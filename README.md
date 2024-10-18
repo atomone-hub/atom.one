@@ -51,6 +51,8 @@ The following public RPC and API endpoints are available:
 - https://atomone-api.allinbits.com/
 - https://atomone-rpc.allinbits.com/
 
+Addtional explorers, RPCs, seed nodes, persistent_peers, etc. may be listed on [cosmos.directory/atomone](https://cosmos.directory/atomone)
+
 ### Discord channel
 
 For more immediate communication, you are also welcome to use [the validator channel on Discord](https://discord.com/channels/1050058681414340701/1052259303924445204).
