@@ -46,6 +46,11 @@ AtomOne is a relatively simple and vanilla Cosmos SDK chain with minor modificat
 
 ### Network informations
 
+The following public RPC and API endpoints are available:
+
+- https://atomone-api.allinbits.com/
+- https://atomone-rpc.allinbits.com/
+
 ### Discord channel
 
 For more immediate communication, you are also welcome to use [the validator channel on Discord](https://discord.com/channels/1050058681414340701/1052259303924445204).
