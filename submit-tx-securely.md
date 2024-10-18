@@ -344,7 +344,6 @@ To specifically delegate to a validator, run the following command:
 
 ```bash
 atomoned tx staking delegate <VALIDATOR_ADDRESS> <AMOUNT>\
-   --proposal <path/to/PROP.json> \
    --from <ADDRESS> \
    --chain-id atomone-1 \
    --fees 5000uatone \
