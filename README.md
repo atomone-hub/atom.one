@@ -46,8 +46,6 @@ AtomOne is a relatively simple and vanilla Cosmos SDK chain with minor modificat
 
 ### Network informations
 
-You can get a list of public Explorers, RPCs, seed node, persistent_peers... on [cosmos.directory/atomone](https://cosmos.directory/atomone)
-
 ### Discord channel
 
 For more immediate communication, you are also welcome to use [the validator channel on Discord](https://discord.com/channels/1050058681414340701/1052259303924445204).
