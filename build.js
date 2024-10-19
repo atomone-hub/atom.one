@@ -14,7 +14,7 @@ const loadTemplate = (filePath) => fs.readFileSync(filePath, "utf-8");
 
 const template = (content, title, header, footer) => {
   const layout = loadTemplate(path.join(rootDir, "site/templates/layout.html"));
-  return layout.replace("{{ header }}", header).replace("{{ footer }}", footer).replace("{{ content }}", content).replace("{{ title }}", title);
+  return layout.replace("{{ header }}", header).replace("{{ footer }}", footer).replace("{{ content }}", content).replace("{{ title }}", title.replace(/-/g, " "));
 };
 
 const generateNavLinks = (files) =>
