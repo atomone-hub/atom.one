@@ -154,6 +154,10 @@ code {
   padding: 3px 5px;
   border-radius: 3px;
 }
+pre > code {
+  background-color: transparent;
+  padding: 0;
+}
 
 footer {
   border-top: solid 1px #ddd;
