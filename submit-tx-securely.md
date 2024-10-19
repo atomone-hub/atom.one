@@ -286,14 +286,11 @@ it some balance.
 
 ### 3. Create the transaction
 
-While the transaction can be created from either the **online** or the
-**offline computers**, the commands described below implies using the **online
-computer** because they have the `--gas` flag equals to `auto`, which requires
-a connection to estimate the gas cost of the transaction. If you prefer to use
-the **offline computer**, replace `auto` with an estimated amount of gas.
-On the other hand, the caveat of using the **oneline computer** is that you
-will have to safely copy the unsigned transaction over the offline computer for
-signing.
+You can create the transaction from either the **online** or the **offline
+computers**, with the caveat that you will have to safely copy the unsigned
+transaction over the offline computer for signing in case you used the online
+computer to generate it. You can generate all types of transactions using the
+CLI. The command is as follows:
 
 You can generate all types of transactions using the CLI. The command is as
 follows:
@@ -304,7 +301,6 @@ atomoned tx <MODULE> <TRANSACTION> [FLAGS]
    --chain-id atomone-1 \
    --fees 5000uatone \
    --generate-only \
-   --gas auto \
    --sequence <SEQUENCE_NUMBER> \
    > tx.unsigned.json
 ```
@@ -348,7 +344,6 @@ atomoned tx staking delegate <VALIDATOR_ADDRESS> <AMOUNT>\
    --chain-id atomone-1 \
    --fees 5000uatone \
    --generate-only \
-   --gas auto \
    --sequence <SEQUENCE_NUMBER> \
    > tx.unsigned.json
 ```
