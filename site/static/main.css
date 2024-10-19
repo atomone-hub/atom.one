@@ -1,0 +1,280 @@
+body {
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+  margin-top: 50px;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h1 + * {
+  margin-top: 25px;
+}
+
+h2 + h1,
+h3 + h1,
+h3 + h2,
+h2 + h3 {
+  margin-top: 15px;
+}
+
+h1 + p,
+h1 + ul,
+h1 + ol,
+h1 + pre,
+h2 + p,
+h2 + ul,
+h2 + ol,
+h2 + pre,
+h3 + p,
+h3 + ul,
+h3 + ol,
+h3 + pre {
+  margin-top: 30px;
+}
+
+a {
+  color: #bbb;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 30px;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+ul li,
+ol li {
+  margin-bottom: 15px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+table th,
+table td {
+  border: 1px solid #444;
+  padding: 12px;
+}
+
+table th {
+  background-color: #222;
+  color: #fff;
+}
+
+table td {
+  background-color: #111;
+  color: #fff;
+}
+
+pre {
+  background-color: #111;
+  color: #ccc;
+  padding: 20px;
+  overflow-x: auto;
+  border-radius: 5px;
+}
+
+code {
+  background-color: #222;
+  color: #ccc;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+pre > code {
+  background-color: transparent;
+  padding: 0;
+}
+
+footer {
+  border-top: solid 1px #ddd;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.markdown-alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-left: 5px solid;
+  font-size: 1em;
+  background-color: #222;
+  color: #ddd;
+}
+
+.markdown-alert-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.markdown-alert-warning {
+  background-color: #5d4500;
+  color: #ffcc00;
+  border-color: #ffae00;
+}
+
+.markdown-alert-info {
+  background-color: #1e4f7a;
+  color: #5bc0de;
+  border-color: #39a9d1;
+}
+
+.markdown-alert-success {
+  background-color: #234f27;
+  color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.markdown-alert-danger {
+  background-color: #631e1e;
+  color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.markdown-alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-left: 5px solid;
+  font-size: 1em;
+  background-color: #222;
+  color: #ddd;
+}
+
+.markdown-alert-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 0 10px;
+}
+
+.markdown-alert-warning {
+  border-color: #ffae00;
+}
+.markdown-alert-warning > .markdown-alert-title {
+  color: #ffae00;
+}
+.markdown-alert-warning svg {
+  fill: #ffae00;
+}
+
+.markdown-alert-note {
+  border-color: #39a9d1;
+}
+.markdown-alert-note > .markdown-alert-title {
+  color: #5bc0de;
+}
+.markdown-alert-note svg {
+  fill: #5bc0de;
+}
+
+.markdown-alert-success {
+  border-color: #4cae4c;
+}
+.markdown-alert-success > .markdown-alert-title {
+  color: #5cb85c;
+}
+.markdown-alert-success svg {
+  fill: #5cb85c;
+}
+
+.markdown-alert-danger {
+  border-color: #d43f3a;
+}
+.markdown-alert-danger > .markdown-alert-title {
+  color: #d9534f;
+}
+.markdown-alert-danger svg {
+  fill: #d9534f;
+}
+
+.markdown-alert-important,
+.markdown-alert-tip {
+  border-color: #ddd;
+}
+.markdown-alert-important > .markdown-alert-title,
+.markdown-alert-tip > .markdown-alert-title {
+  color: #ddd;
+}
+.markdown-alert-important svg,
+.markdown-alert-tip svg {
+  fill: #ddd;
+}
