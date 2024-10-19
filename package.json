@@ -1,0 +1,14 @@
+{
+  "name": "atom.one",
+  "version": "1.0.0",
+  "description": "Deploy website",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-github-alerts": "^0.3.0"
+  }
+}
