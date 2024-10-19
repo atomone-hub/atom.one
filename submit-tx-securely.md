@@ -45,7 +45,7 @@ any reason, it would be unable to send data to a potential attacker.
 
 ### 1. Download the `atomoned` binary
 
-- Go to https://github.com/atomone-hub/atomoned/releases/tag/v1.0.0 (or the
+- Go to https://github.com/atomone-hub/atomone/releases/tag/v1.0.0 (or the
   [latest available release](https://github.com/atomone-hub/atomone/releases)
   used by the AtomOne chain)
 - Download the binary that corresponds to your OS
@@ -54,7 +54,7 @@ any reason, it would be unable to send data to a potential attacker.
   `sha1sum` listed in that file. From a terminal window type:
 
 ```bash
-sha256sum -c --ignore-missing SHA256SUMS-v1.0.4.txt 
+sha256sum -c --ignore-missing SHA256SUMS-v1.0.0.txt
 ```
 
 ```bash
@@ -137,7 +137,7 @@ e29e5bc3aff354caf100fcaad35a9e0173276dd6a5f162a8939dee5f30c9b69e  atomoned-v1.0.
 ```bash
 sha256sum $GOPATH/bin/atomoned
 78fcb6bcda906fc5b959cca985afab5a8486c17b63e1835faec0c0e57364582d  build/atomoned
-# match the hash of linux/adm64 version
+# match the hash of linux/amd64 version
 ```
 
 > [!WARNING]
