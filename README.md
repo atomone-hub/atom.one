@@ -5,13 +5,14 @@
 ### Genesis file
 
 The link to the final genesis is available here:
-https://atomone.fra1.digitaloceanspaces.com/atomone-1/genesis.json
+
+[https://atomone.fra1.digitaloceanspaces.com/atomone-1/genesis.json](https://atomone.fra1.digitaloceanspaces.com/atomone-1/genesis.json)
 
 ### Get the binary
 
 - You can download the proposed chain binary from github release page
 
-https://github.com/atomone-hub/atomone/releases/tag/v1.0.0
+[https://github.com/atomone-hub/atomone/releases/tag/v1.0.0](https://github.com/atomone-hub/atomone/releases/tag/v1.0.0)
 
 - Or you can build it from the source
 
@@ -48,8 +49,8 @@ AtomOne is a relatively simple and vanilla Cosmos SDK chain with minor modificat
 
 The following public RPC and API endpoints are available:
 
-- https://atomone-api.allinbits.com/
-- https://atomone-rpc.allinbits.com/
+- [https://atomone-api.allinbits.com](https://atomone-api.allinbits.com)
+- [https://atomone-rpc.allinbits.com](https://atomone-rpc.allinbits.com)
 
 Addtional explorers, RPCs, seed nodes, persistent_peers, etc. may be listed on [cosmos.directory/atomone](https://cosmos.directory/atomone)
 
