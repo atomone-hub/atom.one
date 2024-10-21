@@ -261,7 +261,7 @@ stored on the blockchain. Run the following command, replacing `<ADDRESS>` with
 the address of your account as collected during step 2:
 
 ```bash
-atomoned query auth account <ADDRESS> --node https://XXX-TODO
+atomoned query auth account <ADDRESS> --node https://atomone-rpc.allinbits.com:443
 ```
 
 ```bash
@@ -353,7 +353,7 @@ to. The prefix must be `atonevaloper`, you can query the addresses of all
 active validators from the **online computer** using the following command:
 
 ```sh
-atomoned query staking validators --node https://XXX-TODO
+atomoned query staking validators --node https://atomone-rpc.allinbits.com:443
 ```
 
 The command will generate a `tx.unsigned.json` file in the current directory,
@@ -396,7 +396,7 @@ You can then securely transfer this file to the **online computer**.
 From the **online computer**, run the following command:
 
 ```bash
-atomoned tx broadcast tx.signed.json --node https://XXX-TODO
+atomoned tx broadcast tx.signed.json --node https://atomone-rpc.allinbits.com:443
 ```
 
 ```bash
@@ -424,7 +424,7 @@ shortly after. You should be able to view your delegation in the list by
 executing the following command:
 
 ```bash
-atomoned query staking delegations <ADDRESS> --node https://XXX-TODO
+atomoned query staking delegations <ADDRESS> --node https://atomone-rpc.allinbits.com:443
 ```
 
 You can also check your transaction status by running:
