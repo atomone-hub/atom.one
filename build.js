@@ -3,7 +3,9 @@ const markdownItGitHubAlerts = require("markdown-it-github-alerts");
 const fs = require("fs-extra");
 const path = require("path");
 
-const md = new MarkdownIt();
+const md = new MarkdownIt({
+  html: true,
+});
 md.use(markdownItGitHubAlerts);
 
 const rootDir = __dirname;
