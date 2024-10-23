@@ -284,7 +284,7 @@ footer {
 }
 
 .ProgressBar-svg {
-    height: 2px !important;
+    height: 1px !important;
 }
 .ProgressBar-svg rect {
     rx: 0px !important;
@@ -292,7 +292,7 @@ footer {
 .ProgressBar-background,
 .ProgressBar-percentage {
     fill: white !important;
-    fill-opacity: .5 !important;
+    fill-opacity: .4 !important;
 }
 
 .ProgressBar-percentage {

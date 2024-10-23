@@ -9,9 +9,13 @@
 
 ## Phase -2: Preparation
 
+</br>
+
 ```progressBar
 [["Completion", 100]]
 ```
+
+</br>
 
 1. **Drafting and Documentation: - 100% completed**
    - Draft the Articles of Constitution and complete the AtomOne proposed Constitution
@@ -27,9 +31,13 @@
 
 ## Phase -1: Finalizing Founding Documents
 
+</br>
+
 ```progressBar
 [["Completion", 100]]
 ```
+
+</br>
 
 1. **Governance Approval - 100% completed**
    - Publish the AtomOne's proposed roadmap and submit it to Govgen for vote (feedback and sentiment).
@@ -41,10 +49,13 @@
 
 ## Phase 0: AtomOne Chain Launch
 
+</br>
 
 ```progressBar
 [["Completion", 50]]
 ```
+
+</br>
 
 1. **Launch** - 50%
    - Launch the AtomOne chain with a simple Gaia fork and no, to minimal changes with ICS and IBC functionalities disabled. - 100%
@@ -52,10 +63,13 @@
 
 ## **Phase 1: Implementation**
 
+</br>
 
 ```progressBar
 [["Completion", 25]]
 ```
+
+</br>
 
 1. **New features/changes implemented**
    - Governance improvements - 50%
@@ -87,10 +101,13 @@
 
 ## Phase 2: Validators, ICS Mechanics
 
+</br>
 
 ```progressBar
 [["Completion", 0]]
 ```
+
+</br>
 
 1. **Validator Incentives**
    - Fix validator incentives and election mechanics.
@@ -102,10 +119,13 @@
 
 ## Phase 3: Cross-Zone Governance
 
+</br>
 
 ```progressBar
 [["Completion", 0]]
 ```
+
+</br>
 
 1. **Expanded Oversight of the DAOs**
    - Allow Oversight DAO to reject proposals from other zones via root/core.
