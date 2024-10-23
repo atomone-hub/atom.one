@@ -159,11 +159,25 @@ pre > code {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
   border-top: solid 1px #ddd;
   color: #fff;
   text-align: center;
   padding: 20px;
   margin-top: 60px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+.footer-socials li{
+    display: flex;
 }
 
 .markdown-alert {
