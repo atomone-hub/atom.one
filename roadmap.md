@@ -1,12 +1,12 @@
 # AtomOne Roadmap
 
-## Phase -2: Preparation
+## Phase -2: Preparation - 100% completed
 
-1. **Drafting and Documentation:- 75% completed**
+1. **Drafting and Documentation: - 100% completed**
    - Draft the Articles of Constitution and complete the AtomOne proposed Constitution
    - Draft the initial Law documents for the proposed MVP DAOs: Steering, Oversight, and the first Treasury DAO - The Buidl DAO (to be used for chain development)\*
    - Draft the proposed AtomOne roadmap and tokenomics
-2. **Proposing completed Articles:- 10% completed**
+2. **Proposing completed Articles: - 100% completed**
    - Begin proposing Constitution Amendments and Articles.
 3. **Chain's supply distribution: 100% completed**
    - Complete the draft for the proposed ATONE supply distribution
@@ -14,34 +14,34 @@
    - Complete the research for proposing the AtomOne launch software
    -\* The names of the proposed DAOs can be subject to change.\*
 
-## Phase -1: Finalizing Founding Documents
+## Phase -1: Finalizing Founding Documents - 100% completed
 
-1. **Governance Approval- 30% completed**
+1. **Governance Approval - 100% completed**
    - Publish the AtomOne's proposed roadmap and submit it to Govgen for vote (feedback and sentiment).
    - Publish the AtomOne's proposed tokenomics and submit it to Govgen for vote (feedback and sentiment).
    - Publish the AtomOne's software choice proposal and submit it to Govgen for vote (feedback and sentiment).
    - Publish the AtomOne's supply distribution proposal and submit it to Govgen for vote (feedback and sentiment).
    - Publish the AtomOne proposed completed Constitution and submit it to Govgen for vote (feedback and sentiment).
-2. **Complete the burn mechanism spec from ATONE to Photon- 10% completed**
+2. **Complete the burn mechanism spec from ATONE to Photon - 100% completed**
 
 ## Phase 0: AtomOne Chain Launch
 
-1. **Launch**
-   - Launch the AtomOne chain with a simple Gaia fork and no, to minimal changes with ICS and IBC functionalities disabled.
-   - Ratify all governance documents on the AtomOne chain: Articles of Constitution and if required the proposed AtomOne roadmap and tokenomics
+1. **Launch** - 50%
+   - Launch the AtomOne chain with a simple Gaia fork and no, to minimal changes with ICS and IBC functionalities disabled. - 100%
+   - Ratify all governance documents on the AtomOne chain: Articles of Constitution and if required the proposed AtomOne roadmap and tokenomics 0%
 
-## **Phase 1: Implementation**
+## **Phase 1: Implementation** - 25%
 
 1. **New features/changes implemented**
-   - Governance improvements
-   - PHOTON mechanics
-   - IBC, including relay & fee-based spam prevention.
-   - Audit all of the above
-2. **Photon activation**
+   - Governance improvements - 50%
+   - PHOTON mechanics - 50%
+   - IBC, including relay & fee-based spam prevention. - 0%
+   - Audit all of the above - 0%
+2. **Photon activation** - 25%
    - ATONE -> PHOTON burn mechanism enabled
    - ATONE only used as fees for PHOTON burn tx
    - All fees collected in PHOTONs
-3. **DAO Activation**
+3. **DAO Activation** - 0%
    - Complete the Charters for the Steering, Oversight, and the first Treasury DAO - The Buidl DAO\* and submit them to AtomOne for vote
    - Complete the Law documents for the proposed MVP DAOs and submit them to AtomOne for vote.
    - Approval of DAO members.
@@ -60,7 +60,8 @@
    - Maintain an off-chain system that stores the Constitution laws and charters.
 
 
-## Phase 2: Validators, ICS Mechanics
+## Phase 2: Validators, ICS Mechanics - 0%
+
 1. **Validator Incentives**
    - Fix validator incentives and election mechanics.
    - Implement rewards not strictly proportional to stake to avoid large validator dominance.
@@ -69,7 +70,7 @@
    - Propose the spec for the improved ICS model that: 1. ensures more or equal ICS rewards for validators. 2. collects and distributes ICS rewards according to work performed. 3. uses photons for all payments.
    - Deploy above ICS on AtomOne. \* Start draft on ICS++ specification w/ ABCI application containers. 1. ICS++ consumer chains are described by a linux container. 2. Develop orchestration tooling for ICS++ 3. Ensure TM1 &lt;-> TM2 IBC compatibility 4. Expand choice of supported consensus engines for consumer chains. (Hub runs TM1, initial ICS++ consumer chains run TM2 invisibly)
 
-## Phase 3: Cross-Zone Governance
+## Phase 3: Cross-Zone Governance - 0%
 
 1. **Expanded Oversight of the DAOs**
    - Allow Oversight DAO to reject proposals from other zones via root/core.
