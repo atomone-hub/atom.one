@@ -10,7 +10,6 @@ body {
 .wrapper {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 header {
@@ -278,3 +277,25 @@ footer {
 .markdown-alert-tip svg {
   fill: #ddd;
 }
+
+.ProgressBar{
+    align-items: center;
+    gap:10px;
+}
+
+.ProgressBar-svg {
+    height: 2px !important;
+}
+.ProgressBar-svg rect {
+    rx: 0px !important;
+}
+.ProgressBar-background,
+.ProgressBar-percentage {
+    fill: white !important;
+    fill-opacity: .5 !important;
+}
+
+.ProgressBar-percentage {
+    fill-opacity: 1 !important;
+}
+

@@ -1,6 +1,17 @@
 # AtomOne Roadmap
 
-## Phase -2: Preparation - 100% completed
+```progressBar
+[["General Completion ", 50]]
+```
+
+<br>
+<br>
+
+## Phase -2: Preparation
+
+```progressBar
+[["Completion", 100]]
+```
 
 1. **Drafting and Documentation: - 100% completed**
    - Draft the Articles of Constitution and complete the AtomOne proposed Constitution
@@ -14,7 +25,11 @@
    - Complete the research for proposing the AtomOne launch software
    -\* The names of the proposed DAOs can be subject to change.\*
 
-## Phase -1: Finalizing Founding Documents - 100% completed
+## Phase -1: Finalizing Founding Documents
+
+```progressBar
+[["Completion", 100]]
+```
 
 1. **Governance Approval - 100% completed**
    - Publish the AtomOne's proposed roadmap and submit it to Govgen for vote (feedback and sentiment).
@@ -26,11 +41,21 @@
 
 ## Phase 0: AtomOne Chain Launch
 
+
+```progressBar
+[["Completion", 50]]
+```
+
 1. **Launch** - 50%
    - Launch the AtomOne chain with a simple Gaia fork and no, to minimal changes with ICS and IBC functionalities disabled. - 100%
    - Ratify all governance documents on the AtomOne chain: Articles of Constitution and if required the proposed AtomOne roadmap and tokenomics 0%
 
-## **Phase 1: Implementation** - 25%
+## **Phase 1: Implementation**
+
+
+```progressBar
+[["Completion", 25]]
+```
 
 1. **New features/changes implemented**
    - Governance improvements - 50%
@@ -60,7 +85,12 @@
    - Maintain an off-chain system that stores the Constitution laws and charters.
 
 
-## Phase 2: Validators, ICS Mechanics - 0%
+## Phase 2: Validators, ICS Mechanics
+
+
+```progressBar
+[["Completion", 0]]
+```
 
 1. **Validator Incentives**
    - Fix validator incentives and election mechanics.
@@ -70,7 +100,12 @@
    - Propose the spec for the improved ICS model that: 1. ensures more or equal ICS rewards for validators. 2. collects and distributes ICS rewards according to work performed. 3. uses photons for all payments.
    - Deploy above ICS on AtomOne. \* Start draft on ICS++ specification w/ ABCI application containers. 1. ICS++ consumer chains are described by a linux container. 2. Develop orchestration tooling for ICS++ 3. Ensure TM1 &lt;-> TM2 IBC compatibility 4. Expand choice of supported consensus engines for consumer chains. (Hub runs TM1, initial ICS++ consumer chains run TM2 invisibly)
 
-## Phase 3: Cross-Zone Governance - 0%
+## Phase 3: Cross-Zone Governance
+
+
+```progressBar
+[["Completion", 0]]
+```
 
 1. **Expanded Oversight of the DAOs**
    - Allow Oversight DAO to reject proposals from other zones via root/core.
