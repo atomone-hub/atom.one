@@ -1,5 +1,6 @@
 const MarkdownIt = require("markdown-it");
 const markdownItGitHubAlerts = require("markdown-it-github-alerts");
+const markdownItProgress = require('markdown-it-progress');
 const fs = require("fs-extra");
 const path = require("path");
 
@@ -7,6 +8,9 @@ const md = new MarkdownIt({
   html: true,
 });
 md.use(markdownItGitHubAlerts);
+md.use(markdownItProgress, {
+    render: 'svg'
+  });
 
 const rootDir = __dirname;
 const outputDir = path.join(rootDir, "dist");

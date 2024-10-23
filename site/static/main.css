@@ -10,7 +10,6 @@ body {
 .wrapper {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 header {
@@ -160,11 +159,25 @@ pre > code {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
   border-top: solid 1px #ddd;
   color: #fff;
   text-align: center;
   padding: 20px;
   margin-top: 60px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+.footer-socials li{
+    display: flex;
 }
 
 .markdown-alert {
@@ -278,3 +291,25 @@ footer {
 .markdown-alert-tip svg {
   fill: #ddd;
 }
+
+.ProgressBar{
+    align-items: center;
+    gap:10px;
+}
+
+.ProgressBar-svg {
+    height: 1px !important;
+}
+.ProgressBar-svg rect {
+    rx: 0px !important;
+}
+.ProgressBar-background,
+.ProgressBar-percentage {
+    fill: white !important;
+    fill-opacity: .4 !important;
+}
+
+.ProgressBar-percentage {
+    fill-opacity: 1 !important;
+}
+
