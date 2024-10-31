@@ -1,6 +1,6 @@
 # AtomOne Roadmap
 
-(\*) Proposed AtomOne roadmap as per GovGen proposal #4: AtomOne Roadmap voted by the GovGen community.
+\* _Proposed AtomOne roadmap as per GovGen proposal #4: AtomOne Roadmap voted by the GovGen community._
 
 </br>
 
