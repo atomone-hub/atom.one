@@ -1,4 +1,6 @@
-# Proposed AtomOne roadmap as per GovGen proposal #4: AtomOne Roadmap voted by the GovGen community
+# AtomOne Roadmap
+
+## Proposed AtomOne roadmap as per GovGen proposal #4: AtomOne Roadmap voted by the GovGen community
 
 ```progressBar
 [["General Completion ", 50]]
