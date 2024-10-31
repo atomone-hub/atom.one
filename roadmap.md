@@ -2,6 +2,8 @@
 
 ## Proposed AtomOne roadmap as per GovGen proposal #4: AtomOne Roadmap voted by the GovGen community
 
+</br>
+
 ```progressBar
 [["General Completion ", 50]]
 ```
