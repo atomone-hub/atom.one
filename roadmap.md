@@ -1,5 +1,9 @@
 # AtomOne Roadmap
 
+\* _Proposed AtomOne roadmap as per GovGen proposal #4: AtomOne Roadmap voted by the GovGen community._
+
+</br>
+
 ```progressBar
 [["General Completion ", 50]]
 ```
@@ -27,7 +31,7 @@
    - Complete the draft for the proposed ATONE supply distribution
 4. **Software choice research 100% completed**
    - Complete the research for proposing the AtomOne launch software
-   -\* The names of the proposed DAOs can be subject to change.\*
+     -\* The names of the proposed DAOs can be subject to change.\*
 
 ## Phase -1: Finalizing Founding Documents
 
@@ -98,7 +102,6 @@
    - Compile Constitution and afferent laws on-chain.
    - Maintain an off-chain system that stores the Constitution laws and charters.
 
-
 ## Phase 2: Validators, ICS Mechanics
 
 </br>
@@ -110,6 +113,7 @@
 </br>
 
 1. **Validator Incentives**
+
    - Fix validator incentives and election mechanics.
    - Implement rewards not strictly proportional to stake to avoid large validator dominance.
 
