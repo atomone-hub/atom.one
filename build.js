@@ -26,6 +26,7 @@ const template = (content, title, header, footer) => {
 const generateNavLinks = (files) =>
   files
     .map((file) => {
+      if (file === "README.md") return;
       const name = path.basename(file, ".md");
       const htmlFile = name === "README" ? "index.html" : `${name}.html`;
 
@@ -39,7 +40,7 @@ fs.removeSync(outputDir);
 
 fs.copySync(staticDir, path.join(outputDir, "static"));
 
-const files = fs.readdirSync(rootDir).filter((file) => path.extname(file) === ".md" && file !== "README.md");
+const files = fs.readdirSync(rootDir).filter((file) => path.extname(file) === ".md");
 
 let header = loadTemplate(path.join(rootDir, "site/templates/header.html"));
 const footer = loadTemplate(path.join(rootDir, "site/templates/footer.html"));
