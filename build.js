@@ -1,6 +1,6 @@
 const MarkdownIt = require("markdown-it");
 const markdownItGitHubAlerts = require("markdown-it-github-alerts");
-const markdownItProgress = require('markdown-it-progress');
+const markdownItProgress = require("markdown-it-progress");
 const fs = require("fs-extra");
 const path = require("path");
 
@@ -9,8 +9,8 @@ const md = new MarkdownIt({
 });
 md.use(markdownItGitHubAlerts);
 md.use(markdownItProgress, {
-    render: 'svg'
-  });
+  render: "svg",
+});
 
 const rootDir = __dirname;
 const outputDir = path.join(rootDir, "dist");
@@ -39,7 +39,7 @@ fs.removeSync(outputDir);
 
 fs.copySync(staticDir, path.join(outputDir, "static"));
 
-const files = fs.readdirSync(rootDir).filter((file) => path.extname(file) === ".md");
+const files = fs.readdirSync(rootDir).filter((file) => path.extname(file) === ".md" && file !== "README.md");
 
 let header = loadTemplate(path.join(rootDir, "site/templates/header.html"));
 const footer = loadTemplate(path.join(rootDir, "site/templates/footer.html"));
