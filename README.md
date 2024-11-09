@@ -31,11 +31,10 @@ will output the instructions required to use the expected go version.
 
 ### Setting recommendations
 
-| minimum-gas-prices | 0.001uatone                                         |
-|--------------------|------------------------------------------------------|
+| minimum-gas-prices | 0.001uatone                                                                                                                     |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
 | seeds              | see [seeds.txt](https://github.com/atomone-hub/atomone-validator-community/blob/main/atomone-1/seeds.txt)                       |
 | persistent_peers   | see [persistent_peers.txt](https://github.com/atomone-hub/atomone-validator-community/blob/main/atomone-1/persistent_peers.txt) |
-
 
 ### Hardware recommendations
 
@@ -53,6 +52,16 @@ The following public RPC and API endpoints are available:
 - [https://atomone-rpc.allinbits.com](https://atomone-rpc.allinbits.com)
 
 Addtional explorers, RPCs, seed nodes, persistent_peers, etc. may be listed on [cosmos.directory/atomone](https://cosmos.directory/atomone)
+
+### Supported wallets
+
+<div class="wallets-list">
+
+- [![Cosmostation wallet](static/imgs/logo-cosmostation.webp)](https://cosmostation.io/)
+- [![Keplr wallet](static/imgs/logo-keplr.webp)](https://chains.keplr.app/)
+- [![Leap wallet](static/imgs/logo-leap.webp)](https://www.leapwallet.io/)
+
+</div>
 
 ### Discord channel
 
