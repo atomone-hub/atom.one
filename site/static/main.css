@@ -170,14 +170,19 @@ footer {
 }
 
 .footer-socials {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
 }
 
-.footer-socials li{
-    display: flex;
+.footer-socials li {
+  display: flex;
+}
+
+.footer-socials svg {
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .markdown-alert {
@@ -292,24 +297,23 @@ footer {
   fill: #ddd;
 }
 
-.ProgressBar{
-    align-items: center;
-    gap:10px;
+.ProgressBar {
+  align-items: center;
+  gap: 10px;
 }
 
 .ProgressBar-svg {
-    height: 1px !important;
+  height: 1px !important;
 }
 .ProgressBar-svg rect {
-    rx: 0px !important;
+  rx: 0px !important;
 }
 .ProgressBar-background,
 .ProgressBar-percentage {
-    fill: white !important;
-    fill-opacity: .4 !important;
+  fill: white !important;
+  fill-opacity: 0.4 !important;
 }
 
 .ProgressBar-percentage {
-    fill-opacity: 1 !important;
+  fill-opacity: 1 !important;
 }
-
