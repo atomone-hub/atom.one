@@ -202,6 +202,11 @@ footer {
   display: flex;
 }
 
+.footer-socials svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
 .markdown-alert {
   padding: 15px;
   margin-bottom: 20px;
