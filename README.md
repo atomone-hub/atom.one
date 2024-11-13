@@ -53,6 +53,26 @@ The following public RPC and API endpoints are available:
 
 Addtional explorers, RPCs, seed nodes, persistent_peers, etc. may be listed on [cosmos.directory/atomone](https://cosmos.directory/atomone)
 
+
+
+### Check your AtomOne allocation
+
+<br/>
+
+<div class="js-tracker">
+ <input class="js-tracker-input tracker-input" placeholder="Input your Cosmos public address" />
+ <button class="js-tracker-check ">Check ATONE Balance</button>
+ 
+ <div class="js-tracker-result is-hidden tracker-balance">
+  <span class="js-tracker-balanceResult "></span>
+ </div>
+
+ <div class="js-tracker-result is-hidden tracker-balance-detail">
+  <div>TOTAL AIRDROP = YES + NO + NWV + ABS + DNV + LIQUID ≃ <span class="js-tracker-balanceTotal"></span> ATONE</div>
+  <div class="tracker-info">According to ATONE distribution proposal discussed on the GovGen forum</div>
+</div>
+
+  
 ### Supported wallets
 
 <div class="wallets-list">
@@ -60,7 +80,6 @@ Addtional explorers, RPCs, seed nodes, persistent_peers, etc. may be listed on [
 - [![Cosmostation wallet](static/imgs/logo-cosmostation.webp)](https://cosmostation.io/)
 - [![Keplr wallet](static/imgs/logo-keplr.webp)](https://chains.keplr.app/)
 - [![Leap wallet](static/imgs/logo-leap.webp)](https://www.leapwallet.io/)
-
 </div>
 
 ### Discord channel
