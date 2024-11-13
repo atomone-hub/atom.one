@@ -317,3 +317,25 @@ footer {
 .ProgressBar-percentage {
   fill-opacity: 1 !important;
 }
+
+.is-hidden {
+  display: none;
+}
+
+.tracker-input {
+  width: 22rem;
+  max-width: 50vw;
+}
+
+.tracker-balance {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.tracker-info {
+  font-style: italic;
+}
+
+.tracker-balance-detail {
+  font-size: 0.8em;
+}
