@@ -1,7 +1,9 @@
-<header>
+<header class="header">
   <nav>
-    <ul>
-      <li><a href="/">Atom One</a></li>
+    <a href="/" class="logo">Atom One</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
       {{ navLinks }}
     </ul>
   </nav>
