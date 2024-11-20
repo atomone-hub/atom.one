@@ -26,7 +26,7 @@ const template = (content, title, header, footer) => {
 const generateNavLinks = (files) =>
   files
     .map((file) => {
-      if (file === "README.md") return;
+      if (file === "README.md" || file === "terms.md" || file === "privacy.md") return;
       const name = path.basename(file, ".md");
       const htmlFile = name === "README" ? "index.html" : `${name}.html`;
 

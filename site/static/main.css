@@ -272,8 +272,16 @@ footer {
   border-top: solid 1px #ddd;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   margin-top: 60px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
 }
 
 .footer-socials {
