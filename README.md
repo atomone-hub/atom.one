@@ -6,7 +6,7 @@
 
 <div class="js-tracker">
  <input class="js-tracker-input tracker-input" placeholder="Input your Cosmos public address" />
- <button class="js-tracker-check ">Check ATONE Balance</button>
+ <button class="js-tracker-check tracker-btn">Check ATONE Balance</button>
  
  <div class="js-tracker-result is-hidden tracker-balance">
   <span class="js-tracker-balanceResult "></span>

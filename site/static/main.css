@@ -339,6 +339,14 @@ footer {
 .tracker-input {
   width: 22rem;
   max-width: 50vw;
+  background-color: white;
+}
+
+input,
+button {
+  background-color: white;
+  padding: 0.5rem;
+  border: none;
 }
 
 .tracker-balance {
