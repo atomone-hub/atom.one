@@ -70,7 +70,7 @@ The only way to mint PHOTON tokens is through the burning of ATONE tokens. The t
 
 Anyone can contribute to AtomOne as a community-driven initiative, with a collaborative decision-making process. If you value hub minimalism for security and sustainability, join the movement. If you would like to contribute, sign up for a GitHub account (if you don’t already have one) and head over to the [AtomOne repo.](https://github.com/orgs/atomone-hub/repositories)
 
-You can join an existing discussion by clicking on “Issues,” selecting the topic that interests you, and adding your comment, or you can open a new discussion by starting a new Issue or adding a Pull Request. Alternatively, join the AtomOne \[Discord channel\]([https://discord.gg/atomone](https://discord.gg/atomone)).
+You can join an existing discussion by clicking on “Issues,” selecting the topic that interests you, and adding your comment, or you can open a new discussion by starting a new Issue or adding a Pull Request. Alternatively, join the AtomOne [Discord channel](<[https://discord.gg/atomone](https://discord.gg/atomone)>).
 
 As AtomOne continues to evolve, the community is encouraged to take an active role in shaping its future. The AtomOne community is urged to remain active, by submitting and discussing new proposals, on the forum and voting for upcoming on-chain proposals.
 
