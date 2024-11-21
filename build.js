@@ -1,6 +1,6 @@
 const MarkdownIt = require("markdown-it");
 const markdownItGitHubAlerts = require("markdown-it-github-alerts");
-const markdownItProgress = require('markdown-it-progress');
+const markdownItProgress = require("markdown-it-progress");
 const fs = require("fs-extra");
 const path = require("path");
 
@@ -9,8 +9,8 @@ const md = new MarkdownIt({
 });
 md.use(markdownItGitHubAlerts);
 md.use(markdownItProgress, {
-    render: 'svg'
-  });
+  render: "svg",
+});
 
 const rootDir = __dirname;
 const outputDir = path.join(rootDir, "dist");
@@ -26,6 +26,7 @@ const template = (content, title, header, footer) => {
 const generateNavLinks = (files) =>
   files
     .map((file) => {
+      if (file === "README.md" || file === "terms.md" || file === "privacy.md") return;
       const name = path.basename(file, ".md");
       const htmlFile = name === "README" ? "index.html" : `${name}.html`;
 

@@ -4,45 +4,152 @@ body {
   color: #fff;
   line-height: 1.6;
   margin: 0;
-  padding: 20px;
+  min-height: 100vh;
 }
 
 .wrapper {
   max-width: 900px;
+  min-height: 100vh;
   margin: 0 auto;
-}
-
-header {
-  padding: 10px 0 20px;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-}
-
-nav ul {
+  padding: 0 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* header */
+
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  border-bottom: solid 1px white;
+  padding: 30px 0 20px;
+}
+
+.header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.header ul {
   margin: 0;
-  gap: 30px;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
 }
 
-nav ul li:first-child {
-  margin-right: auto;
-}
-
-nav ul li a {
-  color: #fff;
+.header li a {
+  display: block;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2em;
-  border-radius: 8px;
-  text-transform: capitalize;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+.header a {
+  color: white;
+}
+
+.header .logo {
+  display: block;
+  font-size: 1.4em;
+  padding: 10px 0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    margin-bottom: 0;
+  }
+
+  .header nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header .menu {
+    display: flex;
+    gap: 1.5rem;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
 
 h1,
@@ -165,8 +272,16 @@ footer {
   border-top: solid 1px #ddd;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   margin-top: 60px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
 }
 
 .footer-socials {
@@ -325,6 +440,14 @@ footer {
 .tracker-input {
   width: 22rem;
   max-width: 50vw;
+  background-color: white;
+}
+
+input,
+button {
+  background-color: white;
+  padding: 0.5rem;
+  border: none;
 }
 
 .tracker-balance {
