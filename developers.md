@@ -53,24 +53,6 @@ The following public RPC and API endpoints are available:
 
 Addtional explorers, RPCs, seed nodes, persistent_peers, etc. may be listed on [cosmos.directory/atomone](https://cosmos.directory/atomone)
 
-### Check your AtomOne allocation
-
-<br/>
-
-<div class="js-tracker">
- <input class="js-tracker-input tracker-input" placeholder="Input your Cosmos public address" />
- <button class="js-tracker-check ">Check ATONE Balance</button>
- 
- <div class="js-tracker-result is-hidden tracker-balance">
-  <span class="js-tracker-balanceResult "></span>
- </div>
-
- <div class="js-tracker-result is-hidden tracker-balance-detail">
-  <div>TOTAL AIRDROP = YES + NO + NWV + ABS + DNV + LIQUID ≃ <span class="js-tracker-balanceTotal"></span> ATONE</div>
-  <div class="tracker-info">According to ATONE distribution proposal discussed on the GovGen forum</div>
- </div>
-</div>
-
 ### Discord channel
 
 For more immediate communication, you are also welcome to use [the validator channel on Discord](https://discord.com/channels/1050058681414340701/1052259303924445204).
