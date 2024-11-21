@@ -1,4 +1,4 @@
-# Atom One
+# AtomOne
 
 ## Operate the node
 

@@ -1,4 +1,4 @@
-# Atom One
+# AtomOne
 
 ## Check your AtomOne allocation
 
