@@ -37,7 +37,7 @@ After months of extensive development and valuable community input, the proposed
 On October 18th, a group of community validators came together, submitted their genTXs, created a new genesis, and successfully launched the AtomOne chain. This was a fully decentralized, community-driven event, with no single entity controlling or deciding the genesis time —these decisions were made collectively by the self-organizing community genesis validators.
 
 You can view the chain's activity and stats directly on the [Mintscan explorer.](https://www.mintscan.io/atomone)  
- As a permissionless, community-driven chain, anyone is welcome to join and become an AtomOne validator. If you're a validator and interested in shaping the future of the network, you can find the instructions on how to join the AtomOne chain [here](https://atom.one).
+ As a permissionless, community-driven chain, anyone is welcome to join and become an AtomOne validator. If you're a validator and interested in shaping the future of the network, you can find the instructions on how to join the AtomOne chain [here](https://atom.one/developers).
 
 ## 7. What is ATONE, and how may it differ from ATOM?
 
@@ -53,7 +53,7 @@ The ATONE token distribution was approved by the GovGen community with a 40.56% 
 
 AtomOne token holders can stake their ATONE tokens using different options:
 
-- CLI tool, ideally by using an offline computer. You can find instructions [here](https://github.com/atomone-hub/atom.one/blob/main/submit-tx-securely.md).
+- CLI tool, ideally by using an offline computer. You can find instructions [here](https://atom.one/submit-tx-securely).
 - [https://staking.atom.one/](https://staking.atom.one/) dApp
 - [Cosmostation](https://www.cosmostation.io/products/cosmostation_extension) wallet (natively within the wallet)
 - [Leap](https://www.leapwallet.io/download) wallet (natively within the wallet)
@@ -68,9 +68,9 @@ The only way to mint PHOTON tokens is through the burning of ATONE tokens. The t
 
 ## 11. How can I contribute to AtomOne?
 
-Anyone can contribute to AtomOne as a community-driven initiative, with a collaborative decision-making process. If you value hub minimalism for security and sustainability, join the movement. If you would like to contribute, sign up for a GitHub account (if you don’t already have one) and head over to the [AtomOne repo.](https://github.com/orgs/atomone-hub/repositories)
+Anyone can contribute to AtomOne as a community-driven initiative, with a collaborative decision-making process. If you value hub minimalism for security and sustainability, join the movement. If you would like to contribute, sign up for a GitHub account (if you don’t already have one) and head over to the [AtomOne org.](https://github.com/orgs/atomone-hub/repositories)
 
-You can join an existing discussion by clicking on “Issues,” selecting the topic that interests you, and adding your comment, or you can open a new discussion by starting a new Issue or adding a Pull Request. Alternatively, join the AtomOne [Discord channel](<[https://discord.gg/atomone](https://discord.gg/atomone)>).
+You can join an existing discussion in the “Issues” section, selecting the topic that interests you, and adding your comment, or you can open a new discussion by starting a new Issue or adding a Pull Request. Alternatively, join the [AtomOne Discord](https://discord.gg/atomone) channel.
 
 As AtomOne continues to evolve, the community is encouraged to take an active role in shaping its future. The AtomOne community is urged to remain active, by submitting and discussing new proposals, on the forum and voting for upcoming on-chain proposals.
 
@@ -90,7 +90,7 @@ An allocation was set aside in the original genesis distribution for development
 
 ## 14 If validators who voted YES are slashed, how will additional validators be secured to ensure the chain is decentralized?
 
-AtomOne is designed to be community-driven, providing opportunities for new validators who align with the chain’s vision. AtomOne is permissionless, allowing anyone to validate the chain. The hope is that all participating validators show interest in the chain’s growth and those who spin up a node will contribute meaningfully to the AtomOne project.
+By slashing the Yes voters, the AtomOne's distribution ensured that those who are not aligned with its vision have less voting percentage than the others. This is a safety measure to prevent non-aligned decisions from being adopted, as has happened within the Cosmos Hub
 
 ## 15. What is the plan for scaling AtomOne?
 
