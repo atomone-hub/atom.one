@@ -28,7 +28,7 @@ The main design elements that make AtomOne unique are:
 
 ## 5. Does AtomOne have a Foundation?
 
-No, AtomOne does not have a foundation or any controlling entity. As a community-owned and community-driven project, AtomOne operates under a DAO structure defined in its Constitution This structure emphasizes true community governance by ensuring that all decisions—including funds management and resource allocation — are made collectively, rather than being controlled by a centralized entity.
+No, AtomOne does not have a foundation or any controlling entity. As a community-owned and community-driven project, AtomOne operates under a DAO structure defined in its Constitution. This structure emphasizes true community governance by ensuring that all decisions—including funds management and resource allocation — are made collectively, rather than being controlled by a centralized entity.
 
 ## 6. When did AtomOne launch?
 
