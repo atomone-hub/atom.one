@@ -31,8 +31,9 @@ will output the instructions required to use the expected go version.
 
 ### Setting recommendations
 
-| minimum-gas-prices | 0.001uatone                                                                                                                     |
+| Setting            | Recommendation                                                                                                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| minimum-gas-prices | 0.001uatone                                                                                                                     |
 | seeds              | see [seeds.txt](https://github.com/atomone-hub/atomone-validator-community/blob/main/atomone-1/seeds.txt)                       |
 | persistent_peers   | see [persistent_peers.txt](https://github.com/atomone-hub/atomone-validator-community/blob/main/atomone-1/persistent_peers.txt) |
 

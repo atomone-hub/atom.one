@@ -2,7 +2,7 @@
 
 **Effective Date: November 18, 2024**
 
-This Privacy Policy (the “Policy”) governs your use of the website, accessible from [https://atom.one](https://atom.one), and any Website, Services, Platform or Interface associated with AtomOne such as the AtomOne Staking Portal at [https://staking.atom.one/](https://staking.atom.one/) and the AtomOne Governance dApp at [https://www.gov.atom.one/](https://www.gov.atom.one/) and related tools, trademarks, intellectual property, services, software, or any public source code repository offered by the operator of this site (collectively, the “Services”).
+This Privacy Policy (the “Policy”) governs your use of the website, accessible from [https://atom.one](https://atom.one), and any Website, Services, Platform or Interface associated with AtomOne such as the AtomOne Staking Portal at [https://staking.atom.one](https://staking.atom.one) and the AtomOne Governance dApp at [https://gov.atom.one](https://gov.atom.one) and related tools, trademarks, intellectual property, services, software, or any public source code repository offered by the operator of this site (collectively, the “Services”).
 
 All in Bits (AiB), Inc., a Delaware corporation, operates the Services. AiB and its affiliates are referred to in this document as the “operator,” “we,” or “us.” The Services do not include outside websites or platforms which may be linked or interconnected to the Services. Such outside platforms may have their own privacy policy, which controls all transactions on such platforms.
 
@@ -12,7 +12,7 @@ Please note, as described in this Policy, we may receive your personal data from
 
 ## 1\. Scope and Applicability
 
-This Privacy Policy explains how All in Bits, Inc. collects, uses, discloses, and protects your information when you access or use the Services and related web-hosted user interfaces at [https://atom.one](https://atom.one), [https://staking.atom.one/](https://staking.atom.one/) and [https://www.gov.atom.one/](https://www.gov.atom.one/) (collectively, the “Interface”). By accessing or using the Interface, you consent to the collection and use of your information as described in this Privacy Policy.
+This Privacy Policy explains how All in Bits, Inc. collects, uses, discloses, and protects your information when you access or use the Services and related web-hosted user interfaces at [https://atom.one](https://atom.one), [https://staking.atom.one](https://staking.atom.one) and [https://gov.atom.one](https://gov.atom.one) (collectively, the “Interface”). By accessing or using the Interface, you consent to the collection and use of your information as described in this Privacy Policy.
 
 This Policy also describes how we handle both personally identifiable information (“Personal Information”) and non-personally identifiable information, and how we protect your privacy when using decentralized services. It applies to information collected through the Interface and related services provided by All in Bits, Inc.
 

@@ -227,7 +227,7 @@ ol li {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 30px;
+  margin-block: 30px;
 }
 
 table th,
