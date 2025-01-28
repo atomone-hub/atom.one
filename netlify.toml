@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/developers"
+  to = "/run-node"
+  status = 301
+  force = false

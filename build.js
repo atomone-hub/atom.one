@@ -40,6 +40,11 @@ fs.removeSync(outputDir);
 
 fs.copySync(staticDir, path.join(outputDir, "static"));
 
+const netlifyFile = path.join(rootDir, "netlify.toml");
+if (fs.existsSync(netlifyFile)) {
+  fs.copySync(netlifyFile, path.join(outputDir, "netlify.toml"));
+}
+
 const files = fs.readdirSync(rootDir).filter((file) => path.extname(file) === ".md");
 
 let header = loadTemplate(path.join(rootDir, "site/templates/header.html"));
