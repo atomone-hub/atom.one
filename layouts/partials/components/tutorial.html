@@ -1,0 +1,31 @@
+<article class="listArticle">
+  {{ $datetime := .Date.Format "2006-01-02" }}
+  {{ $ctx := .ctx }}
+
+  <a href="{{ (partial "utility/get-source-url" .ctx)  | absLangURL }}" >
+    <span class="listArticle__illu">
+        <span class="relative">
+            <span class="listArticle__label {{ if eq .image true }}absolute top-2 left-2 {{end}} ">{{.ctx.CurrentSection.Name}}</span>
+            {{ if eq .image true }}
+                {{ $page := $ctx }}
+                {{ $formats := slice "webp" "png" }}
+                {{ $altText := $ctx.Title }}
+                {{ $class := "aspect-[4/3] w-full bg-gray-200 rounded-lg" }}
+                {{ $quality := 90 | int }}
+                {{ $width := 768 }}
+                {{ $height := 560 }}
+                {{ partial "components/picture.html" (dict "url" .ctx.Params.cover "formats" $formats "alt" $altText "class" $class "quality" $quality "width" $width "height" $height  "page" $page) }}
+            {{ end }}
+        </span>
+      <h2 class="{{ if eq .image true }}mt-8{{else}}mt-12{{end}}">
+        {{ $ctx.Title }}
+      </h2>
+      <p>{{ .ctx.Summary }}</p>
+      <ul>
+        <li>
+         <span>{{ T "By"  }}</span> <span class="listArticle__author">{{$ctx.Params.author}}</span></li>
+        </li>
+      </ul>
+    </span>
+  </a>
+</article>

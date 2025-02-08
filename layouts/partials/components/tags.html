@@ -1,0 +1,31 @@
+<nav>
+  {{- $section := . -}}
+  {{- $tags := dict -}}
+  {{- $currentLang := .Site.Language.Lang -}}
+
+  {{- range .Site.RegularPages -}}
+    {{- if and (eq .Section $section.Section) (eq .Lang $currentLang) -}}
+      {{- range .Params.tags -}}
+        {{- $tag := . | lower -}}
+        {{- if isset $tags $tag -}}
+          {{- $count := index $tags $tag -}}
+          {{- $tags = merge $tags (dict $tag (add $count 1)) -}}
+        {{- else -}}
+          {{- $tags = merge $tags (dict $tag 1) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+
+  <div class="relative w-full">
+    <ul
+      class=" flex flex-nowrap gap-2 pb-8 overflow-x-scroll no-scrollbar snap-x after:w-20 after:bg-gradient-to-l after:from-white after:to-transparent after:h-full after:block after:pointer-events-none after:absolute after:right-0">
+      {{- range $tag, $count := $tags -}}
+        <li class="w-fit snap-start">
+          {{ partial "components/button" (dict "Size" "Small" "Variant" "Outlined" "Name" $tag  "URL" (printf "%s%s/" ("/tags/" | relLangURL | absURL) ($tag | urlize)) ) }}
+        </li>
+      {{- end -}}
+    </ul>
+  </div>
+</nav>

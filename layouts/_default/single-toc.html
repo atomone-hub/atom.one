@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main data-barba="container" data-barba-namespace="single">
+  <div class="pb-10 md:pb-12">
+    <div class="flex w-full justify-between font-bold items-center">
+      <h1 class="flex items-center">
+        <span class="inline-flex items-center text-700 md:text-800">
+          <span class="w-max">{{ .Title }}</span>
+        </span>
+      </h1>
+    </div>
+  </div>
+
+  <section class="relative grid grid-cols-12 gap-8">
+    <nav class="col-span-12 md:col-span-3 text-100 pt-2 top-0 md:sticky self-start">
+      <span class="block font-semibold pb-4 text-gray-700">{{ T "ToC" }}</span>
+      <div class="ml-4">{{ .TableOfContents }}</div>
+    </nav>
+
+    <div class="col-span-12 md:col-span-7 md:col-start-5">
+      <article class="prose max-w-none" {{ with .Params.contentLang }}lang="{{ . }}" {{ end }}>{{ .Content }}</article>
+    </div>
+  </section>
+</main>
+{{ end }}

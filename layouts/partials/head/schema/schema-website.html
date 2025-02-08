@@ -1,0 +1,6 @@
+{{ $url := urls.Parse (.Permalink | absLangURL) }}
+{ "@context": "http://schema.org", "@type": "WebSite", "@id": "{{ "/" | absURL }}", "name":
+"{{ .context.Site.Params.siteTitle }}", "description": "{{ .context.Site.Params.siteDescription }}",
+"url": "{{ .Permalink | absLangURL }}", "inLanguage": "{{ .context.Site.Language.Lang }}",
+"workTranslation": { "@id": "{{ "/" | absURL }}/#website" }, "image":{ "@type":"ImageObject",
+"url":"{{ .context.Site.Params.cover | absURL }}" } }

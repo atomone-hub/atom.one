@@ -1,0 +1,30 @@
+<nav class="w-full gap-x-3">
+  <ul role="menubar" class="w-full flex items-center md:justify-start justify-center">
+    {{ $isHome := .IsHome }}
+    <li role="presentation" class="text-700 md:text-900 font-extrabold leading-tight">
+      <a
+        href="{{ "/" | relLangURL | absURL }}"
+        aria-label="{{ .Site.Title }}"
+        role="menuitem"
+        {{ if $isHome }}aria-current="page"{{ end }}
+        ><span class="block">{{ partial "logos/logo-gnoland" . }}</span></a
+      >
+    </li>
+    <li role="presentation" class="ml-auto hidden md:block">
+      <ul role="menu" class="flex gap-4 lg:gap-8 text-200 md:text-200 font-light">
+        {{- range .Site.Menus.resource -}}
+          <li role="presentation">
+            {{ $isMenuCurrent := (eq (lower $.Section) (lower .Name)) }}
+            <a
+              href="{{ .URL | absLangURL }}"
+              role="menuitem"
+              class="text-gray-50 dark:text-light font-normal hover:text-black dark:hover:text-gray-500 duration-200 after:content-['↗'] after:text-grey-500 after:text-200 after:relative after:pl-1 after:inline-block after:-top-0.5 after:duration-150 hover:after:translate-x-0.5 hover:after:-translate-y-0.5"
+              {{ if $isMenuCurrent }}aria-current="page"{{ end }}
+              >{{ .Name }}</a
+            >
+          </li>
+        {{- end -}}
+      </ul>
+    </li>
+  </ul>
+</nav>

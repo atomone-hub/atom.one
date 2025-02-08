@@ -1,0 +1,16 @@
+{{ with .PrevInSection }}
+<div class="flex gap-x-2 text-lg font-bold w-1/2">
+  <span>←</span>
+  <a class="underline" href="{{ (partial "utility/get-source-url" .) | absLangURL }}"
+    >{{ T "Prev" }} - {{ .LinkTitle }}</a
+  >
+</div>
+{{ end }}
+{{ with .NextInSection }}
+<div class="flex gap-x-2 text-lg font-bold w-1/2">
+  <a class="underline" href="{{ (partial "utility/get-source-url" .) | absLangURL }}"
+    >{{ T "Next" }} - {{ .LinkTitle }}</a
+  >
+  <span>→</span>
+</div>
+{{ end }}

@@ -1,0 +1,82 @@
+[[main]]
+    identifier = "Effective gnops"
+    name = "effective-gnops"
+    pageRef = "effective-gnops/"
+    weight = 1
+        [main.params]
+            list = true
+            leveled = true
+
+[[main]]
+    identifier = "Guides"
+    name = "guides"
+    pageRef = "guides/"
+    weight = 2
+        [main.params]
+            list = true
+            leveled = true
+
+[[main]]
+    identifier = "Showcases"
+    name = "showcases"
+    pageRef = "showcasses/"
+    weight = 3
+        [main.params]
+            list = true
+            leveled = true
+
+[[resource]]
+    identifier = "gno.land"
+    name = "gno.land"
+    url = "https://gno.land/"
+    weight = 1
+
+[[resource]]
+    identifier = "gnops"
+    name = "contribute"
+    url = "https://github.com/gnoverse/gnops"
+    weight = 2
+
+[[resource]]
+    identifier = "play.gno.land"
+    name = "play.gno.land"
+    url = "https://play.gno.land/"
+    weight = 3
+
+
+
+[[footer]]
+    identifier = "privacy"
+    name = "Privacy Policy"
+    pageRef = "/privacy-policy"
+    weight = 1
+
+[[footer]]
+    identifier = "terms"
+    name = "Terms and Conditions"
+    pageRef = "/terms-and-conditions"
+    weight = 2
+
+[[social]]
+    identifier = "Discord"
+    name = "discord"
+    url = "https://discord.gg/S8nKUqwkPn"
+    weight = 1
+
+[[social]]
+    identifier = "GitHub"
+    name = "github"
+    url = "https://github.com/gnolang/gno"
+    weight = 2
+
+[[social]]
+    identifier = "Telegram"
+    name = "telegram"
+    url = "https://t.me/gnoland"
+    weight = 3
+
+[[social]]
+    identifier = "Youtube"
+    name = "youtube"
+    url = "https://www.youtube.com/@_gnoland"
+    weight = 4

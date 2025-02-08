@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main data-barba="container" data-barba-namespace="page">
+  <section>
+    {{- with .Title -}}
+    <h1 class="text-4xl font-extrabold pb-3">{{ . }}</h1>
+    {{- end -}}
+    <div class="prose">{{- .Content -}}</div>
+  </section>
+</main>
+{{ end }}

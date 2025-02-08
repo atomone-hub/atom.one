@@ -1,0 +1,9 @@
+{{/* partial "_internal/google_analytics.html" . */}}
+{{ partial "head/default.html" . }}
+
+{{ block "head/resource-hints" . }}{{ partial "head/resources-hint.html" . }}{{ end }}
+{{ block "head/seo" . }}{{ partial "head/seo.html" . }}{{ end }}
+{{ block "head/opengraph" . }}{{ partial "head/opengraph.html" . }}{{ end }}
+{{ block "head/favicons" . }}{{ partial "head/favicons.html" . }}{{ end }}
+{{ block "head/stylesheets" . }}{{ partialCached "head/stylesheets.html" . }}{{ end }}
+{{ block "meta" . }}{{ end }}

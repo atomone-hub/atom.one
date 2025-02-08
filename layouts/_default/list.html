@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main data-barba="container" data-barba-namespace="list">
+  <header class="mb-8">
+    {{ partial "components/headings" (dict "title" .Title "h" 1 "counter" .Section "ctx" . ) }} {{- with .Content }}
+    <p>{{ . }}</p>
+    {{- end }}
+  </header>
+
+  {{ partial "components/paginator" (dict "section" .Name "grid" 2 "type" (lower .Section ) "ctx" . "rangeLimit" 6) }}
+</main>
+{{ end }}

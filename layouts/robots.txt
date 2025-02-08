@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: {{ if eq hugo.Environment "default" }}/{{ end }}
+Sitemap: {{ "/" | absURL }}sitemap.xml

@@ -1,0 +1,9 @@
+baseURL = '/'
+publishDir = "temp"
+defaultContentLanguage = "en"
+title = "gnops"
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+summaryLength = 10
+uglyURLs = false

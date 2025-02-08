@@ -1,0 +1,11 @@
+[en]
+    weight = 1
+    contentDir = "content/english"
+    languageName = "English"
+    [en.params]
+        slogan = "The DevOps Hub for gno.land | Guides, Tools & Automation"
+        description = "Gnops.io is the DevOps hub for Gno.land, offering setup guides, CI/CD tools, and automation to quickly deploy your blockchain and run a validator easily"
+        siteTitle = "The DevOps Hub for gno.land | Guides, Tools & Automation"
+        siteDescription = "Gnops.io is the DevOps hub for Gno.land, offering setup guides, CI/CD tools, and automation to quickly deploy your blockchain and run a validator easily"
+        twitter = "https://x.com/_gnoland"
+        github = "https://github.com/gnoverse/gnops"

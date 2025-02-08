@@ -1,0 +1,21 @@
+{{ $uniqId := (partial "utility/get-uniqid") }}
+
+
+<div class="w-full bg-gray-100/50 rounded-lg overflow-hidden my-4">
+  <div class="peer">
+    <input type="checkbox" class="peer hidden" id="{{ $uniqId }}" />
+    <label
+      class="relative px-3 py-1 flex items-center gap-2 w-full bg-gray-200 cursor-pointer triangle peer-checked:before:rotate-90"
+      for="{{ $uniqId }}">
+      {{- if .IsNamedParams -}}
+        {{ .Get "title" }}
+      {{- else -}}
+        {{ .Get 0 }}
+      {{- end -}}
+    </label>
+  </div>
+
+  <div class="h-full max-h-0 peer-has-[:checked]:max-h-min overflow-hidden">
+    <div class="block px-4">{{ .Inner | .Page.RenderString }}</div>
+  </div>
+</div>

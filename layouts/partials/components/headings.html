@@ -1,0 +1,23 @@
+{{ $tag := printf "h%d" .h }}
+{{ $openTag := printf "<%s class=\"flex items-center \">" $tag }}
+{{ $closeTag := printf "</%s>" $tag }}
+
+
+<div class="pb-12 md:pb-14">
+  <div class="flex w-full justify-center font-bold items-center ">
+    {{ $openTag | safeHTML }}
+    <span class="inline-flex items-center text-600 md:text-700">
+      <span class="w-max dark:text-gray-800">{{ strings.FirstUpper .title }}</span>
+    </span>
+    {{ $closeTag | safeHTML }}
+    {{- with .sectionLink -}}
+      <a class="flex gap-1 items-center hover:text-gray-700 duration-100" href="{{ . }}">
+        {{ T "ViewAll" }}
+        <span class="size-6">{{ partial "icons/ico-arrow" }}</span>
+      </a>
+    {{- end -}}
+
+  </div>
+  {{ with .subtitle }}<p class="md:w-1/3 mt-4 text-gray-700">{{ . }}</p>{{ end }}
+</div>
+{{- block "subcontent" . -}}{{- end -}}

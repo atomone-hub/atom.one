@@ -1,0 +1,7 @@
+{{ $rangeLimit := default 6 .rangeLimit }} {{ $paginator := slice }} {{ $ctx := .ctx }} {{- with .list -}} {{ $paginator = . }} {{ end }} {{- with .section -}} {{ $paginator = where
+$ctx.Site.RegularPages "Section" . }} {{- end -}}
+<div class="flex flex-col justify-center">
+  <div data-component-articles class="grid {{ if (eq .grid 3) }} md:grid-cols-3 {{else }} md:grid-cols-2 {{ end }} gap-4 grid-cols-1 w-full max-w-2xl mx-auto">
+    {{ range first $rangeLimit $paginator }}{{ partial "components/tutorial" (dict "image" false "ctx" .)}} {{ end }}
+  </div>
+</div>

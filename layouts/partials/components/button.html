@@ -1,0 +1,17 @@
+<a
+  href="{{ .URL }}"
+  title="{{ .Name }}"
+  class="inline-block font-light items-center w-max rounded-full leading-tight
+  {{ if eq .Size "Small" }}
+    py-1 px-2 text-100 font-medium
+  {{ else if eq .Size "Large" }}
+    py-4 px-5 text-200
+  {{ end }}
+  {{ if eq .Variant "Outlined" }}
+    bg-transparent border border-gray-200 dark:border-gray-500
+  {{ else if eq .Variant "Filled" }}
+    bg-gray-800 dark:bg-gray-100 dark:text-light
+  {{ end }}
+  hover:bg-gray-700 dark:hover:bg-gray-200 hover:cursor-pointer">
+  {{ .Name }}
+</a>

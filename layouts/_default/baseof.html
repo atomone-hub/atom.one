@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="{{ or .Site.Language.LanguageCode .Site.Language.Lang }}" dir="{{ or .Site.Language.LanguageDirection `ltr` }}">
+  <head>
+    <style>
+      #loader {
+        background: white;
+      }
+      @media (prefers-color-scheme: dark) {
+        #loader {
+          background: #1a1a1a;
+        }
+      }
+    </style>
+    {{ partial "head/head.html" . }} {{ block "meta" . }}{{ end }}
+  </head>
+
+  <body class="flex flex-col min-h-screen" data-page="home" data-barba="wrapper">
+    <div class="global-wapper min-h-screen flex flex-col">
+      {{ block "header" . }}{{ partial "layout/header.html" . }}{{ end }}
+      <div class="max-w-screen-xl mx-auto w-full px-4">{{ block "prefix" . }}{{ end }} {{ block "main" . }}{{ end }}</div>
+      {{ block "footer" . }}{{ partial "layout/footer.html" . }}{{ end }} {{ block "scripts" . }}{{ partial "layout/scripts.html" . }}{{ end }}
+    </div>
+  </body>
+</html>

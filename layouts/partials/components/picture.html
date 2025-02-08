@@ -1,0 +1,39 @@
+{{- $params := . -}}
+{{- $url := $params.url -}}
+{{- $formats := $params.formats -}}
+{{- $alt := $params.alt | default "Image" -}}
+{{- $class := $params.class | default "" -}}
+{{- $quality := $params.quality | default 75 -}}
+{{- $width := $params.width | default 0 -}}
+{{- $height := $params.height | default 0 -}}
+{{- $page := $params.page -}}
+
+{{- $image := "" -}}
+{{ $genericId := "" }}
+
+{{- if (not $page) -}}
+  {{- $image = resources.GetMatch (printf "**/%s" $url) | default (resources.Get $url) -}}
+  {{ if not $image }}{{ $genericId =  string (math.Rand | mul 6 | math.Ceil) }}{{ end }}
+{{- else -}}
+  {{- $image = $page.Resources.GetMatch $url | default ($page.Resources.Get $url) -}}
+  {{ if and (not $image) $page.File }}
+    {{ $genericId = string (add (mod (int (index (sha1 (string $page.File.UniqueID)) 0)) 6) 1) }}
+  {{ end }}
+{{- end -}}
+
+{{ if not $image }}
+  {{ $image = resources.Get (printf "images/placeholder-%s.png" $genericId) }}
+{{ end }}
+
+{{- if $image -}}
+  <picture class="{{ $class }} block overflow-hidden">
+    {{- range $formats }}
+      {{- $format := . -}}
+      {{- $processedImage := $image.Resize (printf "%dx%d %s" $width $height $format) -}}
+      <source srcset="{{ $processedImage.RelPermalink }}" type="image/{{ $format }}" />
+    {{- end }}
+    <img src="{{ $image.RelPermalink }}" alt="{{ $alt }}" class="object-cover h-full w-full" />
+  </picture>
+{{- else -}}
+  <div class="{{ $class }}">Debug: Image not found: {{ $url }}</div>
+{{- end -}}

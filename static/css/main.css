@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+/**
+   FONT FAMILY GROUPS
+*/
+@import url("syntax.css");
+@import url("@fontsource-variable/inter");
+@import url("@fontsource/inter/latin.css");
+
+/* Proxima Nova */
+@font-face {
+  font-family: "Proxima";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/proxima/proximanova_regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Proxima";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/proxima/proximanova_bold.woff2") format("woff2");
+}
+
+/**
+   TAILWIND
+*/
+pnp @layer base {
+  html {
+    /* @apply font-interNormal overflow-x-hidden font-normal leading-tight bg-light dark:bg-gray-50; */
+    font-feature-settings:
+      "kern" on,
+      "liga" on,
+      "calt" on,
+      "zero" on;
+    -webkit-font-feature-settings:
+      "kern" on,
+      "liga" on,
+      "calt" on,
+      "zero" on;
+    text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    font-variant-ligatures: contextual common-ligatures;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  @supports (font-variation-settings: normal) {
+    html {
+      /* @apply font-interVar; */
+    }
+  }
+
+  .prose code {
+    @apply text-gray-800;
+  }
+}
+
+@layer components {
+  .listArticle {
+    @apply w-full;
+  }
+  .listArticle a {
+    @apply flex flex-col justify-end gap-x-4 items-start p-5 bg-gray-800 dark:bg-gray-100 rounded-2xl h-full duration-200 ease-in-out transition-colors text-gray-500 dark:text-gray-400 hover:bg-gray-700 dark:hover:bg-gray-200;
+  }
+  .listArticle h2 {
+    /* @apply text-gray-50 dark:text-light font-semibold pb-2 text-300 mt-12; */
+  }
+  .listArticle .listArticle__label {
+    /* @apply block px-4 py-2 bg-light dark:bg-gray-50 rounded-full text-100 text-gray-50 dark:text-gray-400; */
+  }
+  .listArticle .listArticle__illu {
+    @apply flex flex-col items-start h-full;
+  }
+  .listArticle p {
+    /* @apply text-200  line-clamp-2 h-full pb-1 leading-snug; */
+  }
+
+  .listArticle ul {
+    @apply flex items-center gap-x-5 gap-y-1 flex-wrap mt-auto;
+  }
+  .listArticle .listArticle__author {
+    /* @apply inline-block text-gray-50 dark:text-light mt-6; */
+  }
+
+  .wrapper-perspective {
+    perspective: 1000px;
+  }
+  .overlay {
+    grid-area: 1 / 1 / -1 / -1;
+    display: grid;
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    --columns: 20;
+    grid-template-columns: repeat(var(--columns), 1fr);
+  }
+
+  .overlay div {
+    @apply bg-gray-800 dark:bg-gray-100;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .triangle::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 0.3rem solid transparent;
+    border-bottom: 0.3rem solid transparent;
+    border-left: 0.5rem solid currentColor;
+  }
+}
+
+/**
+   CUSTOM
+*/
+
+#TableOfContents {
+  @apply relative pl-1 before:absolute before:w-px before:h-full before:bg-gray-200 before:-left-4;
+}
+
+#TableOfContents ul {
+  list-style-type: none;
+  @apply ml-6 pt-3;
+}
+
+#TableOfContents > ul {
+  @apply ml-0 pt-0;
+}
+#TableOfContents li:not(:last-child) {
+  @apply list-none pb-3;
+}
+
+#TableOfContents li::before {
+  @apply inline-block text-gray-700 font-bold mr-2;
+}
+
+#TableOfContents a {
+  @apply duration-200;
+}
+
+#TableOfContents a:before {
+  content: "";
+  @apply absolute block w-px h-5 bg-green-100 -left-4 opacity-0 duration-200;
+}
+
+#TableOfContents a:hover {
+  @apply text-green-100;
+}
+
+#TableOfContents a:hover::before {
+  @apply opacity-100;
+}
+
+.highlight {
+  @apply relative;
+}
+
+.highlight button {
+  /* @apply absolute right-1 top-1 bg-gray-700 dark:bg-gray-200 px-1.5 py-px text-50 rounded; */
+}

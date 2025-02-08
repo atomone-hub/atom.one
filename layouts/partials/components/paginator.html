@@ -1,0 +1,19 @@
+{{ $rangeLimit := default 6 .rangeLimit }} {{ $pages := slice }}{{ $type := .type }}
+
+<div class="flex flex-col items-center">
+  <div id="list-items" class="grid {{ if (eq .grid 3) }}md:grid-cols-3 {{else }}md:grid-cols-2 {{ end }} gap-4 grid-cols-1 w-full max-w-2xl mx-auto justify-center">
+    {{ $ctx := .ctx }} {{ if reflect.IsSlice .section }} {{ $pages = where $ctx.Site.RegularPages "Section" "in" .section }} {{ else if .section }} {{ $pages = $ctx.RegularPagesRecursive }} {{ else }}
+    {{ $pages = .ctx.Pages }} {{ end }} {{ $paginator := .ctx.Paginate $pages $rangeLimit }} {{ range $paginator.Pages }} {{ partial "components/tutorial" (dict "image" false "ctx" .) }} {{ end }}
+  </div>
+
+  <div class="max-w-2xl w-full flex justify-center gap-x-2 text-lg font-bold">
+    {{ if $paginator.HasPrev }}<a
+      href="{{ $paginator.Prev.URL | absLangURL }}"
+      id="loadPrev"
+      data-component-loadbtn="search"
+      class="block px-5 py-4 mx-auto bg-gray-800 text-gray-500 rounded-full my-6"
+      >{{ T "Prev" }}</a
+    >{{end}} {{ if $paginator.HasNext }}<a href="{{ $paginator.Next.URL | absLangURL }}" id="loadNext" class="block px-5 py-4 mx-auto bg-gray-800 text-gray-500 rounded-full my-6">{{ T "Next" }}</a
+    >{{end}}
+  </div>
+</div>

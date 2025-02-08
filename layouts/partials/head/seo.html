@@ -1,0 +1,29 @@
+<!-- TITLE -->
+<title>{{ partial "utility/meta-title" . }}</title>
+
+<!-- DESCRIPTION -->
+<meta name="description" content="{{ partial "utility/meta-description" . }}" />
+
+<!-- AUTHORS -->
+<meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }},{{ end }}gnops" />
+<meta name="Publisher" content="{{ .Site.Title }}" />
+
+<!-- CANONICAL -->
+{{ if eq hugo.Environment "production" }}
+  {{ if  .Translations }}
+    {{ range .Translations }}
+      <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink | absLangURL }}" />
+    {{ end }}
+  {{ end }}
+  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink | absLangURL }}" />
+  <link rel="canonical" href="{{ .Permalink | absLangURL }}" />
+  <link rel="alternate" href="{{ .Permalink | absLangURL }}" hreflang="x-default" />
+{{ end }}
+
+
+<!-- KEYWORDS -->
+{{- if .Keywords -}}
+  <meta name="keywords" content="{{ delimit .Keywords ", " }}" />
+{{- else if .Params.meta.keywords -}}
+  <meta name="keywords" content="{{ delimit .Params.meta.keywords ", " }}" />
+{{- end -}}

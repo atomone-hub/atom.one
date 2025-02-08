@@ -1,0 +1,6 @@
+<!-- SHORTCODE - ICON -->
+{{ if .IsNamedParams }}
+  {{ $icon := .Get "type" }}
+  {{ $icon_template := printf "icons/ico-%s.html" $icon }}
+  {{ partial $icon_template . }}
+{{ end }}
