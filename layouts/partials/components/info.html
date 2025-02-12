@@ -1,0 +1,6 @@
+<div class="w-screen z-50 bg-gray-300 text-light">
+  <div class="relative max-w-screen-2xl mx-auto w-full pl-6 pr-16 py-4">
+    {{ .Info | markdownify }}
+    <div class="absolute right-4 top-4">{{ partial "icons/ico-cross.html" . }}</div>
+  </div>
+</div>

@@ -1,82 +1,124 @@
-[[main]]
-    identifier = "Effective gnops"
-    name = "effective-gnops"
-    pageRef = "effective-gnops/"
+[[header]]
+    identifier = "stake"
+    name = "Stake"
+    url = "#"
     weight = 1
-        [main.params]
-            list = true
-            leveled = true
+    params = { "variant" = "Outlined"}
 
-[[main]]
-    identifier = "Guides"
-    name = "guides"
-    pageRef = "guides/"
+[[header]]
+    identifier = "govern"
+    name = "Govern"
+    url = "#"
     weight = 2
-        [main.params]
-            list = true
-            leveled = true
+    params = { "variant" = "Light"}
 
-[[main]]
-    identifier = "Showcases"
-    name = "showcases"
-    pageRef = "showcasses/"
-    weight = 3
-        [main.params]
-            list = true
-            leveled = true
+
+
+# [[resource]]
+#     identifier = "home"
+#     name = "Home"
+#     url = "/"
+#     weight = 1
 
 [[resource]]
-    identifier = "gno.land"
-    name = "gno.land"
-    url = "https://gno.land/"
-    weight = 1
-
-[[resource]]
-    identifier = "gnops"
-    name = "contribute"
-    url = "https://github.com/gnoverse/gnops"
+    identifier = "faq"
+    name = "Faq"
+    url = "#"
     weight = 2
 
 [[resource]]
-    identifier = "play.gno.land"
-    name = "play.gno.land"
-    url = "https://play.gno.land/"
+    identifier = "roadmap"
+    name = "Roadmap"
+    url = "/roadmap"
     weight = 3
 
+[[resource]]
+    identifier = "run-node"
+    name = "Run Node"
+    url = "/run-node"
+    weight = 4
+
+[[resource]]
+    identifier = "submit-tx-securily"
+    name = "Submit TX Securily"
+    url = "/submit-tx-securily"
+    weight = 5
 
 
-[[footer]]
+[[general]]
+    identifier = "home"
+    name = "Home"
+    pageRef = "/"
+    weight = 1
+
+[[general]]
+    identifier = "faq"
+    name = "Faq"
+    pageRef = "/faq"
+    weight = 2
+
+[[general]]
     identifier = "privacy"
     name = "Privacy Policy"
     pageRef = "/privacy-policy"
-    weight = 1
+    weight = 3
 
-[[footer]]
+[[general]]
     identifier = "terms"
     name = "Terms and Conditions"
     pageRef = "/terms-and-conditions"
+    weight = 4
+
+[[advanced]]
+    identifier = "run-node"
+    name = "Run Node"
+    pageRef = "/run-node"
+    weight = 1
+
+[[advanced]]
+    identifier = "roadmap"
+    name = "Roadmap"
+    pageRef = "/roadmap"
+    weight = 2
+
+[[advanced]]
+    identifier = "submit-tx-security"
+    name = "Submit TX Securily"
+    pageRef = "/submit-tx-security"
+    weight = 3
+
+[[apps]]
+    identifier = "govdapp"
+    name = "AtomOne Governance dApp"
+    pageRef = "/"
+    weight = 1
+
+[[apps]]
+    identifier = "stakingdapp"
+    name = "AtomOne Staking dApp"
+    pageRef = "/"
     weight = 2
 
 [[social]]
-    identifier = "Discord"
-    name = "discord"
-    url = "https://discord.gg/S8nKUqwkPn"
+    identifier = "/atomone-hub"
+    name = "github"
+    url = "https://github.com/gnolang/gno"
     weight = 1
 
 [[social]]
-    identifier = "GitHub"
-    name = "github"
-    url = "https://github.com/gnolang/gno"
+    identifier = "/atomone"
+    name = "discord"
+    url = "https://discord.gg/S8nKUqwkPn"
     weight = 2
 
 [[social]]
-    identifier = "Telegram"
-    name = "telegram"
-    url = "https://t.me/gnoland"
+    identifier = "/_atomone"
+    name = "x"
+    url = "https://x.com/_atomone"
     weight = 3
 
 [[social]]
-    identifier = "Youtube"
-    name = "youtube"
-    url = "https://www.youtube.com/@_gnoland"
+    identifier = "AtomOne&nbsp;Forum"
+    name = "forum"
+    url = "https://common.xyz/atomone/"
     weight = 4

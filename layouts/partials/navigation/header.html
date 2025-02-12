@@ -1,4 +1,4 @@
-<nav class="w-full gap-x-3">
+<nav class="max-w-screen-2xl px-6 mx-auto pt-7 pb-5 ">
   <ul role="menubar" class="w-full flex items-center md:justify-start justify-center">
     {{ $isHome := .IsHome }}
     <li role="presentation" class="text-700 md:text-900 font-extrabold leading-tight">
@@ -7,7 +7,7 @@
         aria-label="{{ .Site.Title }}"
         role="menuitem"
         {{ if $isHome }}aria-current="page"{{ end }}
-        ><span class="block">{{ partial "logos/logo-gnoland" . }}</span></a
+        ><span class="block">{{ partial "images/logo" . }}</span></a
       >
     </li>
     <li role="presentation" class="ml-auto hidden md:block">
@@ -18,7 +18,7 @@
             <a
               href="{{ .URL | absLangURL }}"
               role="menuitem"
-              class="text-gray-50 dark:text-light font-normal hover:text-black dark:hover:text-gray-500 duration-200 after:content-['↗'] after:text-grey-500 after:text-200 after:relative after:pl-1 after:inline-block after:-top-0.5 after:duration-150 hover:after:translate-x-0.5 hover:after:-translate-y-0.5"
+              class="text-gray-50 dark:text-light font-normal hover:text-light/70"
               {{ if $isMenuCurrent }}aria-current="page"{{ end }}
               >{{ .Name }}</a
             >
@@ -26,5 +26,15 @@
         {{- end -}}
       </ul>
     </li>
+    <li role="presentation" class="ml-auto hidden md:block">
+        <ul role="menu" class="flex gap-2 lg:gap-2 text-200 md:text-200 font-light">
+          {{- range .Site.Menus.header -}}
+            <li role="presentation" class="flex">
+              {{ $isMenuCurrent := (eq (lower $.Section) (lower .Name)) }}
+              {{ partial "components/button" (dict "Name" .Name "URL"  (.URL | absLangURL) "Variant" .Params.variant "Size" "Small") }}
+            </li>
+          {{- end -}}
+        </ul>
+      </li>
   </ul>
 </nav>

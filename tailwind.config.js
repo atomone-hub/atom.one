@@ -72,7 +72,7 @@ module.exports = {
       400: `${pxToRem(20)}rem`,
       500: `${pxToRem(24)}rem`,
       600: `${pxToRem(28)}rem`,
-      700: `${pxToRem(48)}rem`,
+      700: `${pxToRem(40)}rem`,
       800: `${pxToRem(64)}rem`,
       900: `${pxToRem(94)}rem`,
     },

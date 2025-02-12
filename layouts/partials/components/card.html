@@ -1,0 +1,8 @@
+<article class="bg-dark rounded-sm p-12 w-full text-gray-200 text-left img-grid">
+  <h3 class="font-semibold text-300 pb-8 text-light uppercase">{{ .Title }}</h3>
+  <p class="text-400">{{ .Content | markdownify }}</p>
+  <div class="flex lg:flex-row flex-col mt-12 lg:items-end gap-14">
+    <aside class="w-1/2"><p>{{ .Note | markdownify }}</p></aside>
+    <img src="{{ .ImgSrc }}" alt="{{ .Title }}" class="max-w-1/2" />
+  </div>
+</article>

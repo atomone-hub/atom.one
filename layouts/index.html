@@ -1,86 +1,107 @@
-{{ define "meta" }} {{ partial "head/schema" (dict "context" . "content" "head/schema/schema-website.html") }} {{ end }} {{ define "prefix" }}
-
-{{end}} {{ define "main" }} 
-
-{{ $ctx := . }} {{- $data := index .Site.Data .Site.Language.Lang -}}
-<main data-barba="container" data-barba-namespace="home" class=" min-h-screen">
-<div class="pb-10 w-full flex flex-col items-center">
-    <h1 class="mt-16 font-proxima inline-block font-bold text-900 dark:text-light mb-10 m-auto">{{ .Title }}</h1>
-    {{- if isset .Params "subtitle" -}}
-    <p class="pb-2 text-500 text-gray-700 font-light">
-      {{ .Params.subtitle }} {{ if and .Params.cta .Params.ctalink }}
-      <a href="{{ .Params.ctalink | absLangURL }}" class="underline">{{ .Params.cta }}</a>
-      {{ end }}
-    </p>
-    {{- end -}}
-  
-    <div data-component="search" class="max-w-96 w-full flex justify-center">
-        <label for="search-input" class="relative flex items-center bg-gray-800 rounded-full p-4 gap-2 w-full">
-            <div class="">{{ partial "icons/ico-search" . }}</div>
-            <input id="search-input" data-component-input placeholder="Search" class="bg-transparent outline-none w-full" />
-        </label>
+{{ define "meta" }} {{ partial "head/schema" (dict "context" . "content" "head/schema/schema-website.html") }} {{ end }} {{ define "prefix" }} {{end}} {{ define "main" }} {{ $ctx := . }} {{- $data :=
+index .Site.Data .Site.Language.Lang -}}
+<main class="pb-20 w-full mx-auto">
+  <section class="relative mb-20 before:absolute before:w-screen before:h-full before:z-[-1] before:bg-dark before:left-0 before:top-0">
+    <div class="max-w-screen-xl mx-auto w-full px-4 flex justify-center items-center min-h-min h-[80vh]">
+      <div class="md:w-3/5 flex flex-col justify-center items-start">
+        <h1 class="mt-16 inline-block font-bold text-800 text-light leading-tight pb-8">{{ .Title }}</h1>
+        {{- with .Params.subtitle -}}
+        <p class="text-300 text-gray-200 font-semibold md:w-3/4 w-full pb-12">{{ .| markdownify }}</p>
+        {{- end -}} {{ with .Params.cta }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large") }} {{- end -}}
+      </div>
+      <div class="w-2/5 hidden md:block">{{ partial "images/cover-hp" . }}</div>
     </div>
+  </section>
 
-    <nav class="relative mt-10 w-full max-w-2xl min-h-8" data-component="tabs">
-        <div data-component-nav="tabs" class="block w-fit m-auto">
-            <ul class="flex justify-center gap-4 md:gap-6 text-gray-500 dark:text-gray-300">
-                <li>
-                    <input type="radio" id="all" name="tab" value="all" class="hidden peer" checked />
-                    <label data-component-item="all" for="all" class="ease duration-300 cursor-pointer hover:text-gray-50 text-gray-50 dark:hover:text-light dark:text-light">All</label>
-                </li>
-                {{- range .Site.Menus.main -}} 
-                    {{- if eq .Params.list true -}}
-                        <li class="min-w-fit">
-                            <!-- <input type="radio" id="{{ .Name }}" name="tab" value="{{ .Name }}" class="hidden peer" /> -->
-                            <label data-component-item="{{ .Name }}" for="{{ .Name }}" class="ease duration-300 cursor-pointer hover:text-gray-50  dark:hover:text-light ">{{ .Identifier }}</label>
-                                </li>
-                    {{- end -}}
-                {{- end -}} 
-            </ul>
-            <div data-component-navbar class="h-0.5 w-[18px] bg-gray-50 dark:bg-light rounded-full mt-1.5"></div>
+  <section class="mb-44 max-w-screen-xl mx-auto w-full px-4">
+    <span class="uppercase block mb-14">{{ .Params.innovation.name }}</span>
+    {{ range .Params.innovation.categories }}
+    <div class="mb-20">
+      <h2 class="text-700 font-bold pb-12">{{ .name }}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {{ range .points}}
+        <div class="text-center">
+          <div class="img-grid-2 overflow-hidden mb-6 aspect-video rounded-lg bg-gray-100">
+            <img src="{{ .img }}" alt="{{ .section }}" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="pb-4 text-400 font-semibold">{{ .section }}</h3>
+          <p class="text-gray-200">{{ .content | markdownify }}</p>
         </div>
-        <div data-component-nav="search" class="flex absolute top-0 w-full justify-center items-center text-gray-500 opacity-0 invisible">
-            <button
-                data-component-tabback
-                class="absolute left-0 flex items-center gap-2"
-                >
-                <span class="w-6 h-6">{{ partial "icons/ico-arrow-left" }}</span>
-                {{ T "Back" }}
-            </button>
-            <span class=""><span data-component-nav-searchcount>3</span> {{ T "ItemsFound" }}</span>
-        </div>
-    </nav>
-  </div>
-
-<section data-component="list" class="mb-24">
-  {{ $maxDisplayed := 6 }}
-
-  <div data-collection="all">
-    {{ $articles := .Site.RegularPages }}
-    {{ partial "components/list" (dict "list" $articles "ctx" $ctx "rangeLimit" $maxDisplayed "sectionLink" true) }} 
-    {{ if gt (len $articles) $maxDisplayed }} 
-        <a href="{{ "/articles/page/2/" | absLangURL }}" data-component-loadbtn="all" class="prevent-barba block w-fit px-5 py-4 mx-auto bg-gray-800 text-gray-500 rounded-full my-6 duration-200 ease transition-colors hover:bg-gray-700 dark:bg-gray-100 dark:hover:bg-gray-200 hover:text-gray-50 dark:hover:text-light">{{ T "LoadMore" }}</a>
-    {{ end }}
-  </div>
-
-  <div data-collection="search" class="hidden">
-    {{ partial "components/list" (dict "list" slice "ctx" $ctx "rangeLimit" $maxDisplayed "sectionLink" true) }} 
-    <button data-component-searchbtn="search" class="prevent-barba hidden w-fit px-5 py-4 mx-auto bg-gray-800 text-gray-500 rounded-full my-6 duration-200 ease transition-colors hover:bg-gray-700 dark:bg-gray-100 hover:text-gray-50">{{ T "LoadMore" }}</button>
-  </div>
-  
-  {{- range .Site.Menus.main -}} 
-    {{- if eq .Params.list true -}} 
-    {{ $subject := site.GetPage (printf "articles/%s" .Name) }}
-    {{ $articles := $subject.RegularPagesRecursive }}
-    <div data-collection="{{lower .Name}}" class="hidden">
-        {{ partial "components/list" (dict "list" $articles "ctx" $ctx "rangeLimit" $maxDisplayed "sectionLink" true) }} 
-        {{ if gt (len $articles) $maxDisplayed }} 
-            <a href="{{ printf "/articles/%s/page/2/" .Name | absLangURL }}" data-component-loadbtn="{{lower .Name}}" class="prevent-barba block w-fit px-5 py-4 mx-auto bg-gray-800 text-gray-500 rounded-full my-6">{{ T "LoadMore" }}</a>
         {{ end }}
+      </div>
     </div>
-    {{- end -}} 
-  {{- end -}}
-</section>
+    {{ end }}
+  </section>
+
+  <section class="mb-24 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
+    <h2 class="text-700 font-bold pb-12">{{ .Params.activity.title }}</h2>
+    <p class="text-gray-200 md:w-1/2 text-400">{{ .Params.activity.content | markdownify}}</p>
+    <div class="flex md:flex-row flex-col gap-8 w-full my-12">
+      {{ range .Params.activity.data }}
+      <article class="bg-dark rounded-sm py-12 px-6 w-full">
+        <h3 class="text-gray-200 pb-2">{{ .info }}</h3>
+        <span class="text-light text-400 font-semibold" id="data-{{ .info | urlize}}"></span>
+      </article>
+      {{ end }}
+    </div>
+    <p class="text-gray-200 text-200 mb-16">{{ .Params.activity.explorers | markdownify }}</p>
+  </section>
+
+  <section class="mb-40 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
+    <h2 class="text-700 font-bold pb-12">{{ .Params.allocation.title }}</h2>
+    {{ range .Params.allocation.content }}
+    <p class="text-gray-200 md:w-1/2 text-400 mb-20">{{ .text | markdownify}}</p>
+    {{ end }} {{ partial "components/interactive-banner" (dict "Title" .Params.allocation.tracker.title "Placeholder" .Params.allocation.tracker.placeholder "Content"
+    .Params.allocation.tracker.content "ImgSrc" "/img/hp/coins.svg" "Comp" "tracker")}}
+
+    <div class="w-full flex-col md:flex-row flex gap-6 my-6">
+      {{ range .Params.allocation.cards }} {{ partial "components/card" (dict "Title" .title "Content" .content "ImgSrc" .img "Note" .note)}} {{ end}}
+    </div>
+    {{ partial "components/banner" (dict "Content" "Check the [guide](#) on how to submit transactions securely on the AtomOne chain")}}
+  </section>
+
+  <section class="mb-20 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
+    <h2 class="text-700 font-bold pb-12">{{ .Params.roadmap.title }}</h2>
+    <p class="text-gray-200 w-2/3 text-400 pb-12">{{ .Params.roadmap.content | markdownify}}</p>
+    {{ partial "components/button" (dict "Name" .Params.roadmap.cta.text "URL" (.Params.roadmap.cta.link | absLangURL) "Variant" "Dark" "Size" "Large") }}
+
+    <div class="flex flex-col lg:flex-row pt-20 gap-16">{{ range .Params.roadmap.steps }} {{ partial "components/step" (dict "Title" .step "Content" .content )}} {{ end }}</div>
+    {{ partial "images/grid" .}}
+  </section>
+
+  <section class="mb-24 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
+    <h2 class="text-700 font-bold pb-12">{{ .Params.contributor.title }}</h2>
+    <p class="text-gray-200 w-1/2 text-400 mb-4">{{ .Params.contributor.content | markdownify}}</p>
+    {{ range .Params.contributor.categories }}
+    <div class="mt-10 mb-32">
+      <h2 class="text-700 font-bold pb-12">{{ .name }}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {{ range .points }}
+        <div class="text-center">
+          <div class="img-grid-2 overflow-hidden mb-6 aspect-video rounded-lg bg-gray-100">
+            <img src="{{ .img }}" alt="{{ .section }}" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="pb-4 text-400 font-semibold">{{ .section }}</h3>
+          <p class="text-gray-200 px-2">{{ .content | markdownify }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+    <div class="flex flex-col gap-6">
+      {{ partial "components/interactive-banner" (dict "Title" .Params.contributor.newsletter.title "Placeholder" .Params.contributor.newsletter.placeholder "Content"
+      .Params.contributor.newsletter.content "ImgSrc" "/img/hp/newsletter.svg" "Comp" "newsletter")}} {{ partial "components/social" . }}
+    </div>
+  </section>
+
+  <section class="max-w-screen-xl mx-auto w-full px-4 text-200 text-gray-200">
+    {{ range .Params.legal }}
+    <div class="mt-20">
+      {{ range .content }}
+      <p>{{.text | markdownify }}</p>
+      {{ end}}
+    </div>
+    {{ end }}
+  </section>
 </main>
 {{ end }}
-

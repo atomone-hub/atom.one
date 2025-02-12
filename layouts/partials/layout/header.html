@@ -1,1 +1,1 @@
-<header class="w-full max-w-screen-xl px-4 mx-auto py-8 flex justify-between">{{ partial "navigation/header" . }} {{ partial "navigation/language" . }}</header>
+<header class="bg-dark text-light fixed z-50 top-0 w-full border-b border-gray-400">{{ partial "components/info" (dict "Info" .Site.Params.info)}}{{ partial "navigation/header" . }}</header>

@@ -1,17 +1,24 @@
 <a
   href="{{ .URL }}"
   title="{{ .Name }}"
-  class="inline-block font-light items-center w-max rounded-full leading-tight
+  class="inline-flex font-light justify-center gap-1.5 items-center w-max rounded-sm leading-tight text-200 px-8 hover:cursor-pointer
   {{ if eq .Size "Small" }}
-    py-1 px-2 text-100 font-medium
+    py-3
   {{ else if eq .Size "Large" }}
-    py-4 px-5 text-200
+    py-4 
   {{ end }}
   {{ if eq .Variant "Outlined" }}
-    bg-transparent border border-gray-200 dark:border-gray-500
-  {{ else if eq .Variant "Filled" }}
-    bg-gray-800 dark:bg-gray-100 dark:text-light
+    bg-transparent border border-light text-light hover:bg-light/10
+  {{ else if eq .Variant "Dark" }}
+    bg-dark hover:bg-dark/80 text-light
+  {{ else if eq .Variant "Light" }}
+    bg-light hover:bg-light/80 text-dark
+  {{ end }} ">
+  {{ with .Icon }}
+    <div class="min-w-6 h-6">
+        {{ $icon_template := printf "icons/ico-%s.html" (lower .) }}
+        {{ partial $icon_template . }}
+    </div>
   {{ end }}
-  hover:bg-gray-700 dark:hover:bg-gray-200 hover:cursor-pointer">
-  {{ .Name }}
+  {{ .Name | safeHTML }}
 </a>
