@@ -8,7 +8,7 @@ interface BalanceResult {
 class Tracker {
   private DOM: {
     tracker: HTMLElement;
-    result?: HTMLElement[];
+    result?: HTMLElement;
     balanceTotal?: HTMLElement;
     balanceResult?: HTMLElement;
     detail?: HTMLElement;
@@ -33,13 +33,11 @@ class Tracker {
     this.balance = 0;
     this.detail = "";
 
-    console.log("bal");
-
     this.init();
   }
 
   private init(): void {
-    this.DOM.result = Array.from(this.DOM.tracker.querySelectorAll(Tracker.SELECTORS.result));
+    this.DOM.result = this.DOM.tracker.querySelector(Tracker.SELECTORS.result) as HTMLElement;
     this.DOM.balanceTotal = this.DOM.tracker.querySelector(Tracker.SELECTORS.balanceTotal) as HTMLElement;
     this.DOM.balanceResult = this.DOM.tracker.querySelector(Tracker.SELECTORS.balanceResult) as HTMLElement;
     this.DOM.detail = this.DOM.tracker.querySelector(Tracker.SELECTORS.detail) as HTMLElement;
@@ -53,18 +51,24 @@ class Tracker {
     if (!this.DOM.input || !this.DOM.input.value) return;
 
     try {
-      const {words} = bech32.decode(this.DOM.input.value);
-      const address = bech32.encode('atone', words);
-      
+      const { words } = bech32.decode(this.DOM.input.value);
+      const address = bech32.encode("atone", words);
+
       const data = await this._getBalance(address);
       const balanceTotal = this._normalizeAmount(data.amount);
 
-      if (this.DOM.detail) {
-        this.DOM.detail.textContent = `You have received: ${balanceTotal} $ATONE`;
+      if (this.DOM.result && this.DOM.detail) {
+        this.DOM.result.textContent = `You have received: ${balanceTotal} $ATONE`;
+        this.DOM.result.classList.add("text-positive");
+        this.DOM.result.classList.remove("text-negative");
+        this.DOM.detail.textContent = `TOTAL AIRDROP = YES + NO + NWV + ABS + DNV + LIQUID ≃ ${balanceTotal} ATONE`;
       }
-
-      this.DOM.result?.forEach((result) => result.classList.remove("is-hidden"));
     } catch (error) {
+      if (this.DOM.result && this.DOM.detail) {
+        this.DOM.result.textContent = `Wrong address or You may not be eligible to the AtomOne airdrop`;
+        this.DOM.result.classList.remove("text-positive");
+        this.DOM.result.classList.add("text-negative");
+      }
       console.error("Error checking balance:", error);
     }
   }
@@ -85,14 +89,14 @@ class Tracker {
         address
         coins
       }
-    }`
+    }`;
 
     try {
       const response = await fetch("https://graphql-atomone-mainnet.allinbits.services/v1/graphql", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-hasura-role": "anonymous"
+          "x-hasura-role": "anonymous",
         },
         body: JSON.stringify({ query: query, variables: { address: cosmosAddress } }),
       });
@@ -103,13 +107,13 @@ class Tracker {
 
       const json = await response.json();
 
-      console.log(json)
+      console.log(json);
       if (!json.data.genesis_balance || json.data.genesis_balance.length === 0) {
         // throw new Error("Not eligible for AtomOne airdrop");
         return { amount: "0", denom: "uatom" };
       }
 
-      return json.data.genesis_balance[0].coins[0]
+      return json.data.genesis_balance[0].coins[0];
     } catch (error) {
       console.error("Error fetching AtomOne balance:", error);
       throw new Error("Could not get AtomOne balances");
