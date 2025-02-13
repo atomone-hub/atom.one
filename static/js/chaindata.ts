@@ -151,9 +151,7 @@ class ChainData {
     if (this.DOM.numberofblocks) {
       this.DOM.numberofblocks.textContent = blockCount.toString();
     }
-    console.log(activeValCount.toString());
     if (this.DOM.activevalidators) {
-      console.log(activeValCount.toString());
       this.DOM.activevalidators.textContent = activeValCount.toString();
     }
     if (this.DOM.proposals) {
