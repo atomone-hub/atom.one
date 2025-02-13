@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev:hugo": "hugo --watch --gc -e default --buildFuture --printUnusedTemplates --printI18nWarnings",
-    "dev:vite": "vite --host",
+    "dev:vite": "tsc && vite --host",
     "dev": "rm -rf temp/* && run-p dev:hugo dev:vite",
     "preview:hugo": "hugo -e default --buildFuture",
     "preview": "rm -rf build/* && rm -rf temp/* && run-s preview:hugo build:vite",

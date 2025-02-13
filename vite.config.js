@@ -11,7 +11,10 @@ import fs from "fs";
  */
 const buildDir = "temp";
 
-const directoriesToCopy = [{ source: "img", target: "img" }];
+const directoriesToCopy = [
+  { source: "img", target: "img" },
+  { source: "js", target: "js" },
+];
 
 /**
  * Common function to process files in a directory
