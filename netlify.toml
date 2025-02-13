@@ -1,6 +1,6 @@
 [build]
   command = "pnpm build"
-  publish = "public"
+  publish = "build"
 
 [build.environment]
   HUGO_VERSION = "0.139.3"
