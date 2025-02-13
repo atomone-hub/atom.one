@@ -1,7 +1,7 @@
 {
-  "name": "gnops",
+  "name": "atomone",
   "version": "1.0.0",
-  "description": "gnops",
+  "description": "atomone",
   "main": "index.js",
   "type": "module",
   "scripts": {
