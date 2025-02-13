@@ -9,19 +9,19 @@ import "../css/main.css";
   const modules: Record<string, Module> = {
     infobanner: {
       selector: "info-banner",
-      path: "./info-banner.js",
+      path: "./info-banner",
     },
     tracker: {
       selector: "tracker",
-      path: "./tracker.js",
+      path: "./tracker",
     },
     newsletter: {
       selector: "newsletter",
-      path: "./newsletter.js",
+      path: "./newsletter",
     },
     chaindata: {
       selector: "chain-data",
-      path: "./chaindata.js",
+      path: "./chaindata",
     },
   };
 

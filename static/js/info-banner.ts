@@ -11,6 +11,8 @@ class InfoBanner {
   constructor(el: HTMLElement) {
     this.DOM = { el };
 
+    console.log("blabal");
+
     el.classList.toggle("hidden", !this.isDisplayed());
 
     this.DOM.closebtn = el.querySelector<HTMLElement>(InfoBanner.SELECTORS.closebtn) || undefined;
