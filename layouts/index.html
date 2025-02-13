@@ -2,14 +2,14 @@
 index .Site.Data .Site.Language.Lang -}}
 <main class="pb-20 w-full mx-auto">
   <section class="relative mb-20 before:absolute before:w-screen before:h-full before:z-[-1] before:bg-dark before:left-0 before:top-0">
-    <div class="max-w-screen-xl mx-auto w-full px-4 flex justify-center items-center min-h-min h-[80vh]">
-      <div class="md:w-3/5 flex flex-col justify-center items-start">
-        <h1 class="mt-16 inline-block font-bold text-800 text-light leading-tight pb-8">{{ .Title }}</h1>
+    <div class="max-w-screen-xl mx-auto w-full px-4 flex justify-center items-center pt-8 pb-36 min-h-min h-[80vh]">
+      <div class="md:w-[55%] flex flex-col justify-center items-start">
+        <h1 class="inline-block font-bold text-800 text-light leading-none pb-8">{{ .Title }}</h1>
         {{- with .Params.subtitle -}}
         <p class="text-300 text-gray-200 font-semibold md:w-3/4 w-full pb-12">{{ .| markdownify }}</p>
         {{- end -}} {{ with .Params.cta }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large") }} {{- end -}}
       </div>
-      <div class="w-2/5 hidden md:block">{{ partial "images/cover-hp" . }}</div>
+      <div class="w-[45%] hidden md:block">{{ partial "images/cover-hp" . }}</div>
     </div>
   </section>
 
