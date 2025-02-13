@@ -17,7 +17,11 @@ import "../css/main.css";
     },
     newsletter: {
       selector: "newsletter",
-      path: "./newsletter.Ts",
+      path: "./newsletter.ts",
+    },
+    chaindata: {
+      selector: "chain-data",
+      path: "./chaindata.ts",
     },
   };
 

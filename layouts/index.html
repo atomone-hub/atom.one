@@ -36,11 +36,11 @@ index .Site.Data .Site.Language.Lang -}}
   <section class="mb-24 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
     <h2 class="text-700 font-bold pb-12">{{ .Params.activity.title }}</h2>
     <p class="text-gray-200 md:w-1/2 text-400">{{ .Params.activity.content | markdownify}}</p>
-    <div class="flex md:flex-row flex-col gap-8 w-full my-12">
+    <div class="flex md:flex-row flex-col gap-8 w-full my-12" data-component="chain-data">
       {{ range .Params.activity.data }}
       <article class="bg-dark rounded-sm py-12 px-6 w-full">
         <h3 class="text-gray-200 pb-2">{{ .info }}</h3>
-        <span class="text-light text-400 font-semibold" id="data-{{ .info | urlize}}"></span>
+        <span class="text-light text-400 font-semibold" data-selector="{{ .info | urlize}}"></span>
       </article>
       {{ end }}
     </div>
