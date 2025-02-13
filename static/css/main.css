@@ -65,7 +65,7 @@
     }
 
     p > a {
-      @apply text-dark after:content-['↗'] after:text-200 after:relative after:pl-1 after:inline-block after:-top-0.5  hover:after:translate-x-0.5 hover:after:-translate-y-0.5;
+      @apply text-dark after:content-['↗'] after:text-200 whitespace-nowrap after:relative after:pl-1 after:inline-block after:-top-0.5  hover:after:translate-x-0.5 hover:after:-translate-y-0.5;
     }
     :is(.bg-gray-300, .bg-dark) p > a {
       @apply text-light hover:text-light/80;
