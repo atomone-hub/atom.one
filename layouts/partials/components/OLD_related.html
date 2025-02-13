@@ -1,3 +1,0 @@
-{{ $related := .Site.RegularPages.Related . | first 2 }} {{ with $related }}
-<nav class="flex flex-col sm:flex-row gap-4">{{ range . }} {{ partial "components/tutorial" (dict "image" false "ctx" .) }} {{ end }}</nav>
-{{ end }}

@@ -102,7 +102,7 @@
 [[social]]
     identifier = "/atomone-hub"
     name = "github"
-    url = "https://github.com/gnolang/gno"
+    url = "https://github.com/atomone-hub"
     weight = 1
 
 [[social]]

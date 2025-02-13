@@ -7,18 +7,26 @@ import "../css/main.css";
   }
 
   const modules: Record<string, Module> = {
-    //   copy: {
-    //     selector: ".js-copy-btn",
-    //     path: "/public/js/copy.js",
-    //   },
+    infobanner: {
+      selector: "info-banner",
+      path: "./info-banner.ts",
+    },
+    tracker: {
+      selector: "tracker",
+      path: "./tracker.ts",
+    },
+    newsletter: {
+      selector: "newsletter",
+      path: "./newsletter.Ts",
+    },
   };
 
   const loadModuleIfExists = async ({ selector, path }: Module): Promise<void> => {
-    const element = document.querySelector(selector);
+    const element = document.querySelector(`[data-component="${selector}"]`);
     if (element) {
       try {
         const module = await import(path);
-        module.default();
+        module.default(element);
       } catch (err) {
         console.error(`Error while loading script ${path}:`, err);
       }
