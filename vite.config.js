@@ -13,7 +13,7 @@ const buildDir = "temp";
 
 const directoriesToCopy = [
   { source: "img", target: "img" },
-  { source: "js", target: "js" },
+  { source: "js", target: "assets/js" },
 ];
 
 /**
@@ -116,9 +116,9 @@ export default defineConfig({
     rollupOptions: {
       input,
       output: {
-        entryFileNames: "js/[name]-[hash].js",
-        chunkFileNames: "js//[name]-[hash].js",
-        assetFileNames: "js/[name]-[hash][extname]",
+        entryFileNames: "assets/[name]-[hash].js",
+        chunkFileNames: "assets/[name]-[hash].js",
+        assetFileNames: "assets/[name]-[hash][extname]",
       },
     },
   },
