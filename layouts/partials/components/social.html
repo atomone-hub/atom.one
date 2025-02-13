@@ -4,7 +4,7 @@
       <h3 class="text-light pb-6 font-semibold">BE PART OF THE CONVERSATION</h3>
       <p class="text-gray-200 text-400">Join the conversion or find out how you can contribute to AtomOne by following its socials.</p>
     </div>
-    <div class="grid sm:grid-cols-2 gap-2 *:w-full">
+    <div class="grid sm:grid-cols-2 gap-2 *:w-full md:w-1/2">
       {{ range .Site.Menus.social }} {{ partial "components/button" (dict "Name" .Identifier "URL" (.URL | absLangURL) "Icon" .Name "Variant" "Light" "Size" "Small") }} {{ end }}
     </div>
   </div>
