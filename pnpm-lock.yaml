@@ -17,6 +17,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.0.4
         version: 4.0.4(vite@5.4.11(@types/node@22.10.1)(lightningcss@1.29.1))
+      bech32:
+        specifier: ^2.0.0
+        version: 2.0.0
       jsonp:
         specifier: ^0.2.1
         version: 0.2.1
@@ -431,6 +434,9 @@ packages:
 
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
+
+  bech32@2.0.0:
+    resolution: {integrity: sha512-LcknSilhIGatDAsY1ak2I8VtGaHNhgMSYVxFrGLXv+xLHytaKZKcaUJJUE7qmBr7h33o5YQwP55pMI0xmkpJwg==}
 
   bn.js@4.12.1:
     resolution: {integrity: sha512-k8TVBiPkPJT9uHLdOKfFpqcfprwBFOAAXXozRubr7R7PfIuKvQlzcI4M0pALeqXN09vdaMbUdUj+pass+uULAg==}
@@ -1635,6 +1641,8 @@ snapshots:
   balanced-match@1.0.2: {}
 
   base64-js@1.5.1: {}
+
+  bech32@2.0.0: {}
 
   bn.js@4.12.1: {}
 
