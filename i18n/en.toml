@@ -1,2 +1,5 @@
-# [ReadMore]
-# other = "Read More"
+caution = 'Caution'
+important = 'Important'
+note = 'Note'
+tip = 'Tip'
+warning = 'Warning'

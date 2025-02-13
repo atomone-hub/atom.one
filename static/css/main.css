@@ -1,6 +1,7 @@
+@import url("@fontsource-variable/inter");
+
 @import "tailwindcss";
-/* @import url("@fontsource-variable/inter");
-@import url("@fontsource/inter/latin.css"); */
+@plugin "@tailwindcss/typography";
 
 /**
    TAILWIND
@@ -117,10 +118,45 @@
   .img-grid-2::after {
     background: radial-gradient(50% 50% at 50% 50%, rgba(243, 243, 244, 0.8) 0%, rgba(243, 243, 244, 0.8) 25%, rgba(243, 243, 244, 0.8) 50%, rgba(243, 243, 244, 1) 100%);
   }
-}
 
-@utility tab-* {
-  tab-size: --value(--tab-size- *);
+  .alert {
+    @apply bg-gray-100 mb-4 rounded-sm border-l p-4;
+  }
+  .alert-heading {
+    @apply before:hidden font-bold text-400;
+  }
+
+  .alert > p {
+    @apply !my-1;
+  }
+
+  .alert-warning {
+    border-color: #ffc107 !important;
+  }
+  .alert-warning > .alert-heading {
+    color: #ffc107 !important;
+  }
+
+  .alert-tip {
+    border-color: #17a2b8 !important;
+  }
+  .alert-tip > .alert-heading {
+    color: #17a2b8 !important;
+  }
+
+  .alert-important {
+    border-color: #3d3d3d !important;
+  }
+  .alert-important > .alert-heading {
+    color: #3d3d3d !important;
+  }
+
+  .alert-note {
+    border-color: #6c757d !important;
+  }
+  .alert-note > .alert-heading {
+    color: #6c757d !important;
+  }
 }
 
 @layer utilities {
@@ -146,3 +182,7 @@
 /**
    CUSTOM
 */
+
+.prose {
+  --tw-prose-pre-bg: var(--color-dark);
+}

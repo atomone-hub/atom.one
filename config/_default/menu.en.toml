@@ -1,14 +1,14 @@
 [[header]]
     identifier = "stake"
     name = "Stake"
-    url = "#"
+    url = "https://staking.atom.one/"
     weight = 1
     params = { "variant" = "Outlined"}
 
 [[header]]
     identifier = "govern"
     name = "Govern"
-    url = "#"
+    url = "https://gov.atom.one/"
     weight = 2
     params = { "variant" = "Light"}
 
@@ -23,25 +23,25 @@
 [[resource]]
     identifier = "faq"
     name = "Faq"
-    url = "#"
+    url = "/faq/"
     weight = 2
 
 [[resource]]
     identifier = "roadmap"
     name = "Roadmap"
-    url = "/roadmap"
+    url = "/roadmap/"
     weight = 3
 
 [[resource]]
     identifier = "run-node"
     name = "Run Node"
-    url = "/run-node"
+    url = "/run-node/"
     weight = 4
 
 [[resource]]
-    identifier = "submit-tx-securily"
-    name = "Submit TX Securily"
-    url = "/submit-tx-securily"
+    identifier = "submit-tx-securely"
+    name = "Submit TX Securely"
+    url = "/submit-tx-securely/"
     weight = 5
 
 
@@ -54,37 +54,37 @@
 [[general]]
     identifier = "faq"
     name = "Faq"
-    pageRef = "/faq"
+    pageRef = "/faq/"
     weight = 2
 
 [[general]]
     identifier = "privacy"
     name = "Privacy Policy"
-    pageRef = "/privacy-policy"
+    pageRef = "/privacy-policy/"
     weight = 3
 
 [[general]]
     identifier = "terms"
     name = "Terms and Conditions"
-    pageRef = "/terms-and-conditions"
+    pageRef = "/terms-and-conditions/"
     weight = 4
 
 [[advanced]]
     identifier = "run-node"
     name = "Run Node"
-    pageRef = "/run-node"
+    pageRef = "/run-node/"
     weight = 1
 
 [[advanced]]
     identifier = "roadmap"
     name = "Roadmap"
-    pageRef = "/roadmap"
+    pageRef = "/roadmap/"
     weight = 2
 
 [[advanced]]
     identifier = "submit-tx-security"
     name = "Submit TX Securily"
-    pageRef = "/submit-tx-security"
+    pageRef = "/submit-tx-security/"
     weight = 3
 
 [[apps]]

@@ -67,11 +67,11 @@ allocation:
     content: "Or check your allocation directly in your wallet. AtomOne is compatible with [Cosmostation](#), [Leap](#), [Keplr](#) (*add AtomOne chain on chain registry page) and more."
   cards:
     - title: "CREATE, VIEW AND VOTE ON PROPOSALS"
-      content: "Create new proposals, deposit on active ones or cast your vote on [AtomOne Governance dApp](#)*"
+      content: "Create new proposals, deposit on active ones or cast your vote on [AtomOne Governance dApp](https://gov.atom.one/)*"
       img: "/img/hp/vote.svg"
       note: "*Or use [Mintscan](#), [Leap](#)"
     - title: "STAKE AND SECURE THE CHAIN"
-      content: "Stake ATONE and contribute to chain’s security on [AtomOne Staking dApp](#)*"
+      content: "Stake ATONE and contribute to chain’s security on [AtomOne Staking dApp](https://staking.atom.one/)*"
       img: "/img/hp/stake.svg"
       note: "*Or use [Cosmostation](#), [Leap](#), [Keplr](#)"
 
