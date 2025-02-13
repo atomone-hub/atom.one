@@ -10,31 +10,37 @@
         ><span class="block">{{ partial "images/logo" . }}</span></a
       >
     </li>
-    <li role="presentation" class="ml-auto hidden md:block">
-      <ul role="menu" class="flex gap-4 lg:gap-8 text-200 md:text-200 font-light">
-        {{- range .Site.Menus.resource -}}
-          <li role="presentation">
-            {{ $isMenuCurrent := (eq (lower $.Section) (lower .Name)) }}
-            <a
-              href="{{ .URL | absLangURL }}"
-              role="menuitem"
-              class="text-gray-50 dark:text-light font-normal hover:text-light/70"
-              {{ if $isMenuCurrent }}aria-current="page"{{ end }}
-              >{{ .Name }}</a
-            >
-          </li>
-        {{- end -}}
-      </ul>
-    </li>
-    <li role="presentation" class="ml-auto hidden md:block">
-        <ul role="menu" class="flex gap-2 lg:gap-2 text-200 md:text-200 font-light">
-          {{- range .Site.Menus.header -}}
-            <li role="presentation" class="flex">
-              {{ $isMenuCurrent := (eq (lower $.Section) (lower .Name)) }}
-              {{ partial "components/button" (dict "Name" .Name "URL"  (.URL | absLangURL) "Variant" .Params.variant "Size" "Small") }}
+    <li class="flex-1">
+        <label for="burger" class="bg-[red]">blabla</label>
+        <input type="checkbox" id="burger" class="hidden">
+        <ul class="flex w-full justify-center items-center">
+            <li role="presentation" class="ml-auto hidden md:block">
+            <ul role="menu" class="flex gap-4 lg:gap-8 text-200 md:text-200 font-light">
+                {{- range .Site.Menus.resource -}}
+                <li role="presentation">
+                    {{ $isMenuCurrent := (eq (lower $.Section) (lower .Name)) }}
+                    <a
+                    href="{{ .URL | absLangURL }}"
+                    role="menuitem"
+                    class="text-gray-50 dark:text-light font-normal hover:text-light/70"
+                    {{ if $isMenuCurrent }}aria-current="page"{{ end }}
+                    >{{ .Name }}</a
+                    >
+                </li>
+                {{- end -}}
+            </ul>
             </li>
-          {{- end -}}
-        </ul>
+            <li role="presentation" class="ml-auto hidden md:block">
+                <ul role="menu" class="flex gap-2 lg:gap-2 text-200 md:text-200 font-light">
+                {{- range .Site.Menus.header -}}
+                    <li role="presentation" class="flex">
+                    {{ $isMenuCurrent := (eq (lower $.Section) (lower .Name)) }}
+                    {{ partial "components/button" (dict "Name" .Name "URL"  (.URL | absLangURL) "Variant" .Params.variant "Size" "Small") }}
+                    </li>
+                {{- end -}}
+                </ul>
+            </li>
+         </ul>
       </li>
   </ul>
 </nav>
