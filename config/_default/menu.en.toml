@@ -48,55 +48,55 @@
 [[general]]
     identifier = "home"
     name = "Home"
-    pageRef = "/"
+    url = "/"
     weight = 1
 
 [[general]]
     identifier = "faq"
     name = "Faq"
-    pageRef = "/faq/"
+    url = "/faq/"
     weight = 2
 
 [[general]]
     identifier = "privacy"
     name = "Privacy Policy"
-    pageRef = "/privacy-policy/"
+    url = "/privacy/"
     weight = 3
 
 [[general]]
     identifier = "terms"
     name = "Terms and Conditions"
-    pageRef = "/terms-and-conditions/"
+    url = "/terms/"
     weight = 4
 
 [[advanced]]
     identifier = "run-node"
     name = "Run Node"
-    pageRef = "/run-node/"
+    url = "/run-node/"
     weight = 1
 
 [[advanced]]
     identifier = "roadmap"
     name = "Roadmap"
-    pageRef = "/roadmap/"
+    url = "/roadmap/"
     weight = 2
 
 [[advanced]]
     identifier = "submit-tx-security"
     name = "Submit TX Securily"
-    pageRef = "/submit-tx-security/"
+    url = "/submit-tx-security/"
     weight = 3
 
 [[apps]]
     identifier = "govdapp"
     name = "AtomOne Governance dApp"
-    pageRef = "/"
+    url = "https://gov.atom.one/"
     weight = 1
 
 [[apps]]
     identifier = "stakingdapp"
     name = "AtomOne Staking dApp"
-    pageRef = "/"
+    url = "https://staking.atom.one/"
     weight = 2
 
 [[social]]

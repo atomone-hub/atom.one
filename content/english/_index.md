@@ -4,7 +4,7 @@ subtitle: "Atom One is a minimal fork of the Cosmos Hub, supporting IBC and ICS 
 
 cta:
   text: "Read the Constitution ↗"
-  link: "#"
+  link: "https://github.com/atomone-hub/genesis/blob/main/CONSTITUTION.md"
 
 innovation:
   name: "ATOMONE KEY INNOVATIONS"
@@ -80,7 +80,7 @@ roadmap:
   content: Stay informed about AtomOne's journey! Explore the latest developments, track key milestones, and discover what’s next on its roadmap. Dive into the details of how AtomOne is evolving to shape the future of decentralized governance and interchain innovation.
   cta:
     text: "Learn more"
-    link: "#"
+    link: "/roadmap/"
   steps:
     - step: "PHASE -2"
       content: "Preparation"
@@ -102,7 +102,7 @@ contributor:
     text: "Learn more"
     link: "#"
   categories:
-    - name: ""
+    - name: "/run-node/"
       points:
         - section: "Explore & Contribute"
           img: "img/hp/community-crafted-gov.png"
