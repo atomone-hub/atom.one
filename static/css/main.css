@@ -39,7 +39,7 @@
 
 @layer base {
   html {
-    @apply font-interNormal overflow-x-hidden font-normal text-dark leading-tight bg-light dark:bg-gray-50 text-300;
+    @apply font-interNormal overflow-x-hidden font-normal text-dark leading-relaxed bg-light dark:bg-gray-50 text-300;
     font-feature-settings:
       "kern" on,
       "liga" on,
