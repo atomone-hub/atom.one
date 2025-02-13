@@ -57,7 +57,7 @@ index .Site.Data .Site.Language.Lang -}}
     <div class="w-full flex-col md:flex-row flex gap-6 my-6">
       {{ range .Params.allocation.cards }} {{ partial "components/card" (dict "Title" .title "Content" .content "ImgSrc" .img "Note" .note)}} {{ end}}
     </div>
-    {{ partial "components/banner" (dict "Content" "Check the [guide](#) on how to submit transactions securely on the AtomOne chain")}}
+    {{ partial "components/banner" (dict "Content" .Params.allocation.banner )}}
   </section>
 
   <section class="mb-20 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">

@@ -74,6 +74,7 @@ allocation:
       content: "Stake ATONE and contribute to chain’s security on [AtomOne Staking dApp](https://staking.atom.one/)*"
       img: "/img/hp/stake.svg"
       note: "*Or use [Cosmostation](https://www.cosmostation.io/products/cosmostation_extension), [Leap](https://www.leapwallet.io/download), [Keplr](https://www.keplr.app/)"
+  banner: "Check the [guide](https://atom.one/submit-tx-securely) on how to submit transactions securely on the AtomOne chain"
 
 roadmap:
   title: Roadmap & Development
