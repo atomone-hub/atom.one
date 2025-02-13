@@ -11,11 +11,7 @@ import fs from "fs";
  */
 const buildDir = "temp";
 
-const directoriesToCopy = [
-  { source: "pagefind", target: "pagefind" },
-  { source: "models", target: "models" },
-  { source: "img", target: "img" },
-];
+const directoriesToCopy = [{ source: "img", target: "img" }];
 
 /**
  * Common function to process files in a directory
@@ -116,7 +112,6 @@ export default defineConfig({
     outDir: resolve(__dirname, "build"),
     rollupOptions: {
       input,
-      external: ["/pagefind/pagefind.js"],
       output: {
         entryFileNames: "assets/[name]-[hash].js",
         chunkFileNames: "assets/[name]-[hash].js",
