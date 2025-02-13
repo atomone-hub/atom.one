@@ -13,7 +13,7 @@ const buildDir = "temp";
 
 const directoriesToCopy = [
   { source: "img", target: "img" },
-  { source: "js", target: "assets/js" },
+  { source: "js", target: "assets" },
 ];
 
 /**
