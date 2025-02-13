@@ -22,7 +22,7 @@
 
 [[resource]]
     identifier = "faq"
-    name = "Faq"
+    name = "FAQ"
     url = "/faq/"
     weight = 2
 
