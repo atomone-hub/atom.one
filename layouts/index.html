@@ -65,7 +65,9 @@ index .Site.Data .Site.Language.Lang -}}
     <p class="text-gray-200 w-2/3 text-400 pb-12">{{ .Params.roadmap.content | markdownify}}</p>
     {{ partial "components/button" (dict "Name" .Params.roadmap.cta.text "URL" (.Params.roadmap.cta.link | absLangURL) "Variant" "Dark" "Size" "Large") }}
 
-    <div class="flex flex-col lg:flex-row pt-20 gap-16">{{ range .Params.roadmap.steps }} {{ partial "components/step" (dict "Title" .step "Content" .content )}} {{ end }}</div>
+    <div class="flex flex-col lg:flex-row pt-20 gap-16">
+      {{ range .Params.roadmap.steps }} {{ partial "components/step" (dict "Title" .step "Content" .content "IsComplete" .isComplete )}} {{ end }}
+    </div>
     {{ partial "images/grid" .}}
   </section>
 

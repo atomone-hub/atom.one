@@ -81,7 +81,7 @@ class ChainData {
     numberofblocks: "[data-selector='number-of-blocks']",
     activevalidators: "[data-selector='active-validators']",
     accounts: "[data-selector='accounts']",
-    proposals: "[data-selector='proposals']",
+    proposals: "[data-selector='active-proposals']",
   };
 
   constructor(

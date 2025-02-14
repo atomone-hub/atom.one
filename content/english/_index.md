@@ -1,6 +1,6 @@
 ---
-title: "Secure Community Driven Interchain Hub"
-subtitle: "Atom One is a minimal fork of the Cosmos Hub, supporting IBC and ICS for scalable interchain solutions"
+title: "A Secure Community-Driven Interchain Hub"
+subtitle: "AtomOne is a community-driven, constitutionally governed blockchain designed to prioritize security, decentralization, and innovation within the Cosmos ecosystem. Serving as a minimal fork of the Cosmos Hub, it supports IBC and ICS for scalable interchain solutions."
 
 cta:
   text: "Read the Constitution ↗"
@@ -14,7 +14,7 @@ innovation:
         - section: "Community-Crafted Governance"
           img: "img/hp/community-crafted-gov.png"
           content: "A live, on-chain constitution and a network of DAOs ensure transparent, community-driven decision-making."
-        - section: "Advisory and Oversight DAOs"
+        - section: "Steering and Oversight DAOs"
           img: "img/hp/advisory-and-oversight-dao.png"
           content: "Steering and Oversight DAOs guide, advise, and enforce compliance with AtomOne's Constitution and community-defined principles."
         - section: "Decentralized Voting Power"
@@ -47,13 +47,13 @@ innovation:
 
 activity:
   title: AtomOne So Far
-  content: "Explore the chain's activity—from active accounts and validators to new and existing proposals. Learn more on [Mintscan](https://www.mintscan.io/govgen)*"
+  content: "Explore the chain's activity—from active accounts and validators to new and existing proposals. Learn more on [Mintscan](https://www.mintscan.io/atomone)*"
   data:
     - info: BLOCK TIME
     - info: NUMBER OF BLOCKS
     - info: ACTIVE VALIDATORS
     - info: ACCOUNTS
-    - info: PROPOSALS
+    - info: ACTIVE PROPOSALS
   explorers: "*Other explorers: [Nodes Hub Explorer](https://explorer.nodeshub.online/atomone/staking), [Valoper Explorer](https://atomone.valopers.com/), [Nodeist Explorer](https://explorer.ist/atomone)"
 
 allocation:
@@ -85,16 +85,22 @@ roadmap:
   steps:
     - step: "PHASE -2"
       content: "Preparation"
+      isComplete: true
     - step: "PHASE -1"
       content: "Finalizing Founding Documents"
+      isComplete: true
     - step: "PHASE 0"
       content: "AtomOne Chain Launch"
+      isComplete: true
     - step: "PHASE 1"
       content: "Implementation"
+      isComplete: false
     - step: "PHASE 2"
       content: "Validators, ICS Mechanics"
+      isComplete: false
     - step: "PHASE 3"
       content: "Cross-Zone Governance"
+      isComplete: false
 
 contributor:
   title: Be a Contributor

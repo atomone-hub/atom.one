@@ -53,7 +53,7 @@
 
 [[general]]
     identifier = "faq"
-    name = "Faq"
+    name = "FAQ"
     url = "/faq/"
     weight = 2
 
@@ -84,7 +84,7 @@
 [[advanced]]
     identifier = "submit-tx-security"
     name = "Submit TX Securily"
-    url = "/submit-tx-security/"
+    url = "/submit-tx-securely/"
     weight = 3
 
 [[apps]]
@@ -108,7 +108,7 @@
 [[social]]
     identifier = "/atomone"
     name = "discord"
-    url = "https://discord.gg/S8nKUqwkPn"
+    url = "https://discord.com/invite/atomone"
     weight = 2
 
 [[social]]
