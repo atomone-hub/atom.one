@@ -1,15 +1,11 @@
 import "../css/main.css";
 
 (() => {
-  // On définit le type pour notre liste de modules
   interface ModuleItem {
     selector: string;
     importer: () => Promise<{ default: (element: HTMLElement) => void }>;
   }
 
-  // Au lieu de stocker juste un path,
-  // on stocke directement la fonction d'import (importer).
-  // Ainsi Vite détecte et réécrit ces imports en prod.
   const modules: ModuleItem[] = [
     {
       selector: "info-banner",
@@ -29,7 +25,6 @@ import "../css/main.css";
     },
   ];
 
-  // Charge un module si l'élément correspondant existe
   const loadModuleIfExists = async (mod: ModuleItem): Promise<void> => {
     const element = document.querySelector(`[data-component="${mod.selector}"]`);
     if (element) {
@@ -44,12 +39,28 @@ import "../css/main.css";
     }
   };
 
-  // Initialisation : on charge tous les modules
   const initModules = async (): Promise<void> => {
+    new GlobalModule();
     const promises = modules.map(loadModuleIfExists);
     await Promise.all(promises);
   };
 
-  // Lance l'init une fois le DOM chargé
   document.addEventListener("DOMContentLoaded", initModules);
 })();
+
+class GlobalModule {
+  constructor() {
+    // Prefect links
+    document.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        const href = link.getAttribute("href");
+        if (href && !document.querySelector(`link[rel="prefetch"][href="${href}"]`)) {
+          const prefetch = document.createElement("link");
+          prefetch.rel = "prefetch";
+          prefetch.href = href;
+          document.head.appendChild(prefetch);
+        }
+      });
+    });
+  }
+}
