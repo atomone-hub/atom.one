@@ -69,7 +69,8 @@
     }
     a[href^="https://atom.one"],
     a[href^="/"],
-    a:has(svg) {
+    a:has(svg),
+    :is(h1, h2, h3, h4) a {
       @apply text-dark hover:text-dark/80 after:hidden;
     }
     :is(.bg-gray-300, .bg-dark) a {
@@ -189,5 +190,8 @@
 */
 
 .prose {
+  color: var(--color-gray-200);
+  --tw-prose-headings: var(--color-dark);
+  --tw-prose-bold: var(--color-dark);
   --tw-prose-pre-bg: var(--color-dark);
 }
