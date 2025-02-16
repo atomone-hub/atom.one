@@ -3,7 +3,7 @@ title: "A Secure Community Driven Interchain Hub"
 subtitle: "AtomOne is a community-driven, constitutionally governed blockchain designed to prioritize security, decentralization, and innovation within the Cosmos ecosystem. Serving as a minimal fork of the Cosmos Hub, it supports IBC and ICS for scalable interchain solutions."
 
 cta:
-  text: "Read the Constitution ↗"
+  text: "Read the Constitution"
   link: "https://github.com/atomone-hub/genesis/blob/main/CONSTITUTION.md"
 
 innovation:
