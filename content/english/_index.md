@@ -54,7 +54,7 @@ activity:
     - info: ACTIVE VALIDATORS
     - info: ACCOUNTS
     - info: ACTIVE PROPOSALS
-  explorers: "*Other explorers: [Nodes Hub Explorer](https://explorer.nodeshub.online/atomone/staking), [Valoper Explorer](https://atomone.valopers.com/), [Nodeist Explorer](https://explorer.ist/atomone)"
+  explorers: "*Other explorers: [Nodes Hub Explorer](https://explorer.nodeshub.online/atomone/staking), [Valoper Explorer](https://atomone.valopers.com/)"
 
 allocation:
   title: AtomOne Allocation
