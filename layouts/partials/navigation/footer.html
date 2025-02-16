@@ -14,7 +14,7 @@
       {{ range .Site.Menus.social }}
       <li role="presentation">
         {{ $isMenuCurrent := (eq (lower $.Section) (lower .Name)) }}
-        <a href="{{ .URL | absLangURL }}" role="menuitem" class="hover:text-dark text-gray-200 flex items-center w-6 h-6" {{ if $isMenuCurrent }}aria-current="page" {{ end }}>
+        <a href="{{ .URL | absLangURL }}" role="menuitem" title="{{ .Name }}" class="hover:text-dark text-gray-200 flex items-center w-6 h-6" {{ if $isMenuCurrent }}aria-current="page" {{ end }}>
           {{ $icon_template := printf "icons/ico-%s.html" (lower .Name) }} {{ partial $icon_template . }}
         </a>
       </li>
