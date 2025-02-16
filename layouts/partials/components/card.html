@@ -3,6 +3,6 @@
   <p class="text-400">{{ .Content | markdownify }}</p>
   <div class="flex lg:flex-row flex-col mt-12 lg:items-end gap-14">
     <aside class="w-1/2"><p>{{ .Note | markdownify }}</p></aside>
-    <img src="{{ .ImgSrc }}" alt="{{ .Title }}" class="max-w-1/2" />
+    <img src="{{ .ImgSrc }}" alt="{{ .Title }}" class="max-w-1/2" width="224" height="147" loading="lazy" />
   </div>
 </article>
