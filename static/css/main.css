@@ -64,14 +64,15 @@
       @apply font-interVar;
     }
 
-    p > a {
-      @apply text-dark after:content-['↗'] after:text-[.85em] whitespace-nowrap after:relative after:pl-0.5 after:inline-block after:-top-0.5  hover:after:translate-x-px hover:after:-translate-y-px;
+    a {
+      @apply text-dark hover:text-dark/80 after:content-['↗'] after:text-[.85em] whitespace-nowrap after:relative after:pl-0.5 after:inline-block after:-top-0.5  hover:after:translate-x-px hover:after:-translate-y-px;
     }
-    p > a[href^="https://atom.one"],
-    p > a[href^="/"] {
-      @apply text-dark after:hidden;
+    a[href^="https://atom.one"],
+    a[href^="/"],
+    a:has(svg) {
+      @apply text-dark hover:text-dark/80 after:hidden;
     }
-    :is(.bg-gray-300, .bg-dark) p > a {
+    :is(.bg-gray-300, .bg-dark) a {
       @apply text-light hover:text-light/80;
     }
   }
