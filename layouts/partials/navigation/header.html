@@ -3,7 +3,7 @@
     {{ $isHome := .IsHome }}
 
     <div role="presentation" class="text-700 md:text-900 font-extrabold leading-tight">
-      <a href="{{ '/' | relLangURL | absURL }}" aria-label="{{ .Site.Title }}" role="menuitem" {{ if $isHome }}aria-current="page" {{ end }}>
+      <a href="{{ "/" | relLangURL | absURL }}" aria-label="{{ .Site.Title }}" role="menuitem" {{ if $isHome }}aria-current="page" {{ end }}>
         <span class="block">{{ partial "images/logo" . }}</span>
       </a>
     </div>
