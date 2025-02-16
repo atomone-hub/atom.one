@@ -40,7 +40,7 @@ class Newsletter {
       if (this.DOM.result) {
         this.DOM.result.innerText = "Please, input a valid email address";
         this.DOM.result.classList.remove("text-positive");
-        this.DOM.result.classList.add("text-negative");
+        this.DOM.result.classList.add(...["text-negative", "pb-2", "mt-8"]);
       }
       return;
     }
@@ -52,11 +52,11 @@ class Newsletter {
         if (result === "success") {
           this.DOM.result.innerText = "SUCCESSFULLY SUBSCRIBED";
           this.DOM.result.classList.remove("text-negative");
-          this.DOM.result.classList.add("text-positive");
+          this.DOM.result.classList.add(...["text-positive", "pb-2", "mt-8"]);
         } else {
           this.DOM.result.innerText = "Please, input correct email";
           this.DOM.result.classList.remove("text-positive");
-          this.DOM.result.classList.add("text-negative");
+          this.DOM.result.classList.add(...["text-negative", "pb-2", "mt-8"]);
         }
       }
     });

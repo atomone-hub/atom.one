@@ -59,7 +59,7 @@ class Tracker {
 
       if (this.DOM.result && this.DOM.detail) {
         this.DOM.result.textContent = `You have received: ${balanceTotal} $ATONE`;
-        this.DOM.result.classList.add("text-positive");
+        this.DOM.result.classList.add(...["text-positive", "pb-2", "mt-8"]);
         this.DOM.result.classList.remove("text-negative");
         this.DOM.detail.textContent = `TOTAL AIRDROP = YES + NO + NWV + ABS + DNV + LIQUID ≃ ${balanceTotal} ATONE`;
       }
@@ -67,7 +67,7 @@ class Tracker {
       if (this.DOM.result && this.DOM.detail) {
         this.DOM.result.textContent = `Wrong address or You may not be eligible to the AtomOne airdrop`;
         this.DOM.result.classList.remove("text-positive");
-        this.DOM.result.classList.add("text-negative");
+        this.DOM.result.classList.add(...["text-negative", "pb-2", "mt-8"]);
       }
       console.error("Error checking balance:", error);
     }
