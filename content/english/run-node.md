@@ -12,7 +12,7 @@ The link to the final genesis is available here:
 
 - You can download the proposed chain binary from github release page
 
-[https://github.com/atomone-hub/atomone/releases/tag/v1.0.0](https://github.com/atomone-hub/atomone/releases/tag/v1.0.0)
+[https://github.com/atomone-hub/atomone/releases/tag/v1.0.1](https://github.com/atomone-hub/atomone/releases/tag/v1.0.1)
 
 - Or you can build it from the source
 
@@ -21,13 +21,14 @@ You need to have [go](https://go.dev/doc/install) installed
 ```sh
 $ git clone https://github.com/atomone-hub/atomone.git
 $ cd atomone
-$ git checkout v1.0.0
+$ git checkout v1.0.1
 $ make build  # compile in the ./build directory
 ```
 
 To ensure [reproducible builds](https://github.com/atomone-hub/atomone#reproducible-builds),
-AtomOne requires go1.21.13, so if you use a different version, `make build`
-will output the instructions required to use the expected go version.
+AtomOne requires a precise version of go, so if you use a different version,
+`make build` will output the instructions required to use the expected go
+version.
 
 ### Setting recommendations
 
