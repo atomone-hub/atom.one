@@ -14,10 +14,10 @@ index .Site.Data .Site.Language.Lang -}}
   </section>
 
   <section class="mb-44 max-w-screen-xl mx-auto w-full px-4">
-    <span class="uppercase block mb-14 font-semibold">{{ .Params.innovation.name }}</span>
+    <span class="uppercase block mb-14 font-semibold text-center md:text-left">{{ .Params.innovation.name }}</span>
     {{ range .Params.innovation.categories }}
     <div class="mb-20">
-      <h2 class="text-700 font-bold pb-12">{{ .name }}</h2>
+      <h2 class="text-700 font-bold pb-12 text-center md:text-left leading-tight">{{ .name }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {{ range .points}}
         <div class="text-center">
@@ -34,7 +34,7 @@ index .Site.Data .Site.Language.Lang -}}
   </section>
 
   <section class="mb-24 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
-    <h2 class="text-700 font-bold pb-12">{{ .Params.activity.title }}</h2>
+    <h2 class="text-700 font-bold pb-12 leading-tight">{{ .Params.activity.title }}</h2>
     <p class="text-gray-200 md:w-1/2 text-400">{{ .Params.activity.content | markdownify}}</p>
     <div class="flex md:flex-row flex-col gap-8 w-full my-12" data-component="chain-data">
       {{ range .Params.activity.data }}
@@ -48,7 +48,7 @@ index .Site.Data .Site.Language.Lang -}}
   </section>
 
   <section class="mb-40 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
-    <h2 class="text-700 font-bold pb-12">{{ .Params.allocation.title }}</h2>
+    <h2 class="text-700 font-bold pb-12 leading-tight">{{ .Params.allocation.title }}</h2>
     {{ range .Params.allocation.content }}
     <p class="text-gray-200 md:w-1/2 text-400 mb-20">{{ .text | markdownify}}</p>
     {{ end }} {{ partial "components/interactive-banner" (dict "Title" .Params.allocation.tracker.title "Placeholder" .Params.allocation.tracker.placeholder "Content"
@@ -61,8 +61,8 @@ index .Site.Data .Site.Language.Lang -}}
   </section>
 
   <section class="mb-20 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
-    <h2 class="text-700 font-bold pb-12">{{ .Params.roadmap.title }}</h2>
-    <p class="text-gray-200 w-2/3 text-400 pb-12">{{ .Params.roadmap.content | markdownify}}</p>
+    <h2 class="text-700 font-bold pb-12 leading-tight">{{ .Params.roadmap.title }}</h2>
+    <p class="text-gray-200 md:w-2/3 text-400 pb-12">{{ .Params.roadmap.content | markdownify}}</p>
     {{ partial "components/button" (dict "Name" .Params.roadmap.cta.text "URL" (.Params.roadmap.cta.link | absLangURL) "Variant" "Dark" "Size" "Large") }}
 
     <div class="flex flex-col lg:flex-row pt-20 gap-16">
@@ -72,11 +72,11 @@ index .Site.Data .Site.Language.Lang -}}
   </section>
 
   <section class="mb-24 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
-    <h2 class="text-700 font-bold pb-12">{{ .Params.contributor.title }}</h2>
-    <p class="text-gray-200 w-1/2 text-400 mb-4">{{ .Params.contributor.content | markdownify}}</p>
+    <h2 class="text-700 font-bold pb-12 leading-tight">{{ .Params.contributor.title }}</h2>
+    <p class="text-gray-200 md:w-1/2 text-400 mb-4">{{ .Params.contributor.content | markdownify}}</p>
     {{ range .Params.contributor.categories }}
     <div class="mt-10 mb-32">
-      <h2 class="text-700 font-bold pb-12">{{ .name }}</h2>
+      <h2 class="text-700 font-bold pb-12 leading-tight">{{ .name }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {{ range .points }}
         <div class="text-center">

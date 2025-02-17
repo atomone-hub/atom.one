@@ -1,3 +1,8 @@
+---
+meta_title: "AtomOne Roadmap: Phases of Decentralized Innovation"
+meta_description: "Explore AtomOne’s roadmap from preparation to cross-zone governance. Track key milestones and innovations in governance, scalability, and interchain security."
+---
+
 # AtomOne Roadmap
 
 \* _Proposed AtomOne roadmap as per GovGen proposal #4: AtomOne Roadmap voted by the GovGen community._

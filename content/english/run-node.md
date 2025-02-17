@@ -1,3 +1,8 @@
+---
+meta_title: "Run an AtomOne Node: Initial Setup and Recommendations"
+meta_description: "Learn how to run an AtomOne node with detailed setup instructions, required files, hardware recommendations, public RPCs, and secure transaction submission tips."
+---
+
 # AtomOne
 
 ## Operate the node

@@ -1,7 +1,1 @@
-{{- if .IsHome -}}
-  {{ .Site.Title }} &mdash; {{ .Site.Params.slogan }}
-{{- else if .Params.meta_title -}}
-  {{ .Params.meta_title }} &mdash; {{ .Site.Title }}
-{{- else -}}
-  {{ .Title }} &mdash; {{ .Site.Title }}
-{{- end -}}
+{{- if .IsHome -}} {{ .Site.Title }} &mdash; {{ .Site.Params.slogan }} {{- else if .Params.meta_title -}} {{ .Params.meta_title }} {{- else -}} {{ .Title }} &mdash; {{ .Site.Title }} {{- end -}}

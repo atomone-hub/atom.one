@@ -1,7 +1,7 @@
 baseURL = '/'
 publishDir = "temp"
 defaultContentLanguage = "en"
-title = "atomone"
+title = "AtomOne"
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
