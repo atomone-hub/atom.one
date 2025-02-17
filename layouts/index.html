@@ -21,7 +21,8 @@ index .Site.Data .Site.Language.Lang -}}
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {{ range .points}}
         <div class="text-center">
-          <div class="img-grid-2 overflow-hidden mb-6 aspect-video rounded-lg bg-gray-100">
+          <div class="relative img-grid-2 overflow-hidden mb-6 aspect-video rounded-lg bg-gray-100">
+            <div class="absolute z-40 py-2 px-3 rounded-sm bg-light right-4 top-4 text-100 font-medium border {{ if eq .status "live"}}border-accent1 text-accent1 {{ else }}border-gray-300 text-gray-300{{ end }}">{{ if eq .status "live"}}Live{{ else }}In Progress{{ end }}</div>
             <img src="{{ .img }}" alt="{{ .section }}" class="w-full h-full object-cover" width="800" height="400" loading="lazy" />
           </div>
           <h3 class="pb-4 text-400 font-semibold">{{ .section }}</h3>

@@ -15,36 +15,45 @@ innovation:
         - section: "Community-Crafted Governance"
           img: "img/hp/community-crafted-gov.png"
           content: "A live, on-chain constitution and a network of DAOs ensure transparent, community-driven decision-making."
-        - section: "Steering and Oversight DAOs"
-          img: "img/hp/advisory-and-oversight-dao.png"
-          content: "Steering and Oversight DAOs guide, advise, and enforce compliance with AtomOne's Constitution and community-defined principles."
+          status: live
         - section: "Decentralized Voting Power"
           img: "img/hp/decentralized-voting-power.png"
           content: "Eliminates delegation-based voting, empowering individual stakers and preventing centralization of governance by validators."
+          status: live
+        - section: "Steering and Oversight DAOs"
+          img: "img/hp/advisory-and-oversight-dao.png"
+          content: "Steering and Oversight DAOs guide, advise, and enforce compliance with AtomOne's Constitution and community-defined principles."
+          status: progress
 
     - name: "Economic Model"
       points:
         - section: "Dual-Token Model"
           img: "img/hp/dual-token-model.png"
           content: "ATONE powers staking and governance, while PHOTON fuels transaction fees and interchain payments, ensuring a secure and efficient chain economy."
+          status: progress
         - section: "Single fee token for IBC and ICS"
           img: "img/hp/single-fee-token-for-ibc-ics.png"
           content: "PHOTON will serve as the sole fee token for all transactions on the root and core shards, as well as for Inter-Blockchain Communication (IBC) and Interchain Security (ICS) payments."
+          status: progress
         - section: "Dynamic Treasury Management"
           img: "img/hp/dynamic-treasury-management.png"
           content: "Specialized Treasury DAOs provide transparent and collective fund management for sustainable ecosystem growth."
+          status: progress
 
     - name: "Security & Scalability"
       points:
         - section: "Scalable and Minimal Design"
           img: "img/hp/scalable-minimal-design.png"
           content: "Focused on hub minimalism, AtomOne avoids unnecessary complexity to optimize scalability, interoperability, and long-term sustainability."
+          status: live
         - section: "Enhanced Interchain Security (ICS)"
           img: "img/hp/enhanced-interchain-security.png"
           content: "Streamlines shard deployment with containerization, focusing consumer chains on application logic while AtomOne ensures consensus and networking."
+          status: progress
         - section: "Improved Delegation System"
           img: "img/hp/improved-delegation-sysyem.png"
           content: "A redesigned proof-of-stake algorithm balances validator voting power, boosts decentralization, and strengthens interchain security."
+          status: progress
 
 activity:
   title: AtomOne So Far
