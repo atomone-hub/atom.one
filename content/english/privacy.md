@@ -1,3 +1,8 @@
+---
+Title: AtomOne Privacy Policy
+Description: AtomOne Privacy Policy
+---
+
 # AtomOne Privacy Policy
 
 **Effective Date: November 18, 2024**

@@ -1,3 +1,8 @@
+---
+Title: AtomOne Site Terms of Use
+Description: AtomOne Site Terms of Use
+---
+
 # AtomOne Site Terms of Use
 
 **Effective Date: November 18, 2024**

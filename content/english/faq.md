@@ -1,3 +1,8 @@
+---
+Title: FAQ
+Description: What is the AtomOne blockchain, and how might it benefit the Cosmos community?
+---
+
 # AtomOne FAQ
 
 ## 1. What is the AtomOne blockchain, and how might it benefit the Cosmos community?
