@@ -1,0 +1,8 @@
+disableHTML = false
+disableCSS = false
+disableJS = false
+disableJSON = false
+minifyOutput = true
+[minify.tdewolff]
+  [minify.tdewolff.html]
+    keepQuotes = true

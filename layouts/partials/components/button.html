@@ -1,0 +1,24 @@
+<a
+  href="{{ .URL }}"
+  title="{{ .Name }}"
+  class="inline-flex font-medium justify-center gap-1.5 items-center w-max rounded-sm leading-tight text-200 px-8 hover:cursor-pointer
+  {{ if eq .Size "Small" }}
+    py-3
+  {{ else if eq .Size "Large" }}
+    py-4 
+  {{ end }}
+  {{ if eq .Variant "Outlined" }}
+    bg-transparent border border-light text-light hover:bg-light/10
+  {{ else if eq .Variant "Dark" }}
+    bg-dark hover:bg-dark/80 text-light
+  {{ else if eq .Variant "Light" }}
+    bg-light hover:bg-light/80 text-dark
+  {{ end }} ">
+  {{ with .Icon }}
+    <div class="w-max h-6">
+        {{ $icon_template := printf "icons/ico-%s.html" (lower .) }}
+        {{ partial $icon_template . }}
+    </div>
+  {{ end }}
+  {{ .Name | safeHTML }}
+</a>

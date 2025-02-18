@@ -1,0 +1,110 @@
+{{ define "meta" }} {{ partial "head/schema" (dict "context" . "content" "head/schema/schema-website.html") }} {{ end }} {{ define "prefix" }} {{end}} {{ define "main" }} {{ $ctx := . }} {{- $data :=
+index .Site.Data .Site.Language.Lang -}}
+<main class="pb-20 w-full mx-auto">
+  <section class="relative mb-20 before:absolute before:w-screen before:h-full before:z-[-1] before:bg-dark before:left-0 before:top-0">
+    <div class="max-w-screen-xl mx-auto w-full px-4 flex">
+      <div class="md:w-[52%] flex flex-col items-start pt-30 pb-49">
+        <h1 class="inline-block font-bold text-800 text-light leading-none pb-8">{{ .Title }}</h1>
+        {{- with .Params.subtitle -}}
+        <p class="text-300 text-gray-200 font-semibold md:w-3/4 w-full pb-12">{{ .| markdownify }}</p>
+        {{- end -}} {{ with .Params.cta }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large") }} {{- end -}}
+      </div>
+      <div class="w-[48%] hidden md:block">{{ partial "images/cover-hp" . }}</div>
+    </div>
+  </section>
+
+  <section class="mb-44 max-w-screen-xl mx-auto w-full px-4">
+    <span class="uppercase block mb-14 font-semibold text-center md:text-left">{{ .Params.innovation.name }}</span>
+    {{ range .Params.innovation.categories }}
+    <div class="mb-20">
+      <h2 class="text-700 font-bold pb-12 text-center md:text-left leading-tight">{{ .name }}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {{ range .points}}
+        <div class="text-center">
+          <div class="relative img-grid-2 overflow-hidden mb-6 aspect-video rounded-lg bg-gray-100">
+            <div class="absolute z-40 py-2 px-3 rounded-sm bg-light right-4 top-4 text-100 font-medium border {{ if eq .status "live"}}border-accent1 text-accent1 {{ else }}border-gray-300 text-gray-300{{ end }}">{{ if eq .status "live"}}Live{{ else }}In Progress{{ end }}</div>
+            <img src="{{ .img }}" alt="{{ .section }}" class="w-full h-full object-cover" width="800" height="400" loading="lazy" />
+          </div>
+          <h3 class="pb-4 text-400 font-semibold">{{ .section }}</h3>
+          <p class="text-gray-200">{{ .content | markdownify }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </section>
+
+  <section class="mb-24 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
+    <h2 class="text-700 font-bold pb-12 leading-tight">{{ .Params.activity.title }}</h2>
+    <p class="text-gray-200 md:w-1/2 text-400">{{ .Params.activity.content | markdownify}}</p>
+    <div class="flex md:flex-row flex-col gap-8 w-full my-12" data-component="chain-data">
+      {{ range .Params.activity.data }}
+      <article class="bg-dark rounded-sm py-12 px-6 w-full">
+        <h3 class="text-gray-200 pb-2">{{ .info }}</h3>
+        <span class="text-light text-400 font-semibold" data-selector="{{ .info | urlize}}"></span>
+      </article>
+      {{ end }}
+    </div>
+    <p class="text-gray-200 text-200 mb-16">{{ .Params.activity.explorers | markdownify }}</p>
+  </section>
+
+  <section class="mb-40 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
+    <h2 class="text-700 font-bold pb-12 leading-tight">{{ .Params.allocation.title }}</h2>
+    {{ range .Params.allocation.content }}
+    <p class="text-gray-200 md:w-1/2 text-400 mb-20">{{ .text | markdownify}}</p>
+    {{ end }} {{ partial "components/interactive-banner" (dict "Title" .Params.allocation.tracker.title "Placeholder" .Params.allocation.tracker.placeholder "Content"
+    .Params.allocation.tracker.content "ImgSrc" "/img/hp/coins.svg" "Comp" "tracker")}}
+
+    <div class="w-full flex-col md:flex-row flex gap-6 my-6">
+      {{ range .Params.allocation.cards }} {{ partial "components/card" (dict "Title" .title "Content" .content "ImgSrc" .img "Note" .note)}} {{ end}}
+    </div>
+    {{ partial "components/banner" (dict "Content" .Params.allocation.banner )}}
+  </section>
+
+  <section class="mb-20 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
+    <h2 class="text-700 font-bold pb-12 leading-tight">{{ .Params.roadmap.title }}</h2>
+    <p class="text-gray-200 md:w-2/3 text-400 pb-12">{{ .Params.roadmap.content | markdownify}}</p>
+    {{ partial "components/button" (dict "Name" .Params.roadmap.cta.text "URL" (.Params.roadmap.cta.link | absLangURL) "Variant" "Dark" "Size" "Large") }}
+
+    <div class="flex flex-col lg:flex-row pt-20 gap-16">
+      {{ range .Params.roadmap.steps }} {{ partial "components/step" (dict "Title" .step "Content" .content "IsComplete" .isComplete )}} {{ end }}
+    </div>
+    {{ partial "images/grid" .}}
+  </section>
+
+  <section class="mb-24 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
+    <h2 class="text-700 font-bold pb-12 leading-tight">{{ .Params.contributor.title }}</h2>
+    <p class="text-gray-200 md:w-1/2 text-400 mb-4">{{ .Params.contributor.content | markdownify}}</p>
+    {{ range .Params.contributor.categories }}
+    <div class="mt-10 mb-32">
+      <h2 class="text-700 font-bold pb-12 leading-tight">{{ .name }}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {{ range .points }}
+        <div class="text-center">
+          <div class="img-grid-2 overflow-hidden mb-6 aspect-video rounded-lg bg-gray-100">
+            <img src="{{ .img }}" alt="{{ .section }}" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="pb-4 text-400 font-semibold">{{ .section }}</h3>
+          <p class="text-gray-200 px-2">{{ .content | markdownify }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+    <div class="flex flex-col gap-6">
+      {{ partial "components/interactive-banner" (dict "Title" .Params.contributor.newsletter.title "Placeholder" .Params.contributor.newsletter.placeholder "Content"
+      .Params.contributor.newsletter.content "ImgSrc" "/img/hp/newsletter.svg" "Comp" "newsletter")}} {{ partial "components/social" . }}
+    </div>
+  </section>
+
+  <section class="max-w-screen-xl mx-auto w-full px-4 text-100 text-gray-200">
+    {{ range .Params.legal }}
+    <div class="mt-10">
+      {{ range .content }}
+      <p class="mt-4">{{.text | markdownify }}</p>
+      {{ end}}
+    </div>
+    {{ end }}
+  </section>
+</main>
+{{ end }}

@@ -1,0 +1,197 @@
+@import url("@fontsource-variable/inter");
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/**
+   TAILWIND
+*/
+
+@theme {
+  --color-dark: #161627;
+  --color-light: #ffffff;
+  --color-gray-100: #f3f3f4;
+  --color-gray-200: #a2a2a9;
+  --color-gray-300: #4a4e69;
+  --color-gray-400: #2d2d3d;
+  --color-positive: #7bffae;
+  --color-negative: #ff8989;
+  --color-accent1: #2e8a99;
+  --color-accent2: #84a7a1;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --font-interVar: '"Inter var"', var(--font-sans);
+  --font-interNormal: "Inter", var(--font-sans);
+
+  --text-*: initial;
+  --text-50: 0.68rem;
+  --text-100: 0.81rem;
+  --text-200: 0.9375rem;
+  --text-300: 1.06rem;
+  --text-400: 1.31rem;
+  --text-500: 1.5rem;
+  --text-600: 1.75rem;
+  --text-700: 2.5rem;
+  --text-800: 4rem;
+  --text-900: 5.87rem;
+}
+
+@layer base {
+  html {
+    @apply font-interNormal overflow-x-hidden font-normal text-dark leading-relaxed bg-light dark:bg-gray-50 text-300;
+    font-feature-settings:
+      "kern" on,
+      "liga" on,
+      "calt" on,
+      "zero" on;
+    -webkit-font-feature-settings:
+      "kern" on,
+      "liga" on,
+      "calt" on,
+      "zero" on;
+    text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    font-variant-ligatures: contextual common-ligatures;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+  }
+
+  @supports (font-variation-settings: normal) {
+    html {
+      @apply font-interVar;
+    }
+
+    a {
+      @apply text-dark hover:text-dark/80 after:content-['↗'] after:text-[.85em] whitespace-nowrap after:relative after:pl-0.5 after:inline-block after:-top-0.5  hover:after:translate-x-px hover:after:-translate-y-px;
+    }
+    a[href^="https://atom.one"],
+    a[href^="/"],
+    a:has(svg),
+    :is(h1, h2, h3, h4) a {
+      @apply text-dark hover:text-dark/80 after:hidden;
+    }
+    :is(.bg-gray-300, .bg-dark) a {
+      @apply text-light hover:text-light/80;
+    }
+  }
+
+  .prose code {
+    @apply text-gray-800;
+  }
+}
+
+@layer components {
+  .img-grid,
+  .img-grid-2 {
+    position: relative;
+  }
+  .img-grid > *,
+  .img-grid-2 > * {
+    position: relative;
+    z-index: 2;
+  }
+  .img-grid::before,
+  .img-grid-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: repeating-linear-gradient(0deg, var(--color-gray-300), var(--color-gray-300) 1px, transparent 1px, transparent 45px),
+      repeating-linear-gradient(90deg, var(--color-gray-300), var(--color-gray-300) 1px, transparent 1px, transparent 55px);
+  }
+  .img-grid-2::before {
+    background-image: repeating-linear-gradient(0deg, var(--color-gray-200), var(--color-gray-200) 1px, transparent 1px, transparent 28px),
+      repeating-linear-gradient(90deg, var(--color-gray-200), var(--color-gray-200) 1px, transparent 1px, transparent 30px);
+  }
+
+  .img-grid::after,
+  .img-grid-2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(22, 22, 39, 0.8) 0%, rgba(22, 22, 39, 0.8) 25%, rgba(22, 22, 39, 0.8) 50%, rgba(22, 22, 39, 1) 100%);
+    z-index: 1;
+  }
+  .img-grid-2::after {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(243, 243, 244, 0.8) 0%, rgba(243, 243, 244, 0.8) 25%, rgba(243, 243, 244, 0.8) 50%, rgba(243, 243, 244, 1) 100%);
+  }
+
+  .alert {
+    @apply bg-gray-100 mb-4 rounded-sm border-l p-4;
+  }
+  .alert-heading {
+    @apply before:hidden font-bold text-400;
+  }
+
+  .alert > p {
+    @apply !my-1;
+  }
+
+  .alert-warning {
+    border-color: #ffc107 !important;
+  }
+  .alert-warning > .alert-heading {
+    color: #ffc107 !important;
+  }
+
+  .alert-tip {
+    border-color: #17a2b8 !important;
+  }
+  .alert-tip > .alert-heading {
+    color: #17a2b8 !important;
+  }
+
+  .alert-important {
+    border-color: #3d3d3d !important;
+  }
+  .alert-important > .alert-heading {
+    color: #3d3d3d !important;
+  }
+
+  .alert-note {
+    border-color: #6c757d !important;
+  }
+  .alert-note > .alert-heading {
+    color: #6c757d !important;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .triangle::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 0.3rem solid transparent;
+    border-bottom: 0.3rem solid transparent;
+    border-left: 0.5rem solid currentColor;
+  }
+}
+
+/**
+   CUSTOM
+*/
+
+.prose {
+  color: var(--color-gray-200);
+  --tw-prose-headings: var(--color-dark);
+  --tw-prose-bold: var(--color-dark);
+  --tw-prose-pre-bg: var(--color-dark);
+}

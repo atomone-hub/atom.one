@@ -1,0 +1,12 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{ range .Data.Pages }}
+    {{ if and (not (in .Params.Robots "noindex")) (ne .Kind "taxonomyTerm") (not .Params.source) }}
+    <url>
+      <loc>{{ .Permalink | absURL }}</loc>
+      {{ if not .Lastmod.IsZero }}
+      <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02" ) }}</lastmod>
+      {{ end }}
+    </url>
+    {{ end }}
+  {{ end }}
+</urlset>

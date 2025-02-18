@@ -1,0 +1,4 @@
+{{ $url := urls.Parse (.Permalink | absLangURL) }}
+{ "@context": "http://schema.org", "@type": "Organization", "@id":
+"{{ "/" | absURL }}/#organization", "name": "{{ .context.Site.Params.siteTitle }}", "description":
+"{{ .context.Site.Params.siteDescription }}", "url": "{{ .Permalink | absLangURL }}" }

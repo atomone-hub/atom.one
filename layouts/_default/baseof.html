@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="{{ or .Site.Language.LanguageCode .Site.Language.Lang }}" dir="{{ or .Site.Language.LanguageDirection `ltr` }}">
+  <head>
+    {{ partial "head/head.html" . }} {{ block "meta" . }}{{ end }}
+  </head>
+
+  <body class="flex flex-col min-h-screen pt-20 md:pt-21">
+    {{ block "header" . }}{{ partial "layout/header.html" . }}{{ end }} {{ block "prefix" . }}{{ end }} {{ block "main" . }}{{ end }} {{ block "footer" . }}{{ partial "layout/footer.html" . }}{{ end
+    }} {{ block "scripts" . }} {{ partial "layout/scripts.html" . }}{{ end }}
+  </body>
+</html>

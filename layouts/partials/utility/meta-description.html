@@ -1,0 +1,2 @@
+{{- if .Params.meta_description -}} {{ .Params.meta_description }} {{- else if .Description -}} {{ .Description }} {{- else if .Summary -}} {{ .Summary }} {{- else -}} {{ .Site.Params.description }}
+{{- end -}}

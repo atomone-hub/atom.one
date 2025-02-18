@@ -1,5 +1,6 @@
-[[redirects]]
-  from = "/developers"
-  to = "/run-node"
-  status = 301
-  force = false
+[build]
+  command = "pnpm preview"
+  publish = "build"
+
+[build.environment]
+  HUGO_VERSION = "0.139.3"

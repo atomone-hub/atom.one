@@ -1,0 +1,11 @@
+[en]
+    weight = 1
+    contentDir = "content/english"
+    languageName = "English"
+    [en.params]
+        slogan = "A Secure Community-Driven Interchain Hub"
+        description = "Discover AtomOne, a secure, community-driven blockchain hub focused on decentralization, transparent governance, scalability, and innovation within the Cosmos ecosystem."
+        siteTitle = "A Secure Community-Driven Interchain Hub"
+        siteDescription = "Discover AtomOne, a secure, community-driven blockchain hub focused on decentralization, transparent governance, scalability, and innovation within the Cosmos ecosystem."
+        twitter = "https://x.com/_atomone"
+        github = "https://github.com/atomone-hub"

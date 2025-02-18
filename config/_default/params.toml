@@ -1,0 +1,7 @@
+themeColor = "#363636"
+cover =  "/img/og.png"
+ghrepo = "https://github.com/atomone-hub"
+info = "WARNING! Participating in AtomOne doesn’t require sharing your private key. No AtomOne related tool or platform should ask you to provide mnemonic seed phrase. If any AtomOne related action requires you to share your private key or mnemonic seed phrase, it may be an attempt to steal your account credentials."
+[Social]
+    twitter = ""
+

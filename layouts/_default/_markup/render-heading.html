@@ -1,0 +1,4 @@
+<h{{ .Level }} id="{{ .Anchor }}" class="group {{- with .Attributes.class }}{{ . }}{{- end }}">
+  {{ .Text }}
+  <a class="opacity-0 duration-75 group-hover:opacity-100 no-underline text-[.9em]" href="#{{ .Anchor }}">#</a>
+</h{{ .Level }}>

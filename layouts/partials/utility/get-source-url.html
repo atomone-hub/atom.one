@@ -1,0 +1,8 @@
+{{ $link := "" }}
+{{- if not .Params.source -}}
+  {{ $link =  .Permalink }}
+{{- else -}}
+  {{ $link = .Params.source }}
+{{- end -}}
+
+{{ return $link }}

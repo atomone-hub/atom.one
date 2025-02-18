@@ -1,0 +1,135 @@
+[[header]]
+    identifier = "stake"
+    name = "Stake"
+    url = "https://staking.atom.one/"
+    weight = 1
+    params = { "variant" = "Outlined"}
+
+[[header]]
+    identifier = "govern"
+    name = "Govern"
+    url = "https://gov.atom.one/"
+    weight = 2
+    params = { "variant" = "Light"}
+
+
+
+# [[resource]]
+#     identifier = "home"
+#     name = "Home"
+#     url = "/"
+#     weight = 1
+
+[[resource]]
+    identifier = "faq"
+    name = "FAQ"
+    url = "/faq/"
+    weight = 2
+
+[[resource]]
+    identifier = "roadmap"
+    name = "Roadmap"
+    url = "/roadmap/"
+    weight = 3
+
+[[resource]]
+    identifier = "run-node"
+    name = "Run Node"
+    url = "/run-node/"
+    weight = 4
+
+[[resource]]
+    identifier = "submit-tx-securely"
+    name = "Submit TX Securely"
+    url = "/submit-tx-securely/"
+    weight = 5
+
+
+[[general]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[general]]
+    identifier = "faq"
+    name = "FAQ"
+    url = "/faq/"
+    weight = 2
+
+[[general]]
+    identifier = "privacy"
+    name = "Privacy Policy"
+    url = "/privacy/"
+    weight = 3
+
+[[general]]
+    identifier = "terms"
+    name = "Terms and Conditions"
+    url = "/terms/"
+    weight = 4
+
+[[advanced]]
+    identifier = "run-node"
+    name = "Run Node"
+    url = "/run-node/"
+    weight = 1
+
+[[advanced]]
+    identifier = "roadmap"
+    name = "Roadmap"
+    url = "/roadmap/"
+    weight = 2
+
+[[advanced]]
+    identifier = "submit-tx-security"
+    name = "Submit TX Securily"
+    url = "/submit-tx-securely/"
+    weight = 3
+
+[[apps]]
+    identifier = "govdapp"
+    name = "AtomOne Governance dApp"
+    url = "https://gov.atom.one/"
+    weight = 1
+
+[[apps]]
+    identifier = "stakingdapp"
+    name = "AtomOne Staking dApp"
+    url = "https://staking.atom.one/"
+    weight = 2
+
+[[social]]
+    identifier = "/atomone-hub"
+    name = "github"
+    params = { label = "Github", listed = true }
+    url = "https://github.com/atomone-hub"
+    weight = 3
+
+[[social]]
+    identifier = "/atomone"
+    params = { label = "Discord Community", listed = true }
+    name = "discord"
+    url = "https://discord.com/invite/atomone"
+    weight = 2
+
+[[social]]
+    identifier = "/_atomone"
+    params = { label = "X (Twitter)", listed = true }
+    name = "x"
+    url = "https://x.com/_atomone"
+    weight = 1
+
+[[social]]
+    identifier = "AtomOne&nbsp;Forum"
+    params = { label = "AtomOne Forum", listed = true }
+    name = "forum"
+    url = "https://common.xyz/atomone/"
+    weight = 4
+
+[[social]]
+    identifier = "r/AtomOneHub"
+    params = { label = "Reddit Community", listed = true }
+    name = "reddit"
+    url = "https://www.reddit.com/r/AtomOneHub/"
+    weight = 5

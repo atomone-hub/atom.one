@@ -1,0 +1,56 @@
+<div class="max-w-screen-2xl px-6 mx-auto pt-6 pb-4">
+  <nav role="menubar" class="w-full flex items-center md:justify-start justify-center">
+    {{ $isHome := .IsHome }}
+
+    <div role="presentation" class="text-700 md:text-900 font-extrabold leading-tight">
+      <a href="{{ "/" | relLangURL | absURL }}" aria-label="{{ .Site.Title }}" role="menuitem" {{ if $isHome }}aria-current="page" {{ end }}>
+        <span class="block">{{ partial "images/logo" . }}</span>
+      </a>
+    </div>
+
+    <div class="flex-1 text-right">
+      <input type="checkbox" id="burger" class="hidden peer" />
+
+      <!-- Bouton d'ouverture et fermeture du menu -->
+      <label for="burger" class="cursor-pointer inline-block md:hidden">
+        <span class="relative flex items-center justify-center w-8 h-8">
+          <svg class="w-6 h-6 text-white absolute peer-checked:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="w-6 h-6 text-white absolute hidden peer-checked:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </span>
+      </label>
+
+      <!-- Menu principal -->
+      <ul role="menu" class="absolute md:relative gap-6 left-0 bg-dark px-6 mx-auto pt-7 pb-5 md:p-0 hidden md:flex w-full justify-center md:items-center peer-checked:flex flex-col md:flex-row">
+        <!-- Menu Ressources -->
+        <li role="presentation" class="md:ml-auto block">
+          <ul role="menu" class="flex gap-4 lg:gap-8 text-200 md:text-200 font-light flex-col md:flex-row items-start">
+            {{- range .Site.Menus.resource -}}
+            <li role="menuitem">
+              {{ $isMenuCurrent := (eq (lower $.Section) (lower .Name)) }}
+              <a href="{{ .URL | absLangURL }}" class="text-gray-50 dark:text-light font-normal hover:text-light/70" {{ if $isMenuCurrent }}aria-current="page" {{ end }}> {{ .Name }} </a>
+            </li>
+            {{- end -}}
+          </ul>
+        </li>
+
+        <!-- Menu Header -->
+        <li role="presentation" class="md:ml-auto">
+          <ul role="menu" class="flex gap-2 lg:gap-2 text-200 md:text-200 font-light">
+            {{- range .Site.Menus.header -}}
+            <li role="menuitem" class="flex">
+              {{ $isMenuCurrent := (eq (lower $.Section) (lower .Name)) }} {{ partial "components/button" (dict "Name" .Name "URL" (.URL | absLangURL) "Variant" .Params.variant "Size" "Small") }}
+            </li>
+            {{- end -}}
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

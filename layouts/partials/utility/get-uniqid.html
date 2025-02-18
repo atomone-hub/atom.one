@@ -1,0 +1,3 @@
+{{- $now := now.Format "20060102150405.000000" -}}
+{{- $hash := sha1 $now -}}
+{{ return substr (md5 $hash) 0 16 }}
