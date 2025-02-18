@@ -122,13 +122,13 @@ contributor:
     - name: ""
       points:
         - section: "Explore & Contribute"
-          img: "img/hp/community-crafted-gov.png"
+          img: "img/hp/explore-contribute.png"
           content: "Stay updated on AtomOne's progress and play a key role in contributing to the [AtomOne GitHub repository](https://github.com/atomone-hub)."
         - section: "Grants & Bounties"
-          img: "img/hp/advisory-and-oversight-dao.png"
+          img: "img/hp/grants-bounties.png"
           content: "Apply for funding through the [AiB Grants and Bounties Program](https://github.com/allinbits/grants/tree/main/AiB-BUIDL-Grants-and-Bounties-program) to support your contributions to AtomOne’s development."
         - section: "Become a Validator"
-          img: "img/hp/decentralized-voting-power.png"
+          img: "img/hp/become-validator.png"
           content: "Check the instructions on how to join the AtomOne chain and become an [AtomOne validator here](/run-node/)."
   newsletter:
     title: "STAY UP TO DATE WITH THE LATEST UPDATES. SIGN UP FOR OUR NEWSLETTER."
