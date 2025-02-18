@@ -1,12 +1,15 @@
 <article class="bg-dark rounded-sm overflow-hidden py-16 flex justify-center w-full img-grid">
-  <div class="flex flex-col md:flex-row px-8 gap-20 lg:w-4/5">
+  <div class="flex flex-col md:flex-row px-8 gap-16 lg:w-[95%]">
     <div class="text-left md:w-1/2">
       <h3 class="text-light pb-6 font-semibold">BE PART OF THE CONVERSATION</h3>
       <p class="text-gray-200 text-400">Join the conversion or find out how you can contribute to AtomOne by following its socials.</p>
     </div>
-    <div class="grid sm:grid-cols-2 gap-2 *:w-full md:w-1/2">
-      {{ range .Site.Menus.social }} {{ if eq .Params.listed true }}{{ partial "components/button" (dict "Name" .Identifier "URL" (.URL | absLangURL) "Icon" .Name "Variant" "Light" "Size" "Small") }}
-      {{ end }}{{ end }}
+    <div class="flex flex-wrap flex-col lg:flex-row gap-2 md:w-1/2">
+      {{ range $index, $item := .Site.Menus.social }}
+      <div class="{{ if lt $index 2 }} lg:w-[40%] {{ else }} lg:w-[30%] {{ end }}w-full flex flex-1 *:w-full justify-center">
+        {{ partial "components/button" (dict "Name" $item.Identifier "URL" ($item.URL | absLangURL) "Icon" $item.Name "Variant" "Light" "Size" "Small") }}
+      </div>
+      {{ end }}
     </div>
   </div>
 </article>
