@@ -50,20 +50,20 @@ any reason, it would be unable to send data to a potential attacker.
 
 ### 1. Download the `atomoned` binary
 
-- Go to https://github.com/atomone-hub/atomone/releases/tag/v1.0.0 (or the
+- Go to https://github.com/atomone-hub/atomone/releases/tag/v1.0.1 (or the
   [latest available release](https://github.com/atomone-hub/atomone/releases)
   used by the AtomOne chain)
 - Download the binary that corresponds to your OS
-- Download the file `SHA256SUMS-v1.0.0.txt`
+- Download the file `SHA256SUMS-v1.0.1.txt`
 - Make sure that the `sha256sum` of the binary you have downloaded matches the
   `sha1sum` listed in that file. From a terminal window type:
 
 ```bash
-sha256sum -c --ignore-missing SHA256SUMS-v1.0.0.txt
+sha256sum -c --ignore-missing SHA256SUMS-v1.0.1.txt
 ```
 
 ```bash
-atomoned-v1.0.0-linux-amd64: OK
+atomoned-v1.0.1-linux-amd64: OK
 ```
 
 - Safely copy the binary into your **offline** and **online computers**, to a
@@ -89,7 +89,7 @@ alternatively (you can know its location on the online computer typing `which
 atomoned`):
 
 ```bash
-git clone --branch v1.0.0 --depth 1 https://github.com/atomone-hub/atomone.git
+git clone --branch v1.0.1 --depth 1 https://github.com/atomone-hub/atomone.git
 cd atomone && make install
 ```
 
@@ -107,42 +107,42 @@ GOROOT=$(go1.21.13 env GOROOT) PATH=$GOROOT/bin:$PATH make install
 ```
 
 After the command has been executed, verify your binary and ensure it produces
-the following output (for version v1.0.0):
+the following output (for version v1.0.1):
 
 ```bash
 atomoned version --long
 ```
 
 ```bash
-commit: 2d6996e6f7e87330b40e945978778708bb9651d3
+commit: 97d21d3686aa79b977ff89ddfedf6ca0f1b1b162
 cosmos_sdk_version: v0.47.13
-go: go version go1.21.13 linux/amd64
+go: go version go1.22.10 linux/amd64
 name: atomone
 server_name: atomoned
-version: v1.0.0
+version: v1.0.1
 ```
 
 Similarly to the download step, and because AtomOne has reproducible builds,
 you can assert that the compiled binary has the same signature than the one
 from the github release:
 
-- Download the file `SHA256SUMS-v1.0.0.txt` at the [github release page][v1.0.0]
+- Download the file `SHA256SUMS-v1.0.1.txt` at the [github release page][v1.0.1]
 - Make sure that the `sha256sum` of the binary you have compiled matches the
   `sha1sum` listed in the file that corresponds to your OS/architecture.
 
 ```bash
-cat SHA256SUMS-v1.0.0.txt
-9e9ba6fda17e9791d5ea38e93807cd6dbd2af3a1a3e1dc97bfae26b9cb2fb201  atomoned-v1.0.0-darwin-amd64
-1f412ab27ca74de7ead3e0f27389b5e1ed5369fab43dbb381abdc021c76d5e21  atomoned-v1.0.0-darwin-arm64
-78fcb6bcda906fc5b959cca985afab5a8486c17b63e1835faec0c0e57364582d  atomoned-v1.0.0-linux-amd64
-434c10a2007a01734fc353acc1b4082099b1f6c99b81371ddf4df3bf5f2f27d6  atomoned-v1.0.0-linux-arm64
-4ee28cfca97590d156f59249acf4c2ae21974728a3e0f55a1382abab8e8e3436  atomoned-v1.0.0-windows-amd64.exe
-e29e5bc3aff354caf100fcaad35a9e0173276dd6a5f162a8939dee5f30c9b69e  atomoned-v1.0.0-windows-arm64.exe
+cat SHA256SUMS-v1.0.1.txt
+0ce4da89a588a898e01ec1568c5253e9f4853f90f4e588408fb6c7ffc42d3425  atomoned-v1.0.1-darwin-amd64
+f36790fa7613ae86f2c64745532a4536bc814156bb1305df5fdb6ddc44bdada8  atomoned-v1.0.1-darwin-arm64
+2b87e2965c6f614761cb9e54e271b8b7fd3f8d3344d2554e52f1c9384ce43e52  atomoned-v1.0.1-linux-amd64
+40d97ad3c8fd639ce8ed34b10a022872d124956209536f372ac85b165ecb796c  atomoned-v1.0.1-linux-arm64
+1e08f5a7b4b0f5573ef0336fbca0ceb472a8d14eb0606eb89ccf47c9d66f3999  atomoned-v1.0.1-windows-amd64.exe
+96dc79cb3e1942efa43ae1f5e9ff59c2f93536a00fa3c869b9ad6871ecda5039  atomoned-v1.0.1-windows-arm64.exe
 ```
 
 ```bash
 sha256sum $GOPATH/bin/atomoned
-78fcb6bcda906fc5b959cca985afab5a8486c17b63e1835faec0c0e57364582d  build/atomoned
+2b87e2965c6f614761cb9e54e271b8b7fd3f8d3344d2554e52f1c9384ce43e52  build/atomoned
 # match the hash of linux/amd64 version
 ```
 
@@ -468,4 +468,4 @@ covers issues related to private key management and transaction signing, adding
 an additional layer of security by only performing the signing using an offline
 computer.
 
-[v1.0.0]: https://github.com/atomone-hub/atomone/releases/tag/v1.0.0
+[v1.0.1]: https://github.com/atomone-hub/atomone/releases/tag/v1.0.1
