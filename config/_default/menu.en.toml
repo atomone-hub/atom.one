@@ -111,7 +111,7 @@
     params = { label = "Discord Community", listed = true }
     name = "discord"
     url = "https://discord.com/invite/atomone"
-    weight = 4
+    weight = 2
 
 [[social]]
     identifier = "/_atomone"
@@ -125,7 +125,7 @@
     params = { label = "AtomOne Forum", listed = true }
     name = "forum"
     url = "https://common.xyz/atomone/"
-    weight = 2
+    weight = 4
 
 [[social]]
     identifier = "r/AtomOneHub"
