@@ -5,20 +5,22 @@ Description: AtomOne Site Terms of Use
 
 # AtomOne Site Terms of Use
 
-**Effective Date: November 18, 2024**
+**Effective Date: February 18, 2025**
 
-## Introduction
+## **1\.** **Introduction**
 
-By accessing this Website, accessible from [https://atom.one](https://atom.one), or any Website, Services, Platform or Interface associated with AtomOne such as the AtomOne Staking Portal at [https://staking.atom.one](https://staking.atom.one) and the AtomOne Governance dApp at [https://gov.atom.one](https://gov.atom.one) (collectively, the “Interface”) and related tools, trademarks, intellectual property, services, software, or any public source code repository offered by the operator of this site (collectively, the “Services”), All in Bits (AiB), Inc. (“the “operator,” “we,” or “us,”), you (the “User”) are agreeing to be bound by these Terms and Conditions of Use (the “Terms”) and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these Terms, you are prohibited from accessing this site.
+By accessing this Website, accessible from [https://atom.one](https://atom.one), or any Website, Services, Platform or Interface associated with AtomOne such as the AtomOne Staking Portal at [https://staking.atom.one/](https://staking.atom.one/) and the AtomOne Governance dApp at [https://www.gov.atom.one/](https://www.gov.atom.one/) (collectively, the “Interface”) and related tools, trademarks, intellectual property, services, software, or any public source code repository offered by the operator of this site (collectively, the “Services”), All in Bits (AiB), Inc. (“the “operator,” “we,” or “us,”), you (the “User”) are agreeing to be bound by these Terms and Conditions of Use (the “Terms”) and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these Terms, you are prohibited from accessing this site.
 
 These Terms govern your use of our Services, including those listed at the websites above and those that may be added from time to time. The “Date Effective” specified on these Terms indicates the date on which the Terms were last modified. Please review these Terms periodically to ensure you are aware of and in compliance with the most current version. Any revision to the Terms shall take effect immediately upon such revised Terms being made accessible via the Interface. These Terms expressly cover your rights and obligations, and our disclaimers and limitations of legal liability, relating to your use of, and access to, the Services. By accessing or using the Interface, you agree to be bound by these Terms. Before using the Services, make sure that you read and understand the accompanying [Privacy Policy](https://docs.google.com/document/d/1pVWLm5A5fKLoHqG4nBEoeeZHKTT6ADviJs53zNgruKw/edit?tab=t.0).
 
 THESE TERMS SET FORTH THE LEGALLY BINDING TERMS AND CONDITIONS, YOUR RIGHTS AND OBLIGATIONS, OUR DISCLAIMERS AND LIMITATIONS OF LEGAL LIABILITY THAT GOVERN YOUR USE OF THE INTERFACE. BY SIGNING MESSAGE TO BE RECORDED ON-CHAIN THAT INCLUDES A LINK TO THESE TERMS ACCESSING OR USING THE INTERFACE, YOU ARE ACCEPTING THESE TERMS (ON BEHALF OF YOURSELF OR THE ENTITY THAT YOU REPRESENT), INCLUDING, WITHOUT LIMITATION, THE MANDATORY ARBITRATION PROVISION IN SECTION 17 AND WAIVER OF JURY TRIAL. IF YOU DO NOT AGREE WITH ALL OF THE PROVISIONS OF THESE TERMS, DO NOT ACCESS OR USE THE INTERFACE.
 
-| The Interface, Services and any other features offered or made available by us are not offered to U.S. Persons or Restricted Persons (each as further defined below), and any such use is prohibited. Any use of a virtual private network (VPN) or any other privacy or anonymization tools or techniques to circumvent, or attempt to circumvent, any restrictions that apply are prohibited. WE RESERVE ALL RIGHTS TO TAKE ACTION AGAINST ANY PERSON VIOLATING, CIRCUMVENTING OR ATTEMPTING TO CIRCUMVENT SUCH RESTRICTIONS, INCLUDING LEGAL ACTION AND/OR TEMPORARILY OR PERMANENTLY RESTRICT ACCESS TO THE INTERFACE AND THE SERVICES. “U.S. Person” shall mean any natural person or legal entity who (i) resides, (ii) is located (iii) is incorporated, or (iv) has a registered office, in the United States of America. “Restricted Person” shall mean any natural person or legal entity who (i) resides, (ii) is located (iii) is incorporated, or (iv) has a registered office, in any Restricted Territory (as further defined below). |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The Interface, Services and any other features offered or made available by us are not offered to Restricted Persons (each as further defined below), and any such use is prohibited. “Restricted Person” shall mean any natural person or legal entity who (i) resides, (ii) is located (iii) is incorporated, or (iv) has a registered office, in any Restricted Territory (as further defined below). Any use of a virtual private network (VPN) or any other privacy or anonymization tools or techniques to circumvent, or attempt to circumvent, any restrictions that apply are prohibited. WE RESERVE ALL RIGHTS TO TAKE ACTION AGAINST ANY PERSON VIOLATING, CIRCUMVENTING OR ATTEMPTING TO CIRCUMVENT SUCH RESTRICTIONS, INCLUDING LEGAL ACTION AND/OR TEMPORARILY OR PERMANENTLY RESTRICT ACCESS TO THE INTERFACE AND THE SERVICES. |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-## 2. Services
+[This website is a community-owned and operated resource, created and maintained by All in Bits (AiB), a contributing member of the AtomOne ecosystem. It is not an official website of AtomOne, and the information contained within does not represent the official views, decisions, or governance of the AtomOne community or its DAOs. The content and opinions expressed herein are those of the AiB. Use of this website is at your own discretion, and no guarantees are made regarding the accuracy, completeness, or reliability of the information provided.](https://commonwealth.im/govgen/discussions/Governance%20Proposals)
+
+## **2\. Services**
 
 1. **AtomOne Governance dApp**
 
@@ -34,7 +36,7 @@ To use the AtomOne Interface, you must connect a compatible third-party wallet (
 
 The operator will never request your private keys, seed phrases, or recovery phrases. Any such request should be considered fraudulent and reported immediately. Failing to safeguard this information may result in the permanent loss of access to your wallet and digital assets.
 
-For enhanced security, users have the option to [generate command-line interface (CLI)](https://github.com/atomone-hub/atom.one/blob/main/submit-tx-securely.md) commands for executing transactions in an offline, air-gapped environment. This method allows users to create and sign transactions on a device that is not connected to the internet, significantly reducing the risk of unauthorized access, hacking, or malware attacks. Once the transaction is signed offline, it can be securely transmitted to the network using an internet-connected device. This adds an extra layer of protection when performing sensitive actions such as transferring funds or managing governance operations.
+For enhanced security, users have the option to [generate command-line interface (CLI)](https://github.com/tbruyelle/govgen-proposals/blob/tbruyelle/doc/submit-tx-securely/submit-tx-securely.md) commands for executing transactions in an offline, air-gapped environment. This method allows users to create and sign transactions on a device that is not connected to the internet, significantly reducing the risk of unauthorized access, hacking, or malware attacks. Once the transaction is signed offline, it can be securely transmitted to the network using an internet-connected device. This adds an extra layer of protection when performing sensitive actions such as transferring funds or managing governance operations.
 
 It is crucial that users strictly follow best practices for secure transaction processing, including keeping private keys secure and ensuring that the air-gapped environment is free from vulnerabilities. Failure to adhere to these best practices could lead to compromised security, resulting in the loss of assets or unauthorized actions being taken on the user’s behalf.
 
@@ -48,11 +50,11 @@ The Interface is continually evolving, with ongoing developments that include ad
 
 For features that involve open-source contributions, those contributions will be governed by separate open-source licenses, as appropriate. The operator is not responsible for third-party contributions, though it may integrate or collaborate with them to enhance the functionality of the Interface. You agree that it is your responsibility to stay informed about any updates to these Terms or features by periodically reviewing them on the Interface.
 
-## 3. Your Permission to Use the Interface
+## **3\.** **Your Permission to Use the Interface**
 
 Subject to these Terms, the operator grants you a non-transferable, limited right to use the Interface, provided you comply with these terms. This permission is personal to you and cannot be assigned or transferred to others. Each user must individually agree to these terms in order to access and use the Interface.
 
-## 4. Conditions for Use of the Interface
+## **4\.** **Conditions for Use of the Interface**
 
 Your permission to use the Interface is contingent upon the following conditions:
 
@@ -61,17 +63,17 @@ Your permission to use the Interface is contingent upon the following conditions
 - **Revocation of Access:** You must cease using the Interface if the operator informs you that you are no longer permitted to use it.
 - **Compliance:** You are required to adhere to the Acceptable Use and Content Standards at all times.
 
-## 5\. Acceptable Use and Content Standards
+## **5\.** **Acceptable Use and Content Standards**
 
 By using the Interface, you agree to adhere to the following conditions, ensuring your use of AtomOne’s Services remains lawful, respectful, and does not compromise the integrity of the decentralized governance process:
 
 1. **Legal Compliance:**
 
    1. **Prohibited Activities:** You must not use the Services to engage in any illegal activities, such as transmitting content that is defamatory, fraudulent, harassing, abusive, or otherwise in violation of the law. If it is determined that you have broken the law, your access will be revoked immediately. This includes activities related to money laundering, illegal gambling, financing of terrorism, or any other criminal or illegal activity.
-   2. **Regional Restrictions:** Your access to AtomOne’s Services may be restricted based on your jurisdiction or geographic location. You may not use the Service if you are located in a country subject to U.S. government sanctions or that has been designated by the U.S. government as a “terrorist supporting” country.
-   3. **Prohibited Use by U.S. Persons, Restricted Persons and Restricted Territories:** The Interface, Services, and any other features offered or made available are not intended for use by U.S. Persons or Restricted Persons, and any such use is strictly prohibited. U.S. Persons include any natural person or legal entity who resides, is located, is incorporated, or has a registered office in the United States of America. Restricted Persons those located in or a citizen, resident of or those having registered office in any state, country, territory or other jurisdiction in which the use of AtomOne’s Services would be illegal or otherwise violate any applicable law (a “Restricted Territory”).
-   4. **Restricted Territories**: Including, but not limited to, Afghanistan, Algeria, Balkans, Bangladesh, Barbados, Belarus, Bulgaria, Burkina Faso, Burma (Myanmar), Cameroon, China, Croatia, Central African Republic, Congo (Democratic Republic), Crimea Region of Ukraine, Cuba, Ethiopia, Gibraltar, Haiti, Iran, Iraq, Jamaica, Lebanon, Libya, Mali, Mozambique, Nigeria, North Korea, Philippines, Russia/Ukraine, Senegal, Somalia, South Africa, South Sudan, Syria, Tanzania, Turkey (Turkiye), Tunisia, Uganda, United Arab Emirates, United States, Venezuela, Vietnam, West Bank, Yemen, and Zimbabwe or any jurisdictions in which the sale of cryptocurrencies are prohibited, restricted or unauthorized in any form or manner whether in full or in part under the laws, regulatory requirements or rules in such jurisdiction; or any state, country, or region that is subject to sanctions enforced by the United States, such as the Specially Designated Nationals and Blocked Persons List (“SDN List”) and Consolidated Sanctions List (“Non-SDN Lists”), the United Kingdom, or the European Union (collectively, “Restricted Territories”). Restricted Territories are subject to change.
-   5. **VPN and Anonymization Tools:** The use of virtual private networks (VPNs) or any other privacy or anonymization tools or techniques to circumvent, or attempt to circumvent, these restrictions is expressly prohibited. You shall not use any technical means to misrepresent its geographical location to access and use AtomOne’s Services from any restricted territory
+   2. **Regional Restrictions:** Your access to AtomOne’s Services may be restricted based on your jurisdiction or geographic location.
+   3. **Prohibited Use by Restricted Persons:** The Interface, Services, and any other features offered or made available are not intended for use by Restricted Persons, and any such use is strictly prohibited. Restricted Persons those located in or a citizen, resident of or those having registered office in any state, country, territory or other jurisdiction in which the use of AtomOne’s Services would be illegal or otherwise violate any applicable law (a “Restricted Territory”).
+   4. **Restricted Territories**: Including, but not limited to, Afghanistan, Algeria, Bangladesh, Belarus, Central African Republic, Congo (Democratic Republic), Cuba, Egypt, Haiti, Iran, Iraq, Lebanon, Libya, Morocco, Mozambique, Myanmar (Burma), Nepal, Nigeria, North Korea, Pakistan, Russia, Senegal, Somalia, South Sudan, Syria, Tanzania, Tunisia, Uganda, Venezuela, Yemen, and Zimbabwe or any jurisdictions where the use of AtomOne’s services would be illegal, prohibited, restricted, or unauthorized in whole or in part under applicable laws, regulations, or rules.
+   5. **VPN and Anonymization Tools:** The use of virtual private networks (VPNs) or any other privacy or anonymization tools or techniques to circumvent, or attempt to circumvent, these restrictions is expressly prohibited. You shall not use any technical means to misrepresent its geographical location to access and use AtomOne’s Services from any Restricted Territory
    6. **Violation Consequences:** The operator reserves all rights to take action against any individual or entity violating, circumventing, or attempting to circumvent these restrictions, including but not limited to, legal action, temporary or permanent restriction of access to the Interface.
 
 2. **Integrity and Security:**
@@ -111,7 +113,7 @@ By using the Interface, you agree to adhere to the following conditions, ensurin
    2. **Submission Integrity:** You agree not to submit false, fraudulent, or manipulative proposals or votes that undermine the integrity of the decentralized governance process. Attempting to manipulate or falsify votes will result in immediate suspension or revocation of access.
    3. **Code of Conduct**: You may not engage in any conduct that violates the code of conduct established by the AtomOne Hub community. Violations of this code of conduct may result in the suspension or permanent loss of access to the Interface.
 
-## 6\. **Enforcement**
+## **6\.** **Enforcement**
 
 The operator takes violations of these Terms, including those outlined in the Acceptable Use and Content Standards, seriously and may investigate any potential violations to the fullest extent permitted by law. If a violation is detected, the operator reserves the right to take any and all of the following actions:
 
@@ -129,7 +131,7 @@ The operator takes violations of these Terms, including those outlined in the Ac
 
 7. **Liability for Violations**: If your use of the Interface results in any harm, damage, or liability to the operator or other users, you may be held liable for those damages, and the operator may take legal action to recover its losses.
 
-## 7\. **Your Information**
+## **7\.** **Your Information**
 
 By using the Interface, you agree to the following responsibilities regarding the information you provide:
 
@@ -139,7 +141,7 @@ By using the Interface, you agree to the following responsibilities regarding th
 4. **Notification of Material Changes**: You agree to promptly notify the operator of any material changes that may affect your eligibility to use the Interface, including, but not limited to, changes in your residency, legal status, or ability to comply with any jurisdictional requirements or restrictions. Failure to notify the operator of such changes may result in suspension or termination of access to the Interface.
 5. **Responsibility for Account Use**: You are fully responsible for all actions taken under your account, whether authorized or unauthorized. This includes any activities initiated through the Interface, such as proposals, votes, and other governance-related interactions. You acknowledge that failure to secure your account or disclose sensitive information (e.g., private keys, passwords) could result in unauthorized access and loss of assets. You will not hold the operator liable for any unauthorized actions resulting from your failure to secure your account credentials.
 
-## 8\. **Know Your Customer**
+## **8\.** **Know Your Customer**
 
 You acknowledge that the operator and its partners may perform Know Your Customer (“KYC”) procedures on the information you provide, as required by internal policies and as required by applicable guidelines or regulations. You consent to such KYC procedures.
 
@@ -147,7 +149,7 @@ You agree that this is a general requirement and in compliance with regulatory r
 
 The operator may in its sole and absolute discretion decline to accept any person’s request in anything, at any time, with no requirement for any reason or explanation; you agree that such decline(s), if any, shall not constitute an opinion, recommendation or investment, legal or tax advice by the operator.
 
-## 9\. **Background Checks**
+## **9\.** **Background Checks**
 
 While the Interface emphasizes decentralized governance and privacy, certain roles within the ecosystem, such as validators or other key participants, may be subject to background checks in accordance with applicable laws, regulations, or internal policies. These background checks are conducted to ensure compliance with legal standards and to maintain the integrity of the network.
 
@@ -157,7 +159,7 @@ While the Interface emphasizes decentralized governance and privacy, certain rol
 4. **Legal Obligations and Reporting**: The operator and its partners may have legal obligations under applicable laws, such as the USA PATRIOT Act or anti-money laundering regulations, to report suspicious activity. These obligations may require the operator to deny access to certain users based on background check results, including but not limited to individuals identified as high-risk or flagged under any relevant legal frameworks.
 5. **Right to Deny Access**: The operator reserves the right to deny access to any products, services, or features offered through the Interface based on the results of background checks. This may occur even if the information obtained is not fully accurate, complete, or truthful, in line with regulatory obligations and the operator’s risk management policies.
 
-## 10\. **Your Content**
+## **10\.** **Your Content**
 
 By submitting content to the Interface, you represent and warrant that you hold all necessary rights, licenses, and permissions to provide such content and that doing so does not infringe the intellectual property or other rights of any third party. You remain the sole owner of your content; however, by submitting content, you grant the operator and its affiliates a **perpetual, non-exclusive, transferable, royalty-free, worldwide license** to use, distribute, reproduce, and publicly display your content on the Interface, as well as for related purposes including promotion, analytics, and archives. This license will continue even after you remove your content from the Interface, to the extent necessary for compliance with legal obligations or for maintaining necessary backups and archives.
 
@@ -171,7 +173,7 @@ You acknowledge and agree that the operator is not responsible for the misuse of
 - **Misuse of Content by Others**: You acknowledge that other users or third parties may misuse the content you submit, potentially violating the terms on which you licensed it. The operator cannot and will not be held responsible for these violations or any resulting damages or consequences.
 - **Infringement of Intellectual Property**: The operator reserves the right to terminate, in its sole discretion, the accounts of any users who repeatedly infringe upon the intellectual property rights of others, whether related to content submitted to the Interface or other activities.
 
-## 11\. **Our Content**
+## **11\.** **Our Content**
 
 Unless otherwise specified, the operator and/or its licensors own all intellectual property rights associated with the content made available on the Interface. This includes, but is not limited to, all product and service names, graphics, button icons, trademarks, service marks, logos, and any other materials presented on the Interface. Some images, videos, or other content displayed may be the property of third parties, in which case the operator uses them with proper authorization or under fair use principles. All intellectual property rights are reserved.
 
@@ -186,7 +188,7 @@ You **may not**:
 
 **Open-Source Contributions**: For the avoidance of doubt, the restrictions in this section do not apply to any content or software that has been explicitly contributed by the operator to the open-source community under an open-source license. Any content or software released under such a license is governed by the specific terms of that open-source license, which may permit broader use, distribution, and modification than otherwise allowed under these terms.
 
-## 12\. **Digital Millennium Copyright Act (DMCA) Compliance**
+## **12\.** **Digital Millennium Copyright Act (DMCA) Compliance**
 
 If you are a copyright holder and believe that content on the Interface infringes upon a copyright that you own or control, you may submit a formal DMCA notification to our designated agent. The operator will respond promptly to valid DMCA claims and, if necessary, remove or disable access to the infringing content.
 
@@ -218,11 +220,11 @@ To submit a counter-notification, your written communication must include the fo
 
 Once a valid counter-notification is received, the operator may restore the removed material, unless the original complainant files a court action seeking to restrain you from engaging in the allegedly infringing activity.
 
-## 13\. **Your Responsibility and Security**
+## **13\.** **Your Responsibility and Security**
 
 You agree to reimburse the operator for all costs, damages, and legal claims arising from your breach of these terms or the misuse of the Interface by others using your account. Both parties agree to promptly notify each other of any legal claims related to this agreement. Failure by the operator to notify you promptly does not absolve you of your responsibility, except where prompt notice could have mitigated the issue. You agree to allow the operator to assume the investigation, defense, and settlement of any legal claims at its discretion. The operator agrees not to enter any settlement that places you at fault or imposes obligations on you without your consent.
 
-## 14\. **Disclaimers**
+## **14\. Disclaimers**
 
 1. You acknowledge and accept all risks associated with the use of the Interface and its content. To the fullest extent permitted by law, the operator provides the Interface on an “as is” and “as available” basis, without any warranties of any kind, including, without limitation, implied or statutory warranties of merchantability, fitness for a particular purpose, title, security, accuracy, reliability, availability, quiet enjoyment, or non-infringement of third-party rights.
 
@@ -254,7 +256,7 @@ You agree to reimburse the operator for all costs, damages, and legal claims ari
 
 15. **Use of Blockchain and Decentralized Services:** By using the Interface, you acknowledge the inherent risks of decentralized blockchain technology, including the irreversibility of transactions, potential software bugs or exploits, market volatility, and lack of recourse in the event of unauthorized access to your wallet. The operator is not liable for any losses or damages arising from these risks.
 
-## 15\. **Limits on Liability / Indemnification**
+## **15\.** **Limits on Liability / Indemnification**
 
 1. To the fullest extent permitted by law, neither you nor the operator will be liable for any:
 
@@ -279,11 +281,11 @@ You agree to reimburse the operator for all costs, damages, and legal claims ari
 
 6. **California Residents**: If you are a resident of California, you hereby waive California Civil Code Section 1542, which states: “A general release does not extend to claims which the creditor does not know or suspect to exist in his or her favor at the time of executing the release, which, if known by him or her, must have materially affected his or her settlement with the debtor.”
 
-## 16\. **Termination**
+## **16\.** **Termination**
 
 Either party may terminate this agreement at any time. Upon termination, your permission to use the Interface immediately ends. The following sections will survive termination: Sections 5, 6, 7, 10, 13, 14, 15, 17, and 18\.
 
-## 17\. **Disputes, Binding Arbitration, Class Action Waiver**
+## **17\.** **Disputes, Binding Arbitration, Class Action Waiver**
 
 1. **On-Chain Governance Disputes**: Disputes specifically related to decentralized governance decisions within the AtomOne Hub shall be resolved through the on-chain governance mechanisms established by the community and governed by its consensus rules. These on-chain resolutions are final and binding as per the decentralized governance framework.
 
@@ -310,7 +312,7 @@ Either party may terminate this agreement at any time. Upon termination, your pe
 
 11. **Acknowledgement**: BY AGREEING TO ARBITRATION, YOU UNDERSTAND THAT YOU ARE IRREVOCABLY WAIVING YOUR RIGHT TO LITIGATE ANY DISPUTES IN COURT OR TO HAVE A JURY TRIAL. YOU FURTHER ACKNOWLEDGE THAT YOUR ABILITY TO ENGAGE IN DISCOVERY AND APPEAL RIGHTS MAY BE LIMITED IN ARBITRATION. YOU ACCEPT THESE RISKS BY AGREEING TO THESE TERMS.
 
-## 18\. **General Terms**
+## **18\.** **General Terms**
 
 1. **Severability**: If any provision of these terms is found to be unenforceable or invalid, that provision shall be modified to the minimum extent necessary to make it enforceable. If modification is not possible, the provision shall be severed, and the remaining provisions will continue in full force and effect.
 
@@ -320,13 +322,13 @@ Either party may terminate this agreement at any time. Upon termination, your pe
 
 4. **Entire Agreement**: These terms, along with any documents or additional terms referenced herein or incorporated by reference, represent the entire agreement between you and the operator concerning the use of the Interface. This agreement supersedes any and all prior and contemporaneous oral or written agreements, discussions, and understandings regarding the subject matter. Any modifications to these terms must be made in writing and signed by both parties.
 
-## 19\. **Contact**
+## **19\.** **Contact**
 
 You may contact the operator regarding any questions, concerns, or notices related to these terms by emailing the operator at legal@allinbits.com. Any notices or communications sent to the operator under these terms should be directed to this email address.
 
 The operator may contact you regarding these terms or any matter related to your account through the email address you provide upon registration. Additionally, the operator may deliver notices by posting them on the homepage of the Interface, in your account page, or through other visible locations on the Interface as necessary.
 
-## 20\. **Changes to the Terms**
+## **20\.** **Changes to the Terms**
 
 The operator reserves the right to update or modify these terms at any time in its sole discretion. Any changes will be communicated by posting the revised terms on the Interface, along with the date of the last update. In certain cases, the operator may provide additional notice through special announcements or alerts within the Interface.
 
