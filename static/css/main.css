@@ -79,7 +79,8 @@
   }
 
   .prose code {
-    @apply text-gray-800;
+    font-weight: inherit !important;
+    @apply text-light! before:hidden after:hidden bg-gray-400 rounded-sm py-0.5 px-1;
   }
 }
 

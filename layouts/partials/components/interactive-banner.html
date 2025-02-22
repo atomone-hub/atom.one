@@ -1,20 +1,22 @@
-<article class="bg-dark rounded-sm overflow-hidden py-16 flex justify-center w-full img-grid">
-  <div class="flex flex-col md:flex-row lg:w-4/5 gap-20 px-8 items-center">
-    <img src="{{ .ImgSrc }}" alt="{{ .Title }}" class="max-w-1/2" height="248" loading="lazy" />
-    <div class="text-gray-200 text-left">
-      <h3 class="text-light font-semibold pb-8">{{ .Title }}</h3>
-      <div data-component="{{ .Comp }}">
-        <div class="flex rounded-sm border border-light overflow-auto text-100">
-          <input data-selector="input" class="w-full bg-gray-400 py-4 px-6 outline-none text-light" placeholder="{{ .Placeholder }}" />
-          <button data-selector="check" class="bg-light hover:bg-light/80 text-dark py-4 px-6 min-w-28 cursor-pointer">Check</button>
+<div id="{{ .Comp }}" class="scroll-mt-46">
+  <article class="bg-dark rounded-sm overflow-hidden py-16 flex justify-center w-full img-grid">
+    <div class="flex flex-col md:flex-row lg:w-4/5 gap-20 px-8 items-center">
+      <img src="{{ .ImgSrc }}" alt="{{ .Title }}" class="max-w-1/2" height="248" loading="lazy" />
+      <div class="text-gray-200 text-left">
+        <h3 class="text-light font-semibold pb-8">{{ .Title }}</h3>
+        <div data-component="{{ .Comp }}">
+          <div class="flex rounded-sm border border-light overflow-auto text-100">
+            <input data-selector="input" class="w-full bg-gray-400 py-4 px-6 outline-none text-light" placeholder="{{ .Placeholder }}" />
+            <button data-selector="check" class="bg-light hover:bg-light/80 text-dark py-4 px-6 min-w-28 cursor-pointer">Check</button>
+          </div>
+          <div class="">
+            <p data-selector="result" class="text-300 font-semibold"></p>
+            <p data-selector="detail" class="text-light text-200"></p>
+          </div>
         </div>
-        <div class="">
-          <p data-selector="result" class="text-300 font-semibold"></p>
-          <p data-selector="detail" class="text-light text-200"></p>
-        </div>
-      </div>
 
-      <p class="pt-8">{{ .Content | markdownify }}</p>
+        <p class="pt-8">{{ .Content | markdownify }}</p>
+      </div>
     </div>
-  </div>
-</article>
+  </article>
+</div>
