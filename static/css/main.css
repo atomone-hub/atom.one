@@ -79,7 +79,7 @@
   }
 
   .prose code {
-    @apply text-gray-800;
+    @apply text-light! font-normal! before:hidden after:hidden bg-gray-400 rounded-sm py-0.5 px-1 text-[.85em]!;
   }
 }
 
