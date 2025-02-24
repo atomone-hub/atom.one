@@ -61,7 +61,7 @@ meta_description: "Explore AtomOne’s roadmap from preparation to cross-zone go
 ``` </br>
 -->
 
-1. **Launch** - 100%
+1. **Launch - 100% completed**
    - Launch the AtomOne chain with a simple Gaia fork and no, to minimal changes with ICS and IBC functionalities disabled. - 100%
    - Ratify all governance documents on the AtomOne chain: Articles of Constitution and if required the proposed AtomOne roadmap and tokenomics 100%
 
