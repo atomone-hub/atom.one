@@ -69,6 +69,12 @@
     url = "/terms/"
     weight = 4
 
+[[general]]
+    identifier = "branding"
+    name = "Branding"
+    url = "https://github.com/atomone-hub/assets/tree/main/logos"
+    weight = 5
+
 [[advanced]]
     identifier = "run-node"
     name = "Run Node"
