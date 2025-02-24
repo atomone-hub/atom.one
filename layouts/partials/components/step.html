@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center max-w-36">
+<div class="flex flex-col items-center max-w-36 relative flex-1 group">
   {{ if .IsComplete }}
   <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none" class="mb-6">
     <path
@@ -7,15 +7,21 @@
       stroke=""
     />
   </svg>
+  <div class="w-0.5 lg:w-[calc(100%+--spacing(16))] h-[calc(100%+--spacing(16))] lg:h-0.5 bg-accent1 absolute top-[15px] -translate-x-1/2 lg:translate-x-0 left-1/2 -z-1"></div>
   {{ else }}
   <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none" class="mb-6">
     <path
       d="M16.7083 30.6856L16.7083 30.6856L16.6999 30.6903C15.9703 31.0999 15.037 31.1085 14.2527 30.6846C14.2518 30.6841 14.2509 30.6836 14.25 30.6831L2.69085 24.3202C2.6908 24.3202 2.69075 24.3202 2.6907 24.3202C1.93875 23.9054 1.5 23.1548 1.5 22.3664V9.6336C1.5 8.83683 1.92718 8.09369 2.68443 7.68326L2.68444 7.68328L2.69015 7.68014L14.2557 1.31374L14.2564 1.31335C15.0167 0.894064 15.9669 0.89826 16.6999 1.30969L16.6998 1.30973L16.7083 1.31439L28.3065 7.67828C29.0512 8.09809 29.5 8.85472 29.5 9.6336V22.3664C29.5 23.1453 29.0512 23.9019 28.3065 24.3217L16.7083 30.6856Z"
       stroke="var(--color-accent1)"
+      fill="var(--color-light)"
       stroke-width="2"
     />
   </svg>
+  <div class="w-0.5 lg:w-[calc(100%+--spacing(16))] h-[calc(100%+--spacing(16))] lg:h-0.5 bg-gray-100 absolute top-[15px] -translate-x-1/2 lg:translate-x-0 left-1/2 -z-1 group-last:hidden"></div>
+
   {{ end }}
-  <h3 class="uppercase pb-1 font-semibold">{{ .Title }}</h3>
-  <p class="text-200 text-gray-200">{{ .Content | markdownify }}</p>
+  <div class="bg-light">
+    <h3 class="uppercase pb-1 font-semibold">{{ .Title }}</h3>
+    <p class="text-200 text-gray-200">{{ .Content | markdownify }}</p>
+  </div>
 </div>
