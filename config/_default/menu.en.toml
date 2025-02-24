@@ -71,7 +71,7 @@
 
 [[general]]
     identifier = "branding"
-    name = "Branding"
+    name = "Brand Assets"
     url = "https://github.com/atomone-hub/assets/tree/main/logos"
     weight = 5
 
@@ -134,8 +134,8 @@
     weight = 4
 
 [[social]]
-    identifier = "r/AtomOneHub"
+    identifier = "r/atomone"
     params = { label = "Reddit Community", listed = true }
     name = "reddit"
-    url = "https://www.reddit.com/r/AtomOneHub/"
+    url = "https://www.reddit.com/r/atomone/"
     weight = 5
