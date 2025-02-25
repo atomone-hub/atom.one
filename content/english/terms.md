@@ -1,6 +1,7 @@
 ---
 Title: AtomOne Site Terms of Use
 Description: AtomOne Site Terms of Use
+is_header_clear: true
 ---
 
 # AtomOne Site Terms of Use

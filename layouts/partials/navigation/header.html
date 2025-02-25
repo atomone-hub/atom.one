@@ -12,7 +12,6 @@
     <div class="flex-1 text-right">
       <input type="checkbox" id="burger" class="hidden peer" />
 
-      <!-- Bouton d'ouverture et fermeture du menu -->
       <label for="burger" class="cursor-pointer inline-block md:hidden">
         <span class="relative flex items-center justify-center w-8 h-8">
           <svg class="w-6 h-6 absolute peer-checked:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -27,9 +26,7 @@
         </span>
       </label>
 
-      <!-- Menu principal -->
       <ul role="menu" class="absolute md:relative gap-6 left-0 {{if .Params.is_header_clear}} bg-light text-dark hover:text-dark/70{{ else }} bg-dark text-light hover:text-light/70{{ end }} px-6 mx-auto pt-7 pb-5 md:p-0 hidden md:flex w-full justify-center md:items-center peer-checked:flex flex-col md:flex-row">
-        <!-- Menu Ressources -->
         <li role="presentation" class="md:ml-auto block">
           <ul role="menu" class="flex gap-4 lg:gap-8 text-200 md:text-200 font-light flex-col md:flex-row items-start">
             {{- range .Site.Menus.resource -}}
@@ -41,7 +38,6 @@
           </ul>
         </li>
 
-        <!-- Menu Header -->
         <li role="presentation" class="md:ml-auto">
           <ul role="menu" class="flex gap-2 lg:gap-2 text-200 md:text-200 font-light">
             {{- range .Site.Menus.header -}}

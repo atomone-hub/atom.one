@@ -1,6 +1,7 @@
 ---
 meta_title: "AtomOne FAQ: Community-Driven Cosmos Chain Explained"
 meta_description: Learn about AtomOne’s governance, security features, dual-token model, staking, and how it complements the Cosmos ecosystem. Join or contribute today!
+is_header_clear: true
 ---
 
 # AtomOne FAQ
