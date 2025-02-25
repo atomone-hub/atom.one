@@ -1,6 +1,7 @@
 ---
 meta_title: "AtomOne Roadmap: Phases of Decentralized Innovation"
 meta_description: "Explore AtomOne’s roadmap from preparation to cross-zone governance. Track key milestones and innovations in governance, scalability, and interchain security."
+is_header_clear: true
 ---
 
 # AtomOne Roadmap

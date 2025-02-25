@@ -1,6 +1,7 @@
 ---
 meta_title: "How to Submit Transactions Securely to AtomOne: Step-by-Step Guide"
 meta_description: "Learn how to securely sign and broadcast AtomOne transactions using offline and online methods. Protect your AtomOne account with these best practices."
+is_header_clear: true
 ---
 
 # Submitting a Transaction to AtomOne - and How to Submit Transactions Securely

@@ -6,7 +6,7 @@
     </div>
     <div class="flex flex-wrap flex-col lg:flex-row gap-2 md:w-1/2">
       {{ range $index, $item := .Site.Menus.social }}
-      <div class="{{ if lt $index 2 }} xl:w-[48%] {{ else }} xl:w-[30%] {{ end }}w-full flex grow-1 *:w-full justify-center">
+      <div class="xl:w-[30%] w-full flex grow-1 *:w-full justify-center">
         {{ partial "components/button" (dict "Name" $item.Identifier "URL" ($item.URL | absLangURL) "Icon" $item.Name "Variant" "Light" "Size" "Small") }}
       </div>
       {{ end }}
