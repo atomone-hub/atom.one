@@ -5,7 +5,7 @@
         <section class="flex flex-col gap-y-18">
         {{ $all := ($.Site.GetPage "section" .Section).Pages.ByPublishDate.Reverse }} 
         {{ range  $all }} 
-            <a href="{{ with .Params.external_url }}{{ . }}{{ else }}{{.RelPermalink }}{{ end }}" class="no-underline block-link">
+            <a href="{{.RelPermalink }}" class="no-underline block-link">
                 <article class="cursor-pointer" data-component="link">
                     <div class="relative bg-grey-200 aspect-[14/6] rounded bg-gray-100 overflow-hidden">
                         {{ $image := .Resources.GetMatch .Params.cover }}
@@ -13,7 +13,7 @@
                         {{ if .Params.external_url }}
                         <div class="absolute rounded bg-light bottom-6 right-6 px-8 py-4 text-100">Read ↗</div>{{ end }}
                     </div>
-                    {{if .Title}}<h2 class="text-600 pb-4 mt-6 leading-tight">{{.Title}}</h2>{{end}}
+                    {{if .Title}}<h2 class="text-600 pb-4 mt-6 leading-tight font-semibold">{{.Title}}</h2>{{end}}
                     {{with .Params.summary}}<p class="text-gray-200 pb-8">{{.}}</p>{{end}}
                     {{with .PublishDate}}<time class="text-gray-800" datetime="{{.Format "2006-01-02"}}">{{. | time.Format ":date_long"}}</time>{{end}}        
                 </article>
