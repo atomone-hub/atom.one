@@ -5,6 +5,7 @@ publishDate: 2024-10-21T21:46:00-01:00
 cover: cover.png
 summary: The AtomOne chain is live!
 external_url: https://allinbits.com/blog/atomone/
+is_header_clear: true
 ---
 
 ## Summary
