@@ -64,7 +64,7 @@
       @apply font-interVar;
     }
 
-    a {
+    a:not(.block-link) {
       @apply text-dark hover:text-dark/80 after:content-['↗'] after:text-[.85em] whitespace-nowrap after:relative after:pl-0.5 after:inline-block after:-top-0.5  hover:after:translate-x-px hover:after:-translate-y-px;
     }
     a[href^="https://atom.one"],

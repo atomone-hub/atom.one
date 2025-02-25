@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main class="pb-20 w-full mx-auto">
+    <div class="max-w-screen-lg mx-auto w-full px-4 mt-14">
+        <h1 class="text-center font-bold text-700 mb-12">Blog</h1>
+        <section class="flex flex-col gap-y-18">
+        {{ $all := ($.Site.GetPage "section" .Section).Pages.ByPublishDate.Reverse }} 
+        {{ range  $all }} 
+            <a href="{{ with .Params.external_url }}{{ . }}{{ else }}{{.RelPermalink }}{{ end }}" class="no-underline block-link">
+                <article class="cursor-pointer" data-component="link">
+                    <div class="relative bg-grey-200 aspect-[14/6] rounded bg-gray-100 overflow-hidden">
+                        {{ $image := .Resources.GetMatch .Params.cover }}
+                        {{if $image}}<img class="object-cover w-full h-full m-0!" src="{{ $image.RelPermalink }}" alt="{{.Title}}">{{end}}
+                        {{ if .Params.external_url }}
+                        <div class="absolute rounded bg-light bottom-6 right-6 px-8 py-4 text-100">Read ↗</div>{{ end }}
+                    </div>
+                    {{if .Title}}<h2 class="text-600 pb-4 mt-6">{{.Title}}</h2>{{end}}
+                    {{with .Params.summary}}<p class="text-gray-200 pb-8">{{.}}</p>{{end}}
+                    {{with .PublishDate}}<time class="text-gray-800" datetime="{{.Format "2006-01-02"}}">{{. | time.Format ":date_long"}}</time>{{end}}        
+                </article>
+            </a>
+            {{ end }}
+        </section>
+    </div>
+</main>
+{{ end }}

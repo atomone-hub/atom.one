@@ -13,35 +13,34 @@
     params = { "variant" = "Light"}
 
 
-
-# [[resource]]
-#     identifier = "home"
-#     name = "Home"
-#     url = "/"
-#     weight = 1
-
 [[resource]]
     identifier = "faq"
     name = "FAQ"
     url = "/faq/"
-    weight = 2
+    weight = 1
 
 [[resource]]
     identifier = "roadmap"
     name = "Roadmap"
     url = "/roadmap/"
-    weight = 3
+    weight = 2
 
 [[resource]]
     identifier = "run-node"
     name = "Run Node"
     url = "/run-node/"
-    weight = 4
+    weight = 3
 
 [[resource]]
     identifier = "submit-tx-securely"
     name = "Submit TX Securely"
     url = "/submit-tx-securely/"
+    weight = 4
+
+[[resource]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
     weight = 5
 
 
