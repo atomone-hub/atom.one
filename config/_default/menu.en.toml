@@ -139,3 +139,10 @@
     name = "reddit"
     url = "https://www.reddit.com/r/atomone/"
     weight = 5
+
+[[social]]
+    identifier = "youtube"
+    name = "youtube"
+    params = { label = "Youtube", listed = true }
+    url = "https://www.youtube.com/@AtomOneHub"
+     weight = 6
