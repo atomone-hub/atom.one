@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main class="pb-20 w-full mx-auto">
+  <div class="max-w-screen-lg mx-auto w-full px-4 mt-14">
+    <a href="{{ "/blog/" | absURL }}" class="text-center w-full block mb-10 lg:mb-16 text-200 text-gray-300 hover:text-dark">&lt; Back</a>
+    {{with .PublishDate}}<time class="block mb-6 lg:mb-10 text-center text-300" datetime="{{.Format "2006-01-02"}}">{{. | time.Format ":date_long"}}</time>{{end}}        
+    <h1 class="text-center text-700 lg:text-800 leading-none mb-14 font-bold">{{ .Title }}</h1>
+    <div class="mb-10  relative bg-grey-200 aspect-[14/6] rounded bg-gray-100 overflow-hidden">
+      {{ $image := .Resources.GetMatch .Params.cover }} 
+      {{if $image}}<img class="object-cover w-full h-full m-0!" src="{{ $image.RelPermalink }}" alt="{{.Title}}" />{{end}} 
+      {{ if .Params.external_url }}
+      {{ end }}
+    </div>
+    <article class="prose lg:prose-lg mx-auto">{{ .Content }}</article>
+    <div class="mt-16 mx-auto text-center">
+    {{ partial "components/button" (dict "Name" "Read More" "URL" .Params.external_url "Variant" "Dark" "Size" "Large") }}
+    </div>
+  </div>
+</main>
+{{ end }}
