@@ -4,7 +4,7 @@
     {{ partial "head/head.html" . }} {{ block "meta" . }}{{ end }}
   </head>
 
-  <body class="flex flex-col min-h-screen pt-20 md:pt-21">
+  <body class="flex flex-col min-h-screen pt-20 md:pt-21 has-[header>div:not(.hidden)+div]:pt-42">
     {{ block "header" . }}{{ partial "layout/header.html" . }}{{ end }} {{ block "prefix" . }}{{ end }} {{ block "main" . }}{{ end }} {{ block "footer" . }}{{ partial "layout/footer.html" . }}{{ end
     }} {{ block "scripts" . }} {{ partial "layout/scripts.html" . }}{{ end }}
   </body>
