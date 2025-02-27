@@ -2,7 +2,7 @@
 title: The Utility of the ATOM and ATONE Staking Tokens
 description: The Utility of the ATOM and ATONE Staking Tokens
 publishDate: 2025-02-27T12:00:00-01:00
-cover:
+cover: cover.png
 summary: The Utility of the ATOM and ATONE Staking Tokens
 external_url: https://github.com/jaekwon/writings/blob/master/atomone/utility_of_atone.md
 is_header_clear: true
