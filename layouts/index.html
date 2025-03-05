@@ -93,7 +93,7 @@ index .Site.Data .Site.Language.Lang -}}
     {{ end }}
     <div class="flex flex-col gap-6">
       {{ partial "components/interactive-banner" (dict "Title" .Params.contributor.newsletter.title "Placeholder" .Params.contributor.newsletter.placeholder "Content"
-      .Params.contributor.newsletter.content "ImgSrc" "/img/hp/newsletter.svg" "Comp" "newsletter")}} {{ partial "components/social" . }}
+      .Params.contributor.newsletter.content "ImgSrc" "/img/hp/newsletter.svg" "Comp" "newsletter" "Api" .Params.contributor.newsletter.api "Tag" .Params.contributor.newsletter.tag)}} {{ partial "components/social" . }}
     </div>
   </section>
 

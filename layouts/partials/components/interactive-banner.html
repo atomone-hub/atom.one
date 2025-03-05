@@ -4,11 +4,29 @@
       <img src="{{ .ImgSrc }}" alt="{{ .Title }}" class="max-w-1/2" height="248" loading="lazy" />
       <div class="text-gray-200 text-left">
         <h3 class="text-light font-semibold pb-8">{{ .Title }}</h3>
-        <div data-component="{{ .Comp }}">
+        <div data-component="{{ .Comp }}" data-api="{{ with .Api }}{{ . }}{{ end }}" data-tag="{{ with .Tag }}{{ . }}{{ end }}">
           <div class="flex rounded-sm border border-light overflow-auto text-100">
             <input data-selector="input" class="w-full bg-gray-400 py-4 px-6 outline-none text-light" placeholder="{{ .Placeholder }}" />
-            <button data-selector="check" class="bg-light hover:bg-light/80 text-dark py-4 px-6 min-w-28 cursor-pointer">Check</button>
+            <button data-selector="check" class="bg-light hover:bg-light/80 text-dark py-4 px-6 min-w-28 cursor-pointer">{{ if eq .Comp "newsletter" }}Subscribe{{ else }}Check{{ end }}</button>
           </div>
+          {{ range .Complementary_tags }}
+          <div class="flex gap-4 items-start leading-tight mt-6">
+            <input
+              type="checkbox"
+              class="relative appearance-none border-light checked:bg-light checked:before:bg-dark checked:before:block checked:before:[clip-path:polygon(14%_44%,_0_65%,_50%_100%,_100%_16%,_80%_0%,_43%_62%)] checked:before:rounded- checked:before:absolute checked:before:top-[0.3rem] checked:before:left-[0.3rem] checked:before:w-3 checked:before:h-3 rounded mt-0.5 border min-w-6 h-6 indeterminate:bg-gray-300"
+              value="{{ .tag }}"
+              id="{{ .tag }}"
+              {{
+              if
+              .default
+              }}checked{{
+              end
+              }}
+              data-tag="{{ .tag }}"
+            />
+            <label for="{{ .tag }}">{{ .content }}</label>
+          </div>
+          {{ end }}
           <div class="">
             <p data-selector="result" class="text-300 font-semibold"></p>
             <p data-selector="detail" class="text-light text-200"></p>

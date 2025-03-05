@@ -2,6 +2,7 @@
 Title: AtomOne Site Terms of Use
 Description: AtomOne Site Terms of Use
 is_header_clear: true
+Robots: noindex
 ---
 
 # AtomOne Site Terms of Use
