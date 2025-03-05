@@ -135,6 +135,7 @@ contributor:
     placeholder: "Enter your email"
     content: "I understand my information will be processed in accordance with the [Privacy Policy](/privacy/), and I agree to the [Terms of Service](/terms/)."
     api: https://govgen.us12.list-manage.com/subscribe/post-json?u=8aea2e183e0168577db2fff30&amp;id=a458652cd2&amp;f_id=00c609e9f0
+    tag: 12755615 #general segment
 
 legal:
   - content:
