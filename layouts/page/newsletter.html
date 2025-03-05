@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main class="pb-20 w-full mx-auto">
+  <div class="mb-20 max-w-screen-xl mx-auto w-full px-4 mt-14">
+    <h1 class="text-center text-700 lg:text-800 leading-none mb-16 font-bold">{{ .Title }}</h1>
+    <article class="prose lg:prose-lg mx-auto">{{ .Content }}</article>
+    <section class="max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
+      <div class="flex flex-col gap-6">
+        {{ partial "components/interactive-banner" (dict "Title" .Params.newsletter.title "Placeholder" .Params.newsletter.placeholder "Content" .Params.newsletter.content "ImgSrc"
+        "/img/hp/newsletter.svg" "Comp" "newsletter")}} {{ partial "components/social" . }}
+      </div>
+    </section>
+  </div>
+</main>
+{{ end }}
