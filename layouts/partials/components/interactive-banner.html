@@ -7,7 +7,7 @@
         <div data-component="{{ .Comp }}" data-api="{{ with .Api }}{{ . }}{{ end }}" data-tag="{{ with .Tag }}{{ . }}{{ end }}">
           <div class="flex rounded-sm border border-light overflow-auto text-100">
             <input data-selector="input" class="w-full bg-gray-400 py-4 px-6 outline-none text-light" placeholder="{{ .Placeholder }}" />
-            <button data-selector="check" class="bg-light hover:bg-light/80 text-dark py-4 px-6 min-w-28 cursor-pointer">Check</button>
+            <button data-selector="check" class="bg-light hover:bg-light/80 text-dark py-4 px-6 min-w-28 cursor-pointer">{{ if eq .Comp "newsletter" }}Subscribe{{ else }}Check{{ end }}</button>
           </div>
           {{ range .Complementary_tags }}
           <div class="flex gap-4 items-start leading-tight mt-6">
