@@ -2,6 +2,7 @@
 Title: AtomOne Privacy Policy
 Description: AtomOne Privacy Policy
 is_header_clear: true
+Robots: noindex
 ---
 
 # AtomOne Privacy Policy

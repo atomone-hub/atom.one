@@ -9,6 +9,9 @@ class Newsletter {
     check?: HTMLElement;
   };
 
+  private api: string;
+  private tag: string | undefined;
+
   private static readonly SELECTORS = {
     result: "[data-selector='result']",
     detail: "[data-selector='detail']",
@@ -22,6 +25,9 @@ class Newsletter {
     this.DOM.input = el.querySelector<HTMLInputElement>(Newsletter.SELECTORS.input) || undefined;
     this.DOM.check = el.querySelector<HTMLElement>(Newsletter.SELECTORS.check) || undefined;
     this.DOM.result = el.querySelector<HTMLElement>(Newsletter.SELECTORS.result) || undefined;
+
+    this.api = el.dataset.api ?? "";
+    this.tag = el.dataset.tag;
 
     this.DOM.check?.addEventListener("click", this.registerEmail.bind(this));
   }
@@ -45,8 +51,10 @@ class Newsletter {
       return;
     }
 
-    const url = "https://govgen.us12.list-manage.com/subscribe/post-json?u=8aea2e183e0168577db2fff30&amp;id=a458652cd2&amp;f_id=00c609e9f0";
-    jsonp(`${url}&EMAIL=${userEmail}`, { param: "c" }, (_: any, data: any) => {
+    const tagParam = this.tag ? `&tags=${this.tag}` : "";
+    const requestUrl = `${this.api}&EMAIL=${encodeURIComponent(userEmail)}${tagParam}`;
+
+    jsonp(requestUrl, { param: "c" }, (_: any, data: any) => {
       const { msg, result } = data;
       if (this.DOM.result) {
         if (result === "success") {
