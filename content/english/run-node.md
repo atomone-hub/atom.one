@@ -14,11 +14,15 @@ The link to the final genesis is available here:
 
 [https://atomone.fra1.digitaloceanspaces.com/atomone-1/genesis.json](https://atomone.fra1.digitaloceanspaces.com/atomone-1/genesis.json)
 
+## Networks informations
+
+All the networks informations, versions and upgrade are gather in [github.com/atomone-hub/networks](https://github.com/atomone-hub/networks)
+
 ### Get the binary
 
-- You can download the proposed chain binary from github release page
+- You can download latest version of the binary from github release page
 
-[https://github.com/atomone-hub/atomone/releases/tag/v1.0.1](https://github.com/atomone-hub/atomone/releases/tag/v1.0.1)
+[https://github.com/atomone-hub/atomone/releases](https://github.com/atomone-hub/atomone/releases)
 
 - Or you can build it from the source
 
@@ -27,7 +31,7 @@ You need to have [go](https://go.dev/doc/install) installed
 ```sh
 $ git clone https://github.com/atomone-hub/atomone.git
 $ cd atomone
-$ git checkout v1.0.1
+$ git checkout ${VERSION}
 $ make build  # compile in the ./build directory
 ```
 
@@ -38,9 +42,11 @@ version.
 
 ### Setting recommendations
 
+You can find community informations on [cosmos.directory/atomone](https://cosmos.directory/atomone).
+
 | Setting            | Recommendation                                                                                                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| minimum-gas-prices | 0.001uatone                                                                                                                     |
+| minimum-gas-prices | 0.025uatone                                                                                                                     |
 | seeds              | see [seeds.txt](https://github.com/atomone-hub/atomone-validator-community/blob/main/atomone-1/seeds.txt)                       |
 | persistent_peers   | see [persistent_peers.txt](https://github.com/atomone-hub/atomone-validator-community/blob/main/atomone-1/persistent_peers.txt) |
 
@@ -48,8 +54,8 @@ version.
 
 AtomOne is a relatively simple and vanilla Cosmos SDK chain with minor modifications. The recommended minimum hardware requirements should be enough to comfortably be able to run a validator node.
 
-- 4 Cores
-- 8 GB RAM
+- 6 Cores
+- 16 GB RAM
 - 512 GB disk space (could increase over time, will need to monitor disk usage)
 
 ### Network informations
