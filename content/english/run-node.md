@@ -54,9 +54,14 @@ You can find community informations on [cosmos.directory/atomone](https://cosmos
 
 AtomOne is a relatively simple and vanilla Cosmos SDK chain with minor modifications. The recommended minimum hardware requirements should be enough to comfortably be able to run a validator node.
 
-- 6 Cores
-- 16 GB RAM
-- 512 GB disk space (could increase over time, will need to monitor disk usage)
+| Node Type  | RAM   | Storage*     |
+|------------|-------|--------------|
+| Validator  | 32GB  | 500GB-2TB    |
+| Full       | 16GB  | 2TB          |
+| Default    | 16GB  | 1TB          |
+
+
+*\* Storage size depend on level of pruning.*
 
 ### Network informations
 
