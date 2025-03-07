@@ -61,7 +61,7 @@ AtomOne is a relatively simple and vanilla Cosmos SDK chain with minor modificat
 | Default    | 16GB  | 1TB          |
 
 
-*\* Storage size depend on level of pruning.*
+*\* Storage size depends on level of pruning.*
 
 ### Network informations
 
