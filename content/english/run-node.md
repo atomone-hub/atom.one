@@ -42,7 +42,7 @@ version.
 
 ### Setting recommendations
 
-You can find community informations on [cosmos.directory/atomone](https://cosmos.directory/atomone).
+Community settings can be found at [cosmos.directory/atomone](https://cosmos.directory/atomone).
 
 | Setting            | Recommendation                                                                                                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
