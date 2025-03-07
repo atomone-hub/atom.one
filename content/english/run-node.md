@@ -14,9 +14,9 @@ The link to the final genesis is available here:
 
 [https://atomone.fra1.digitaloceanspaces.com/atomone-1/genesis.json](https://atomone.fra1.digitaloceanspaces.com/atomone-1/genesis.json)
 
-## Networks informations
+## Network information
 
-All the networks informations, versions and upgrade are gather in [github.com/atomone-hub/networks](https://github.com/atomone-hub/networks)
+All network information, versions and upgrades are available at [github.com/atomone-hub/networks](https://github.com/atomone-hub/networks)
 
 ### Get the binary
 
