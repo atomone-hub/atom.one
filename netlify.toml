@@ -1,6 +1,9 @@
 [build]
-  command = "pnpm preview"
+  command = "pnpm build"
   publish = "build"
 
 [build.environment]
   HUGO_VERSION = "0.139.3"
+
+[context.deploy-preview]
+  command = "pnpm preview"
