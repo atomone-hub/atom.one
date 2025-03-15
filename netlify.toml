@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm preview"
+  command = "pnpm build"
   publish = "build"
 
 [build.environment]
