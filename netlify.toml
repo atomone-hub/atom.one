@@ -6,4 +6,4 @@
   HUGO_VERSION = "0.139.3"
 
 [context.deploy-preview]
-  command = "pnpm deploy"
+  command = "pnpm preview"
