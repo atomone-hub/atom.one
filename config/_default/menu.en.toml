@@ -43,6 +43,12 @@
     url = "/blog/"
     weight = 5
 
+[[resource]]
+    identifier = "docs"
+    name = "Docs"
+    url = "https://docs.atom.one"
+    weight = 6
+
 
 [[general]]
     identifier = "home"
