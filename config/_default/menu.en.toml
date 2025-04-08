@@ -146,8 +146,8 @@
     weight = 5
 
 [[social]]
-    identifier = "youtube"
+    identifier = "AtomOneHub"
     name = "youtube"
     params = { label = "Youtube", listed = true }
     url = "https://www.youtube.com/@AtomOneHub"
-     weight = 6
+    weight = 6
