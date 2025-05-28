@@ -11,9 +11,11 @@
       {{ end }}
     </div>
     <article class="prose lg:prose-lg mx-auto">{{ .Content }}</article>
+    {{ if .Params.external_url }}
     <div class="mt-16 mx-auto text-center">
     {{ partial "components/button" (dict "Name" "Read More" "URL" .Params.external_url "Variant" "Dark" "Size" "Large") }}
     </div>
+    {{ end }}
   </div>
 </main>
 {{ end }}
