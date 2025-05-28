@@ -1,7 +1,7 @@
 ---
 title: AtomOne v2 - The PHOTON-Powered Upgrade
 description: AtomOne v2, shaped by community and validators, introduces PHOTON, a fee token enabling modular growth, clearer roles, and a scalable, community-driven future.
-publishDate: 2025-05-27T00:46:00-01:00
+publishDate: 2025-05-28T00:46:00-01:00
 cover: cover.png
 summary: AtomOne v2, shaped by community and validators, introduces PHOTON, a fee token enabling modular growth, clearer roles, and a scalable, community-driven future.
 is_header_clear: true
@@ -27,7 +27,7 @@ The upgrade followed AtomOne’s governance process from start to finish. It beg
 
 Although v2 is live, the final step to make PHOTON the exclusive fee token still depends on a future governance decision. This next phase will continue to be shaped by the AtomOne community and implemented by a decentralized validator set committed to the network’s long-term vision.
 
-In parallel, community contributors have developed tools to support the transition. Several dashboards are now available to help users monitor and perform ATONE-to-PHOTON conversions with greater transparency and ease. These efforts reflect the broader community’s role in governance and creating practical infrastructure that supports adoption and long-term usability. You can find those here: moonkit / nodeist / etc
+In parallel, community contributors have developed tools to support the transition. Several dashboards are now available to help users monitor and perform ATONE-to-PHOTON conversions with greater transparency and ease. These efforts reflect the broader community’s role in governance and creating practical infrastructure that supports adoption and long-term usability. You can find those here: [moonkit](https://atomone.moonkitt.com/mint) / [nodeist](https://atomone.ist/mainnet/mint) / etc
 
 AtomOne v2 represents another step forward in building a decentralized, resilient network shaped by its community. As the transition to PHOTON progresses and new proposals take shape, AtomOne continues to explore how thoughtful design can strengthen blockchain ecosystems for the long term.
 
