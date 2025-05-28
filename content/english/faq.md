@@ -43,7 +43,7 @@ After months of extensive development and valuable community input, the proposed
 On October 18th, a group of community validators came together, submitted their genTXs, created a new genesis, and successfully launched the AtomOne chain. This was a fully decentralized, community-driven event, with no single entity controlling or deciding the genesis time —these decisions were made collectively by the self-organizing community genesis validators.
 
 You can view the chain's activity and stats directly on the [Mintscan explorer.](https://www.mintscan.io/atomone)  
- As a permissionless, community-driven chain, anyone is welcome to join and become an AtomOne validator. If you're a validator and interested in shaping the future of the network, you can find the instructions on how to join the AtomOne chain [here](https://atom.one/developers).
+ As a permissionless, community-driven chain, anyone is welcome to join and become an AtomOne validator. If you're a validator and interested in shaping the future of the network, you can find the instructions on how to join the AtomOne chain [here](https://atom.one/run-node/).
 
 ## 7. What is ATONE, and how may it differ from ATOM?
 
