@@ -29,7 +29,7 @@ Although v2 is live, the final step to make PHOTON the exclusive fee token still
 
 In parallel, community contributors have developed tools to support the transition. Several dashboards are now available to help users monitor and perform ATONE-to-PHOTON conversions with greater transparency and ease. These efforts reflect the broader community’s role in governance and creating practical infrastructure that supports adoption and long-term usability. You can find those here: 
 
-- [moonkit](https://atomone.moonkitt.com/mint)
+- [moonkitt](https://atomone.moonkitt.com/mint)
 - [nodeist](https://atomone.ist/mainnet/mint)
 
 AtomOne v2 represents another step forward in building a decentralized, resilient network shaped by its community. As the transition to PHOTON progresses and new proposals take shape, AtomOne continues to explore how thoughtful design can strengthen blockchain ecosystems for the long term.
