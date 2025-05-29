@@ -61,6 +61,34 @@ index .Site.Data .Site.Language.Lang -}}
     {{ partial "components/banner" (dict "Content" .Params.allocation.banner )}}
   </section>
 
+  <section class="mb-24 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center" id="photon">
+    <h2 class="text-700 font-bold pb-12 leading-tight">{{ .Params.photon.title }}</h2>
+    <p class="text-gray-200 md:w-1/2 text-400 mb-12">{{ .Params.photon.content | markdownify}}</p>
+    {{ partial "components/button" (dict "Name" .Params.photon.cta.text "URL" (.Params.photon.cta.link | absLangURL) "Variant" "Dark" "Size" "Large") }}
+
+    <div class="w-full md:flex-row flex flex-col md:p-20 p-12 md:gap-20 gap-12 mt-20 mb-12 bg-blue-100 items-center rounded-sm" id="burn-photon">
+      <div class="flex-col flex md:w-1/2 lg:w-1/3">
+        <img src="/img/hp/photon-coin.svg" alt="PHOTON" class="w-full" />
+      </div>
+      <div class="flex-col flex md:w-1/2 lg:w-2/3 text-left">
+        <h3 class="pb-2 text-light uppercase font-bold text-300 pb-8">{{ .Params.photon.card.title }}</h3>
+        {{ range .Params.photon.card.content }}
+        <p class="text-gray-200 pb-8 text-light/50 text-400">{{ .text | markdownify }}</p>
+        {{ end }}
+        <div class="flex flex-col sm:flex-row gap-6">
+          {{ range .Params.photon.card.ctas }}
+          {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large") }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-6 text-left">
+      {{ range .Params.photon.legal.content }} 
+      <p class="text-gray-200 text-200">{{ .text | markdownify }}</p>
+      {{ end }}
+    </div>
+  </section>
+
   <section class="mb-20 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
     <h2 class="text-700 font-bold pb-12 leading-tight">{{ .Params.roadmap.title }}</h2>
     <p class="text-gray-200 md:w-2/3 text-400 pb-12">{{ .Params.roadmap.content | markdownify}}</p>
