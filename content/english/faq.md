@@ -71,6 +71,7 @@ AtomOne token holders can stake their ATONE tokens using different options:
 PHOTON serves as the transaction fee token for the initial AtomOne chain and for the future AtomOne Hub. It is the sole fee token for all transactions on the root and core shards, as well as for Inter-Blockchain Communication (IBC) and Interchain Security (ICS) payments.
 
 The only way to mint PHOTON tokens is through the burning of ATONE tokens. The total mintable PHOTON supply is capped at 1 billion tokens. This mechanism ensures a controlled and transparent supply of PHOTON, tied directly to the burning of ATONE. Once ATONE tokens are converted into PHOTON, they cannot be converted back. This one-way conversion helps in maintaining the economic structure and stability of the AtomOne chain.
+Read and vote on the current on-chain [PHOTON proposal](https://gov.atom.one/proposals/5).
 
 ## 11. How can I contribute to AtomOne?
 
@@ -80,15 +81,15 @@ You can join an existing discussion in the “Issues” section, selecting the t
 
 As AtomOne continues to evolve, the community is encouraged to take an active role in shaping its future. The AtomOne community is urged to remain active, by submitting and discussing new proposals, on the forum and voting for upcoming on-chain proposals.
 
-You can follow AtomOne progress directly on the [AtomOne repo](https://github.com/atomone-hub), joining [AtomOne Discord](http://discord.gg/atomone) or by getting familiar with the [AtomOne proposed roadmap](https://app.govgen.io/proposals/4) to learn more about the upcoming proposed functionalities and developments of the AtomOne chain.
+You can follow AtomOne progress directly on the [AtomOne repo](https://github.com/atomone-hub), joining [AtomOne Discord](http://discord.gg/atomone) or by getting familiar with the [AtomOne proposed roadmap](https://atom.one/roadmap/) to learn more about the upcoming proposed functionalities and developments of the AtomOne chain.
 
-Participants can also apply for grants and bounties through [the AiB Grants and Bounties Program](https://github.com/allinbits/grants/tree/main/AiB-BUIDL-Grants-and-Bounties-program), which offers support for those contributing to the development of the AtomOne chain or directly submit a spending proposal to the AtomOne community using the Community Pool.
+Participants can also apply for grants and bounties through [the AiB Grants and Bounties Program](https://github.com/allinbits/grants/tree/main/AiB-BUIDL-Grants-and-Bounties-program), which offers support for those contributing to the development of the AtomOne chain.
 
 ## 12. How can I become a validator on AtomOne?
 
 AtomOne uses a Proof-of-Stake delegation system similar to Cosmos Hub, with some future modifications that are aiming to improve the distribution of voting power and rewards across validators. The incentive system will be driven by the AtomOne community.
 
-As a permissionless, community-driven chain, anyone is welcome to join and become an AtomOne validator. If you're a validator and interested in shaping the future of the network, you can find the instructions on how to join the AtomOne chain [here](https://atom.one).
+As a permissionless, community-driven chain, anyone is welcome to join and become an AtomOne validator. If you're a validator and interested in shaping the future of the network, you can find the instructions on how to join the AtomOne chain [here](https://atom.one/run-node/).
 
 ## 13. How is the developer activity encouraged on the platform, and how is development of the chain funded?
 
@@ -96,7 +97,7 @@ An allocation was set aside in the original genesis distribution for development
 
 ## 14 If validators who voted YES are slashed, how will additional validators be secured to ensure the chain is decentralized?
 
-By slashing the Yes voters, the AtomOne's distribution ensured that those who are not aligned with its vision have less voting percentage than the others. This is a safety measure to prevent non-aligned decisions from being adopted, as has happened within the Cosmos Hub
+By slashing the Yes voters, the AtomOne's distribution ensured that those who are not aligned with its vision have less voting percentage than the others. This is a safety measure to prevent non-aligned decisions from being adopted, as has happened within the Cosmos Hub.
 
 ## 15. What is the plan for scaling AtomOne?
 
