@@ -53,7 +53,7 @@ ATONE is the native staking and governance token for AtomOne, created through a 
 
 The ATONE distribution proposal considered how ATOM holders participated in Cosmos Hub Proposal 848\. If you held ATOM on November 25th, 2023 (when the voting period ended) you were eligible for the ATONE airdrop.
 
-The ATONE token distribution was approved by the GovGen community with a 40.56% vote turnout, resulting in the allocation of 96,997,800 ATONE tokens to 1,128,299 Cosmos Hub (ATOM) addresses. Additionally, 5,388,766 ATONE were allocated to the Community Pool and 5,388,766 ATONE were allocated to a reserved address for the future funding of the AtomOne Treasury DAO, making the total ATONE genesis supply 107,775,332 tokens. You can verify your ATONE allocation directly in your wallet (see point \#6 above) or by checking the AtomOne airdrop tracker [here](https://govgen.io/#trackers). For more information read the [AtomOne Distribution article](https://x.com/_atomone/status/1852103987950162034).
+The ATONE token distribution was approved by the GovGen community with a 40.56% vote turnout, resulting in the allocation of 96,997,800 ATONE tokens to 1,128,299 Cosmos Hub (ATOM) addresses. Additionally, 5,388,766 ATONE were allocated to the Community Pool and 5,388,766 ATONE were allocated to a reserved address for the future funding of the AtomOne Treasury DAO, making the total ATONE genesis supply 107,775,332 tokens. You can verify your ATONE allocation directly in your wallet (see point \#6 above) or by checking the AtomOne airdrop tracker [here](https://atom.one/#tracker). For more information read the [AtomOne Distribution article](https://x.com/_atomone/status/1852103987950162034).
 
 ## 9. How can I stake ATONE?
 
