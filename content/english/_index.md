@@ -30,7 +30,7 @@ innovation:
         - section: "Dual-Token Model"
           img: "img/hp/dual-token-model.png"
           content: "ATONE powers staking and governance, while PHOTON fuels transaction fees and interchain payments, ensuring a secure and efficient chain economy."
-          status: progress
+          status: live
         - section: "Single fee token for IBC and ICS"
           img: "img/hp/single-fee-token-for-ibc-ics.png"
           content: "PHOTON will serve as the sole fee token for all transactions on the root and core shards, as well as for Inter-Blockchain Communication (IBC) and Interchain Security (ICS) payments."
