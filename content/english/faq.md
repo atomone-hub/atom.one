@@ -71,7 +71,7 @@ AtomOne token holders can stake their ATONE tokens using different options:
 PHOTON serves as the transaction fee token for the initial AtomOne chain and for the future AtomOne Hub. It is the sole fee token for all transactions on the root and core shards, as well as for Inter-Blockchain Communication (IBC) and Interchain Security (ICS) payments.
 
 The only way to mint PHOTON tokens is through the burning of ATONE tokens. The total mintable PHOTON supply is capped at 1 billion tokens. This mechanism ensures a controlled and transparent supply of PHOTON, tied directly to the burning of ATONE. Once ATONE tokens are converted into PHOTON, they cannot be converted back. This one-way conversion helps in maintaining the economic structure and stability of the AtomOne chain.
-Read and vote on the current on-chain [PHOTON proposal] (https://gov.atom.one/proposals/5).
+Read and vote on the current on-chain [PHOTON proposal](https://gov.atom.one/proposals/5).
 
 ## 11. How can I contribute to AtomOne?
 
