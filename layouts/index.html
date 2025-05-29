@@ -71,11 +71,11 @@ index .Site.Data .Site.Language.Lang -}}
         <img src="/img/hp/photon-coin.svg" alt="PHOTON" class="w-full" />
       </div>
       <div class="flex-col flex md:w-1/2 lg:w-2/3 text-left">
-        <h3 class="pb-2 text-light uppercase font-bold text-300 pb-8">{{ .Params.photon.card.title }}</h3>
+        <h3 class="text-light uppercase font-bold text-300 pb-8">{{ .Params.photon.card.title }}</h3>
         {{ range .Params.photon.card.content }}
-        <p class="text-gray-200 pb-8 text-light/50 text-400">{{ .text | markdownify }}</p>
+        <p class="pb-8 text-light/50 text-400">{{ .text | markdownify }}</p>
         {{ end }}
-        <div class="flex flex-col sm:flex-row gap-3">
+        <div class="flex flex-col sm:flex-row gap-3 *:w-full *:sm:w-auto">
           {{ range .Params.photon.card.ctas }}
           {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large") }}
           {{ end }}
