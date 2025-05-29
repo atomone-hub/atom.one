@@ -30,7 +30,7 @@ innovation:
         - section: "Dual-Token Model"
           img: "img/hp/dual-token-model.png"
           content: "ATONE powers staking and governance, while PHOTON fuels transaction fees and interchain payments, ensuring a secure and efficient chain economy."
-          status: progress
+          status: live
         - section: "Single fee token for IBC and ICS"
           img: "img/hp/single-fee-token-for-ibc-ics.png"
           content: "PHOTON will serve as the sole fee token for all transactions on the root and core shards, as well as for Inter-Blockchain Communication (IBC) and Interchain Security (ICS) payments."
@@ -81,14 +81,35 @@ allocation:
       img: "/img/hp/vote.svg"
       note: "*Or use [Mintscan](#), [Leap](#)"
     - title: "STAKE AND SECURE THE CHAIN"
-      content: "Stake ATONE and contribute to chain’s security on [AtomOne Staking dApp](https://staking.atom.one/)*"
+      content: "Stake ATONE and contribute to chain's security on [AtomOne Staking dApp](https://staking.atom.one/)*"
       img: "/img/hp/stake.svg"
       note: "*Or use [Cosmostation](https://www.cosmostation.io/products/cosmostation_extension), [Leap](https://www.leapwallet.io/download), [Keplr](https://www.keplr.app/)"
   banner: "Check the [guide](https://atom.one/submit-tx-securely) on how to submit transactions securely on the AtomOne chain"
 
+photon:
+  title: "PHOTON: Fee Token of AtomOne"
+  content: "Introduced with the [AtomOne v2 upgrade](https://gov.atom.one/proposals/8) PHOTON serves as the exclusive* fee-token for transactions across all shards, IBC fees, and ICS/VaaS payments, while ATONE powers governance and staking."
+  cta: 
+    text: "Learn about PHOTON"
+    link: "https://atom.one/blog/atomone-v2-the-photon-powered-upgrade/"
+  card:
+    title: "BURN ATONE TO GET PHOTON"
+    content:
+      - text: "PHOTON can only be minted by burning ATONE. This process is irreversible. Minting PHOTON reduces ATONE's circulating supply and ties PHOTON's creation of a maximum of 1 billion PHOTONS directly to it."
+      - text: "Examples of community tools** for minting PHOTON:"
+    ctas:
+      - text: "Moonkitt"
+        link: "https://atomone.moonkitt.com/mint"
+      - text: "Nodeist"
+        link: "https://atomone.ist/mainnet/mint"
+  legal:
+    content:
+      - text: "&#42; With the [AtomOne v2 upgrade](https://gov.atom.one/proposals/8), both ATONE and PHOTON can be used to pay for transaction fees during a transition period. This transition period allows users to adjust to using PHOTON for fees and contributors to update tools and integrations. A future governance proposal will be required to update fee parameters and fully complete the transition."
+      - text: "&#42;&#42; The community tools mentioned are not owned or created by All in Bits (AIB) therefore AIB can't offer any guarantee regarding their availability or safety. Anyone using these tools also should be aware that these tools are not audited. We also want to remind everyone that users should always be careful about what transactions they sign, whether they do it on browser extension wallets or hardware wallets."
+
 roadmap:
   title: Roadmap & Development
-  content: Stay informed about AtomOne's journey! Explore the latest developments, track key milestones, and discover what’s next on its roadmap. Dive into the details of how AtomOne is evolving to shape the future of decentralized governance and interchain innovation.
+  content: Stay informed about AtomOne's journey! Explore the latest developments, track key milestones, and discover what's next on its roadmap. Dive into the details of how AtomOne is evolving to shape the future of decentralized governance and interchain innovation.
   cta:
     text: "Learn more"
     link: "/roadmap/"
@@ -126,7 +147,7 @@ contributor:
           content: "Stay updated on AtomOne's progress and play a key role in contributing to the [AtomOne GitHub repository](https://github.com/atomone-hub)."
         - section: "Grants & Bounties"
           img: "img/hp/grants-bounties.png"
-          content: "Apply for funding through the [AiB Grants and Bounties Program](https://github.com/allinbits/grants/tree/main/AiB-BUIDL-Grants-and-Bounties-program) to support your contributions to AtomOne’s development."
+          content: "Apply for funding through the [AiB Grants and Bounties Program](https://github.com/allinbits/grants/tree/main/AiB-BUIDL-Grants-and-Bounties-program) to support your contributions to AtomOne's development."
         - section: "Become a Validator"
           img: "img/hp/become-validator.png"
           content: "Check the instructions on how to join the AtomOne chain and become an [AtomOne validator here](/run-node/)."
