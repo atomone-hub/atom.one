@@ -77,10 +77,10 @@ is_header_clear: true
 
 1. **New features/changes implemented**
    - Governance improvements - 50%
-   - PHOTON mechanics - 50%
+   - PHOTON mechanics - 100%
    - IBC, including relay & fee-based spam prevention. - 0%
-   - Audit all of the above - 0%
-2. **Photon activation** - 25%
+   - Audit all of the above - 50%
+2. **Photon activation** - 95%
    - ATONE -> PHOTON burn mechanism enabled
    - ATONE only used as fees for PHOTON burn tx
    - All fees collected in PHOTONs
