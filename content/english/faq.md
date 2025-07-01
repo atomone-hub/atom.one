@@ -14,7 +14,7 @@ AtomOne is a community-driven fork of the Cosmos Hub, originating from concerns 
 
 The results of Proposal 848 highlighted a significant concern within the Cosmos Hub community, particularly around centralization, security, and governance limitations.
 
-Many community members feel that the shift risks transforming ATOM into a monetary token, diverging from its original security-focused purpose. AtomOne, as a minimal fork of Gaia (the Cosmos Hub),aims to enhance security, transparency, and a more equitable distribution of voting power and rewards across validators while offering a more inclusive and flexible governance model. AtomOne’s mission is to be a decentralized, adaptable blockchain supporting Inter-Blockchain Communication (IBC) and Interchain Security (ICS), acting as a secure, neutral Hub that empowers communities to self-govern and innovate within the Cosmos ecosystem, ultimately aiming to strengthen and complement the network over the long term. AtomOne’s constitutionally grounded approach to governance and security ensures it remains a robust and secure platform, aligned with the original values of the Cosmos ecosystem, ultimately strengthening and complementing the network over the long term.
+Many community members feel that the shift risks transforming ATOM into a monetary token, diverging from its original security-focused purpose. AtomOne, as a minimal fork of Gaia (the Cosmos Hub), aims to enhance security, transparency, and a more equitable distribution of voting power and rewards across validators while offering a more inclusive and flexible governance model. AtomOne’s mission is to be a decentralized, adaptable blockchain supporting Inter-Blockchain Communication (IBC) and Interchain Security (ICS), acting as a secure, neutral Hub that empowers communities to self-govern and innovate within the Cosmos ecosystem, ultimately aiming to strengthen and complement the network over the long term. AtomOne’s constitutionally grounded approach to governance and security ensures it remains a robust and secure platform, aligned with the original values of the Cosmos ecosystem, ultimately strengthening and complementing the network over the long term.
 
 ## 3. What might AtomOne mean for the original Cosmos Hub?
 
@@ -26,8 +26,8 @@ The main design elements that make AtomOne unique are:
 
 - The existence of a live on-chain Constitution that outlines decision-making processes, representation, and community responsibilities, ensuring that governance reflects the collective vision of AtomOne’s participants.
 - The creation of the dual token model ATONE- PHOTON, with each token fulfilling distinct roles to ensure the chain’s security and efficient transaction processing. ATONE is the native staking and governance token of AtomOne while PHOTON is the fee token for the initial AtomOne chain and for the future AtomOne Hub. PHOTON will serve as the sole fee token for all transactions on the root and core shards, as well as for Inter-Blockchain Communication (IBC) and Interchain Security (ICS) payments.
-- The removal of a foundation entity that controls part of the genesis token allocation and replacement with a system of specialized treasury DAOs that ensure that fund management and resource allocation decisions are made through collective decision-making rather than a centralized authority, enhancing transparency and community-driven governance..
-- The existence of an advisory DAO- the Steering DAO and of an supervisory DAO- the Oversight DAO to guide, advise and ensure compliance of all decisions with the Constitution and Laws.
+- The removal of a foundation entity that controls part of the genesis token allocation and replacement with a system of specialized treasury DAOs that ensure that fund management and resource allocation decisions are made through collective decision-making rather than a centralized authority, enhancing transparency and community-driven governance.
+- The existence of an advisory DAO - the Steering DAO and of a supervisory DAO - the Oversight DAO to guide, advise and ensure compliance of all decisions with the Constitution and Laws.
 - New Interchain Security (ICS) model that streamlines consumer shard deployment using containerization, allowing consumer chains to focus solely on application logic while AtomOne handles consensus and networking through a standard consensus engine.
 - Improvements to the proof of stake delegation system by adjusting the delegation algorithm to distribute voting power more evenly among validators. This will increase the Nakamoto coefficient (a measure of decentralization) and make ICS (Interchain Security) more robust by ensuring validators have similar levels of delegated stake.
 - The creation of a more equitable validators reward system that discourages excessive delegations to validators that have a high voting power, with the goal to encourage a healthier spread of delegation. This may include introducing a minimum staking requirement and distributing rewards in a way that supports a balanced validator set.
@@ -42,8 +42,7 @@ After months of extensive development and valuable community input, the proposed
 
 On October 18th, a group of community validators came together, submitted their genTXs, created a new genesis, and successfully launched the AtomOne chain. This was a fully decentralized, community-driven event, with no single entity controlling or deciding the genesis time —these decisions were made collectively by the self-organizing community genesis validators.
 
-You can view the chain's activity and stats directly on the [Mintscan explorer.](https://www.mintscan.io/atomone)  
- As a permissionless, community-driven chain, anyone is welcome to join and become an AtomOne validator. If you're a validator and interested in shaping the future of the network, you can find the instructions on how to join the AtomOne chain [here](https://atom.one/run-node/).
+You can view the chain's activity and stats directly on the [Mintscan explorer.](https://www.mintscan.io/atomone). As a permissionless, community-driven chain, anyone is welcome to join and become an AtomOne validator. If you’re a validator and interested in shaping the future of the network, you can find the instructions on how to join the AtomOne chain [here](https://atom.one/run-node/).
 
 ## 7. What is ATONE, and how may it differ from ATOM?
 
@@ -51,9 +50,9 @@ ATONE is the native staking and governance token for AtomOne, created through a 
 
 ## 8. When was the distribution snapshot and how did ATONE tokens become available?
 
-The ATONE distribution proposal considered how ATOM holders participated in Cosmos Hub Proposal 848\. If you held ATOM on November 25th, 2023 (when the voting period ended) you were eligible for the ATONE airdrop.
+The ATONE distribution proposal considered how ATOM holders participated in Cosmos Hub Proposal 848. If you held ATOM on November 25th, 2023 (when the voting period ended) you were eligible for the ATONE airdrop.
 
-The ATONE token distribution was approved by the GovGen community with a 40.56% vote turnout, resulting in the allocation of 96,997,800 ATONE tokens to 1,128,299 Cosmos Hub (ATOM) addresses. Additionally, 5,388,766 ATONE were allocated to the Community Pool and 5,388,766 ATONE were allocated to a reserved address for the future funding of the AtomOne Treasury DAO, making the total ATONE genesis supply 107,775,332 tokens. You can verify your ATONE allocation directly in your wallet (see point \#6 above) or by checking the AtomOne airdrop tracker [here](https://atom.one/#tracker). For more information read the [AtomOne Distribution article](https://x.com/_atomone/status/1852103987950162034).
+The ATONE token distribution was approved by the GovGen community with a 40.56% vote turnout, resulting in the allocation of 96,997,800 ATONE tokens to 1,128,299 Cosmos Hub (ATOM) addresses. Additionally, 5,388,766 ATONE were allocated to the Community Pool and 5,388,766 ATONE were allocated to a reserved address for the future funding of the AtomOne Treasury DAO, making the total ATONE genesis supply 107,775,332 tokens. You can verify your ATONE allocation directly in your wallet (see point #6 above) or by checking the AtomOne airdrop tracker [here](https://atom.one/#tracker). For more information read the [AtomOne Distribution article](https://x.com/_atomone/status/1852103987950162034).
 
 ## 9. How can I stake ATONE?
 
@@ -70,10 +69,48 @@ AtomOne token holders can stake their ATONE tokens using different options:
 
 PHOTON serves as the transaction fee token for the initial AtomOne chain and for the future AtomOne Hub. It is the sole fee token for all transactions on the root and core shards, as well as for Inter-Blockchain Communication (IBC) and Interchain Security (ICS) payments.
 
-The only way to mint PHOTON tokens is through the burning of ATONE tokens. The total mintable PHOTON supply is capped at 1 billion tokens. This mechanism ensures a controlled and transparent supply of PHOTON, tied directly to the burning of ATONE. Once ATONE tokens are converted into PHOTON, they cannot be converted back. This one-way conversion helps in maintaining the economic structure and stability of the AtomOne chain.
-Read and vote on the current on-chain [PHOTON proposal](https://gov.atom.one/proposals/5).
+The only way to mint PHOTON is by burning ATONE. The total mintable supply of PHOTON is capped at 1 billion tokens. Once ATONE is converted into PHOTON, the process is irreversible. This one-way conversion helps maintain economic stability and ensures that PHOTON issuance is entirely backed by burned ATONE.
 
-## 11. How can I contribute to AtomOne?
+PHOTON’s introduction is part of AtomOne’s dual-token model, which separates concerns: ATONE is used exclusively for staking and governance, while PHOTON is used for fees. This separation gives ATONE room to serve its inflationary security role while keeping PHOTON non-inflationary and fixed in supply.
+
+## How is PHOTON calculated?
+
+The PHOTON conversion rate is dynamic, based on the following formula:
+
+`conversion_rate = (1,000,000,000 - photon_supply) / atone_supply`
+
+As more PHOTON is minted and ATONE is burned, the rate adjusts accordingly.
+
+When PHOTON is fully activated:
+
+- All transactions must use PHOTON for fees, except for the `MsgMintPhoton` transaction, which allows users to burn ATONE to mint PHOTON.
+
+- Validators continue to set their own gas prices. Fee revenue is paid in PHOTON and goes directly to validators and stakers.
+
+- There is no protocol inflation for PHOTON. All PHOTON in circulation results from ATONE burns.
+
+## 12. How was PHOTON created?
+
+The PHOTON rollout followed AtomOne’s governance process from start to finish as part of the [AtomOne v2 upgrade](https://atom.one/blog/atomone-v2-the-photon-powered-upgrade/). It began with a signaling proposal, continued through community feedback, and was finalized with an on-chain vote. The upgrade itself was coordinated by validators, with contributors supporting the shift by building tools for monitoring and managing conversions. The module has been tested extensively and audited by a third-party security firm ahead of its mainnet rollout.
+
+## 13. How do I convert ATONE to PHOTON?
+
+Along with native integrations in popular Cosmos wallets such as Cosmostation and Keplr, several community-build dashboards are available to users track conversation rates and perform ATONE-to-PHOTON burns:
+
+- [Nodeist Dashboard](https://atomone.ist/mainnet/mint)
+- [Moonkitt Dashboard](https://atomone.moonkitt.com/mint)
+
+These tools provide real-time data and simple interfaces for submitting `MsgMintPhoton` transactions. Eventually the community may build up new interfaces and more existing wallets and dashboards may integrate the ATONE-to-PHOTON burn mechanism.
+
+## 14. Where can I learn more about PHOTON?
+
+You can find more information in the following:
+
+- Detailed specification of the PHOTON module and its logic: [ADR-002 Photon Token](https://github.com/atomone-hub/atomone/pull/34)
+- Code implementation of the burn-and-mint mechanism and fee validation in the Photon Module [x/photon implementation](https://github.com/atomone-hub/atomone/pull/57)
+- Community discussion and rationale leading to the proposal: [Proposal #5 on Commonwealth](https://gov.atom.one/proposals/5)
+
+## 15. How can I contribute to AtomOne?
 
 Anyone can contribute to AtomOne as a community-driven initiative, with a collaborative decision-making process. If you value hub minimalism for security and sustainability, join the movement. If you would like to contribute, sign up for a GitHub account (if you don’t already have one) and head over to the [AtomOne org.](https://github.com/orgs/atomone-hub/repositories)
 
@@ -85,28 +122,32 @@ You can follow AtomOne progress directly on the [AtomOne repo](https://github.co
 
 Participants can also apply for grants and bounties through [the AiB Grants and Bounties Program](https://github.com/allinbits/grants/tree/main/AiB-BUIDL-Grants-and-Bounties-program), which offers support for those contributing to the development of the AtomOne chain.
 
-## 12. How can I become a validator on AtomOne?
+## 16. How can I become a validator on AtomOne?
 
 AtomOne uses a Proof-of-Stake delegation system similar to Cosmos Hub, with some future modifications that are aiming to improve the distribution of voting power and rewards across validators. The incentive system will be driven by the AtomOne community.
 
-As a permissionless, community-driven chain, anyone is welcome to join and become an AtomOne validator. If you're a validator and interested in shaping the future of the network, you can find the instructions on how to join the AtomOne chain [here](https://atom.one/run-node/).
+As a permissionless, community-driven chain, anyone is welcome to join and become an AtomOne validator. If you’re a validator and interested in shaping the future of the network, you can find instructions on how to join the AtomOne chain [here](https://atom.one/run-node/).
 
-## 13. How is the developer activity encouraged on the platform, and how is development of the chain funded?
+## 17. How is the developer activity encouraged on the platform, and how is development of the chain funded?
 
 An allocation was set aside in the original genesis distribution for development purposes. AtomOne may support DAO systems and smart contracts to specify developer payments transparently on-chain. On-chain governance will determine AtomOne’s scope and further define its Constitution.
 
-## 14 If validators who voted YES are slashed, how will additional validators be secured to ensure the chain is decentralized?
+## 18. If validators who voted YES are slashed, how will additional validators be secured to ensure the chain is decentralized?
 
-By slashing the Yes voters, the AtomOne's distribution ensured that those who are not aligned with its vision have less voting percentage than the others. This is a safety measure to prevent non-aligned decisions from being adopted, as has happened within the Cosmos Hub.
+By slashing the Yes voters, the AtomOne’s distribution ensured that those who are not aligned with its vision have less voting percentage than the others. This is a safety measure to prevent non-aligned decisions from being adopted, as has happened within the Cosmos Hub.
 
-## 15. What is the plan for scaling AtomOne?
+## 19. What is the plan for scaling AtomOne?
 
-AtomOne aims to scale transaction throughput through a modified version of ICS (Scaled Security). AtomOne is expected to maintain hub minimalism; the best way to scale to accommodate a broader user base. This approach is expected to capture the market's need for security in IBC token transactions and ICS shard hosting. Scaling and security questions are expected to be further addressed by community contributions and development.
+AtomOne aims to scale transaction throughput through a modified version of ICS (Scaled Security). AtomOne is expected to maintain hub minimalism; the best way to scale to accommodate a broader user base. This approach is expected to capture the market’s need for security in IBC token transactions and ICS shard hosting. Scaling and security questions are expected to be further addressed by community contributions and development.
 
 ## 16. Will AtomOne use Cosmos Hub’s shared security?
 
 The AtomOne hub is expected to have its own ICS model (Scaled Security) to scale permissionless blockchain applications for influx of users for efficient intra-hub communication without sacrificing security and leveraging Linux container technology. However, how scaled security and other potential features develop is intended to be addressed in more detail by further community contributions and development.
 
-## 17. Now that AtomOne has launched, how can the community assist with marketing the chain?
+## 20. Will AtomOne use Cosmos Hub’s shared security?
+
+The AtomOne hub is expected to have its own ICS model (Scaled Security) to scale permissionless blockchain applications for influx of users for efficient intra-hub communication without sacrificing security and leveraging Linux container technology. However, how scaled security and other potential features develop is intended to be addressed in more detail by further community contributions and development.
+
+## 21. Now that AtomOne has launched, how can the community assist with marketing the chain?
 
 AtomOne is a community driven chain, therefore any marketing effort to promote the chain would have to be agreed by the community. Now that the chain has launched, the community would need to focus on creating the Marketing DAO amongst other DAOs. In order to do so, the community would need to work on forming a proposal to the community in order to elect the members of the Marketing DAO. We are certain that there are several skilled candidates that will respectfully form the DAO. The Marketing DAO will lead all future efforts in marketing the chain.
