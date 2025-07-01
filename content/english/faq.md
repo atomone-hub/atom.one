@@ -73,7 +73,7 @@ The only way to mint PHOTON is by burning ATONE. The total mintable supply of PH
 
 PHOTON’s introduction is part of AtomOne’s dual-token model, which separates concerns: ATONE is used exclusively for staking and governance, while PHOTON is used for fees. This separation gives ATONE room to serve its inflationary security role while keeping PHOTON non-inflationary and fixed in supply.
 
-## How is PHOTON calculated?
+## 11. How is PHOTON calculated?
 
 The PHOTON conversion rate is dynamic, based on the following formula:
 
@@ -139,10 +139,6 @@ By slashing the Yes voters, the AtomOne’s distribution ensured that those who 
 ## 19. What is the plan for scaling AtomOne?
 
 AtomOne aims to scale transaction throughput through a modified version of ICS (Scaled Security). AtomOne is expected to maintain hub minimalism; the best way to scale to accommodate a broader user base. This approach is expected to capture the market’s need for security in IBC token transactions and ICS shard hosting. Scaling and security questions are expected to be further addressed by community contributions and development.
-
-## 16. Will AtomOne use Cosmos Hub’s shared security?
-
-The AtomOne hub is expected to have its own ICS model (Scaled Security) to scale permissionless blockchain applications for influx of users for efficient intra-hub communication without sacrificing security and leveraging Linux container technology. However, how scaled security and other potential features develop is intended to be addressed in more detail by further community contributions and development.
 
 ## 20. Will AtomOne use Cosmos Hub’s shared security?
 
