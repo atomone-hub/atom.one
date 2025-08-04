@@ -80,7 +80,7 @@ is_header_clear: true
    - PHOTON mechanics - 100%
    - IBC, including relay & fee-based spam prevention. - 0%
    - Audit all of the above - 50%
-2. **Photon activation** - 95%
+2. **Photon activation** - 100%
    - ATONE -> PHOTON burn mechanism enabled
    - ATONE only used as fees for PHOTON burn tx
    - All fees collected in PHOTONs

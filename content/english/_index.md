@@ -33,8 +33,8 @@ innovation:
           status: live
         - section: "Single fee token for IBC and ICS"
           img: "img/hp/single-fee-token-for-ibc-ics.png"
-          content: "PHOTON will serve as the sole fee token for all transactions on the root and core shards, as well as for Inter-Blockchain Communication (IBC) and Interchain Security (ICS) payments."
-          status: progress
+          content: "PHOTON serves as the sole fee token for all transactions on the root and core shards, as well as for Inter-Blockchain Communication (IBC) and Interchain Security (ICS) payments."
+          status: live
         - section: "Dynamic Treasury Management"
           img: "img/hp/dynamic-treasury-management.png"
           content: "Specialized Treasury DAOs provide transparent and collective fund management for sustainable ecosystem growth."
@@ -88,7 +88,7 @@ allocation:
 
 photon:
   title: "PHOTON: Fee Token of AtomOne"
-  content: "Introduced with the [AtomOne v2 upgrade](https://gov.atom.one/proposals/8) PHOTON serves as the exclusive* fee-token for transactions across all shards, IBC fees, and ICS/VaaS payments, while ATONE powers governance and staking."
+  content: "Introduced with the [AtomOne v2 upgrade](https://gov.atom.one/proposals/8) PHOTON serves as the exclusive fee-token for transactions across all shards, IBC fees, and ICS/VaaS payments, while ATONE powers governance and staking."
   cta: 
     text: "Learn about PHOTON"
     link: "https://atom.one/blog/atomone-v2-the-photon-powered-upgrade/"
@@ -96,7 +96,7 @@ photon:
     title: "BURN ATONE TO GET PHOTON"
     content:
       - text: "PHOTON can only be minted by burning ATONE. This process is irreversible. Minting PHOTON reduces ATONE's circulating supply and ties PHOTON's creation of a maximum of 1 billion PHOTONS directly to it."
-      - text: "Examples of community tools** for minting PHOTON:"
+      - text: "Examples of community tools* for minting PHOTON:"
     ctas:
       - text: "Moonkitt"
         link: "https://atomone.moonkitt.com/mint"
@@ -104,8 +104,7 @@ photon:
         link: "https://atomone.ist/mainnet/mint"
   legal:
     content:
-      - text: "&#42; With the [AtomOne v2 upgrade](https://gov.atom.one/proposals/8), both ATONE and PHOTON can be used to pay for transaction fees during a transition period. This transition period allows users to adjust to using PHOTON for fees and contributors to update tools and integrations. A future governance proposal will be required to update fee parameters and fully complete the transition."
-      - text: "&#42;&#42; The community tools mentioned are not owned or created by All in Bits (AIB) therefore AIB can't offer any guarantee regarding their availability or safety. Anyone using these tools also should be aware that these tools are not audited. We also want to remind everyone that users should always be careful about what transactions they sign, whether they do it on browser extension wallets or hardware wallets."
+      - text: "&#42; The community tools mentioned are not owned or created by All in Bits (AIB) therefore AIB can't offer any guarantee regarding their availability or safety. Anyone using these tools also should be aware that these tools are not audited. We also want to remind everyone that users should always be careful about what transactions they sign, whether they do it on browser extension wallets or hardware wallets."
 
 roadmap:
   title: Roadmap & Development
