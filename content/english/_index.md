@@ -96,7 +96,7 @@ photon:
     title: "BURN ATONE TO GET PHOTON"
     content:
       - text: "PHOTON can only be minted by burning ATONE. This process is irreversible. Minting PHOTON reduces ATONE's circulating supply and ties PHOTON's creation of a maximum of 1 billion PHOTONS directly to it."
-      - text: "Examples of community tools** for minting PHOTON:"
+      - text: "Examples of community tools* for minting PHOTON:"
     ctas:
       - text: "Moonkitt"
         link: "https://atomone.moonkitt.com/mint"
@@ -104,7 +104,7 @@ photon:
         link: "https://atomone.ist/mainnet/mint"
   legal:
     content:
-      - text: "&#42;&#42; The community tools mentioned are not owned or created by All in Bits (AIB) therefore AIB can't offer any guarantee regarding their availability or safety. Anyone using these tools also should be aware that these tools are not audited. We also want to remind everyone that users should always be careful about what transactions they sign, whether they do it on browser extension wallets or hardware wallets."
+      - text: "&#42; The community tools mentioned are not owned or created by All in Bits (AIB) therefore AIB can't offer any guarantee regarding their availability or safety. Anyone using these tools also should be aware that these tools are not audited. We also want to remind everyone that users should always be careful about what transactions they sign, whether they do it on browser extension wallets or hardware wallets."
 
 roadmap:
   title: Roadmap & Development
