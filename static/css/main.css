@@ -64,18 +64,19 @@
     html {
       @apply font-interVar;
     }
+  }
 
     a:not(.block-link) {
-      @apply text-dark hover:text-dark/80 after:content-['↗'] after:text-[.85em] whitespace-nowrap after:relative after:pl-0.5 after:inline-block after:-top-0.5  hover:after:translate-x-px hover:after:-translate-y-px;
+      @apply text-dark hover:text-dark/80 after:bg-[url('/img/icons/ico-external-link.svg')] after:invert-0 after:bg-no-repeat after:bg-contain after:bg-center after:w-3.5 after:h-3.5 after:text-[.85em] whitespace-nowrap after:relative after:inline-block after:-top-0.5  hover:after:translate-x-px hover:after:-translate-y-px;
     }
     a[href^="https://atom.one"],
     a[href^="/"],
     a:has(svg),
     :is(h1, h2, h3, h4) a {
-      @apply text-dark hover:text-dark/80 after:hidden;
+      @apply text-dark hover:text-dark/80 after:hidden after:invert-0;
     }
-    :is(.bg-gray-300, .bg-dark) a {
-      @apply text-light hover:text-light/80;
+    :is(.bg-gray-300, .bg-dark) a:not(.block-link) {
+      @apply text-light hover:text-light/80 after:invert;
     }
   }
 
@@ -83,7 +84,7 @@
     font-weight: inherit !important;
     @apply text-light! before:hidden after:hidden bg-gray-400 rounded-sm py-0.5 px-1;
   }
-}
+
 
 @layer components {
   .img-grid,

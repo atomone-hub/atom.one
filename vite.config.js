@@ -46,28 +46,6 @@ const getHtmlEntries = (dir) => {
   return entries;
 };
 
-/**
- * Recurvice copy directory
- */
-const copyDirectoryRecursive = (source, target) => {
-  if (!fs.existsSync(target)) {
-    fs.mkdirSync(target, { recursive: true });
-  }
-
-  const entries = fs.readdirSync(source, { withFileTypes: true });
-
-  entries.forEach((entry) => {
-    const sourcePath = path.join(source, entry.name);
-    const targetPath = path.join(target, entry.name);
-
-    if (entry.isDirectory()) {
-      copyDirectoryRecursive(sourcePath, targetPath);
-    } else if (entry.isFile()) {
-      fs.copyFileSync(sourcePath, targetPath);
-    }
-  });
-};
-
 const input = getHtmlEntries(buildDir);
 
 /**
@@ -92,7 +70,8 @@ const copyFilesPlugin = () => {
         const targetDir = resolve("build", target);
 
         if (fs.existsSync(sourceDir)) {
-          copyDirectoryRecursive(sourceDir, targetDir);
+          // More robust recursive copy to avoid EISDIR errors
+          fs.cpSync(sourceDir, targetDir, { recursive: true, force: true });
           console.log(`Copied '${source}' directory to ${targetDir}`);
         } else {
           console.warn(`Source directory '${sourceDir}' does not exist.`);
@@ -113,6 +92,7 @@ export default defineConfig({
   },
   build: {
     outDir: resolve(__dirname, "build"),
+    emptyOutDir: true,
     rollupOptions: {
       input,
       output: {
