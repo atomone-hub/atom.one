@@ -114,8 +114,17 @@ is_header_clear: true
    - Implement rewards not strictly proportional to stake to avoid large validator dominance.
 
 2. **ICS**
-   - Propose the spec for the improved ICS model that: 1. ensures more or equal ICS rewards for validators. 2. collects and distributes ICS rewards according to work performed. 3. uses photons for all payments.
-   - Deploy above ICS on AtomOne. \* Start draft on ICS++ specification w/ ABCI application containers. 1. ICS++ consumer chains are described by a linux container. 2. Develop orchestration tooling for ICS++ 3. Ensure TM1 &lt;-> TM2 IBC compatibility 4. Expand choice of supported consensus engines for consumer chains. (Hub runs TM1, initial ICS++ consumer chains run TM2 invisibly)
+
+   - Propose the spec for the improved ICS model that: 
+      1. ensures more or equal ICS rewards for validators. 
+      2. collects and distributes ICS rewards according to work performed. 
+      3. uses photons for all payments.
+   - Deploy above ICS on AtomOne.
+   - Start draft on ICS++ specification w/ ABCI application containers. 
+      1. ICS++ consumer chains are described by a linux container. 
+      2. Develop orchestration tooling for ICS++ 
+      3. Ensure TM1 &lt;-> TM2 IBC compatibility 
+      4. Expand choice of supported consensus engines for consumer chains. (Hub runs TM1, initial ICS++ consumer chains run TM2 invisibly)
 
 ## Phase 3: Cross-Zone Governance
 
