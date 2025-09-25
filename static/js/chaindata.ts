@@ -15,60 +15,31 @@ class ChainData {
         averageBlockTime: average_block_time_per_hour {
           averageTime: average_time
         }
-        account_aggregate {
+        account_aggregate: accounts_aggregate {
           aggregate {
             count
           }
         }
-        block_aggregate {
+        block_aggregate: blocks_aggregate {
           aggregate {
             count
           }
         }
-        activeTotal: block(limit: 1, order_by: { height: desc }) {
-          height
-          validator_statuses_aggregate(where: { status: { _eq: "BOND_STATUS_BONDED" } }) {
-            aggregate {
-              count
-            }
-          }
+        validators:  validator_status(distinct_on: validator_address, order_by: {validator_address: asc, height: desc_nulls_last}) {
+          validator_address
+          status
         }
-        inactiveTotal: block(limit: 1, order_by: { height: desc }) {
-          height
-          validator_statuses_aggregate(where: { status: { _neq: "BOND_STATUS_BONDED" } }) {
-            aggregate {
-              count
-            }
-          }
-        }
-        total: block(limit: 1, order_by: { height: desc }) {
-          height
-          validator_statuses_aggregate {
-            aggregate {
-              count
-            }
-          }
-        }
-        actionable_proposals: proposal_aggregate(
-          where: {
-            _or: [
-              { status: { _eq: "PROPOSAL_STATUS_DEPOSIT_PERIOD" } }
-              { status: { _eq: "PROPOSAL_STATUS_VOTING_PERIOD" } }
-            ]
-          }
-        ) {
+        actionable_proposals: proposals_aggregate(where: {_or:[{status:{_eq:"PROPOSAL_STATUS_DEPOSIT_PERIOD"}},{status:{_eq:"PROPOSAL_STATUS_VOTING_PERIOD"}}]}) {
           aggregate {
             count
           }
         }
-        voting_proposals: proposal_aggregate(
-          where: { status: { _eq: "PROPOSAL_STATUS_VOTING_PERIOD" } }
-        ) {
+        voting_proposals: proposals_aggregate(where: {status:{_eq:"PROPOSAL_STATUS_VOTING_PERIOD"}}) {
           aggregate {
             count
           }
         }
-        all_proposals: proposal_aggregate {
+        all_proposals: proposals_aggregate {
           aggregate {
             count
           }
@@ -136,7 +107,7 @@ class ChainData {
     const accountsCount = Number(data?.account_aggregate?.aggregate?.count ?? 0);
     const blockTimeAvg = Number(data?.averageBlockTime?.[0]?.averageTime ?? 0).toFixed(1);
     const blockCount = Number(data?.block_aggregate?.aggregate?.count ?? 0);
-    const activeValCount = Number(data?.activeTotal?.[0]?.validator_statuses_aggregate?.aggregate?.count ?? 0);
+    const activeValCount = Number(data?.validators?.filter((x: { status: string; })=>x.status=="BOND_STATUS_BONDED").length ?? 0);
 
     const actionableProposals = Number(data?.actionable_proposals?.aggregate?.count ?? 0);
     // const votingProposals = Number(data?.voting_proposals?.aggregate?.count ?? 0);
@@ -161,4 +132,4 @@ class ChainData {
   }
 }
 
-export default (el: HTMLElement) => new ChainData(el, "https://graphql-atomone-mainnet.allinbits.services/v1/graphql");
+export default (el: HTMLElement) => new ChainData(el, "https://graphql-atomone-mainnet-v2.allinbits.services/v1/graphql");
