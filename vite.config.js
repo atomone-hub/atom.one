@@ -54,7 +54,7 @@ const input = getHtmlEntries(buildDir);
 const copyFilesPlugin = () => {
   return {
     name: "copy-files-plugin",
-    buildStart() {
+    writeBundle() {
       // xml and txt files
       processFilesInDir(buildDir, (filePath) => {
         if (filePath.endsWith(".xml") || filePath.endsWith(".txt")) {

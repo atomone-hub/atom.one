@@ -115,20 +115,27 @@
     name = "github"
     params = { label = "Github", listed = true }
     url = "https://github.com/atomone-hub"
-    weight = 3
+    weight = 4
 
 [[social]]
     identifier = "/atomone"
     params = { label = "Discord Community", listed = true }
     name = "discord"
     url = "https://discord.com/invite/atomone"
-    weight = 2
+    weight = 3
 
 [[social]]
     identifier = "/_atomone"
     params = { label = "X (Twitter)", listed = true }
     name = "x"
     url = "https://x.com/_atomone"
+    weight = 2
+
+[[social]]
+    identifier = "$ATONE serpents!"
+    params = { label = "Telegram", listed = true }
+    name = "telegram"
+    url = "https://t.me/+I7RYy1vR_5FkMTQx"
     weight = 1
 
 [[social]]
@@ -136,18 +143,18 @@
     params = { label = "AtomOne Forum", listed = true }
     name = "forum"
     url = "https://common.xyz/atomone/"
-    weight = 4
+    weight = 5
 
 [[social]]
     identifier = "r/atomone"
     params = { label = "Reddit Community", listed = true }
     name = "reddit"
     url = "https://www.reddit.com/r/atomone/"
-    weight = 5
+    weight = 6
 
 [[social]]
     identifier = "AtomOneHub"
     name = "youtube"
     params = { label = "Youtube", listed = true }
     url = "https://www.youtube.com/@AtomOneHub"
-    weight = 6
+    weight = 7
