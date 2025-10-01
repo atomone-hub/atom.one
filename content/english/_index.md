@@ -7,6 +7,10 @@ cta:
   text: "Read the Constitution"
   link: "https://github.com/atomone-hub/genesis/blob/main/CONSTITUTION.md"
 
+cta_2:
+  text: "Join Telegram Community"
+  link: "https://t.me/+I7RYy1vR_5FkMTQx"
+
 innovation:
   name: "ATOMONE KEY INNOVATIONS"
   categories:
