@@ -10,7 +10,7 @@ is_header_clear: true
 
 The internet used to feel different. Before the timelines, the algorithms, the performative haze, there was honesty in how we shared. Words mattered. You didn’t need a strategy to speak your mind. That’s what we’re building towards again.
 
-All in Bits is proud to present **Dither**, a small but determined experiment in reclaiming what the internet used to feel like. Today, we’ve launched the first live version: a minimal but functional application stack that shows how the protocol works, how people can start using it, and how builders can extend it.
+All in Bits is proud to present **[Dither](https://dither.chat)**, a small but determined experiment in reclaiming what the internet used to feel like. Today, we’ve launched the first live version: a minimal but functional application stack that shows how the protocol works, how people can start using it, and how builders can extend it.
 
 There’s no algorithm. No timeline tricks. No edits. Just posts, preserved forever on-chain.
 
