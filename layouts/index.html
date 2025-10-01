@@ -6,8 +6,12 @@ index .Site.Data .Site.Language.Lang -}}
       <div class="md:w-[52%] flex flex-col items-start pt-30 pb-49">
         <h1 class="inline-block font-bold text-800 text-light leading-none pb-8">{{ .Title }}</h1>
         {{- with .Params.subtitle -}}
-        <p class="text-300 text-gray-200 font-semibold md:w-3/4 w-full pb-12">{{ .| markdownify }}</p>
-        {{- end -}} {{ with .Params.cta }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large") }} {{- end -}}
+          <p class="text-300 text-gray-200 font-semibold md:w-3/4 w-full pb-12">{{ .| markdownify }}</p>
+        {{- end -}} 
+        <div class="flex flex-col md:flex-row gap-2">
+          {{ with .Params.cta }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large") }} {{- end -}}
+          {{ with .Params.cta_2 }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Outlined" "Size" "Large") }} {{- end -}}
+        </div>
       </div>
       <div class="w-[48%] hidden md:block">{{ partial "images/cover-hp" . }}</div>
     </div>

@@ -132,7 +132,7 @@
     weight = 2
 
 [[social]]
-    identifier = "$ATONE serpents!"
+    identifier = "Telegram community"
     params = { label = "Telegram", listed = true }
     name = "telegram"
     url = "https://t.me/+I7RYy1vR_5FkMTQx"
