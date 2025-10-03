@@ -7,7 +7,7 @@ summary: AtomOne’s v3 upgrade is set to mark the next chapter in its unfolding
 is_header_clear: true
 ---
 
-[AtomOne’s v3 upgrade](https://common.xyz/atomone/discussion/1305011-Signaling%20proposal%20-%20Constitution%20Amendment) is set to mark the next chapter in its unfolding story, reflecting months of debate and on-chain decisions. v3 will show how collective choice keeps governance, security, and token design moving forward.
+[AtomOne’s v3 upgrade](https://common.xyz/atomone/discussion/1304878-signaling-proposal-atomone-v3-upgrade) is set to mark the next chapter in its unfolding story, reflecting months of debate and on-chain decisions. v3 will show how collective choice keeps governance, security, and token design moving forward.
 
 ## Origins and Foundations
 
