@@ -2,12 +2,12 @@
 title: "AtomOne v3: A Roadmap in Motion"
 description: AtomOne’s v3 upgrade is set to mark the next chapter in its unfolding story
 publishDate: 2025-10-02T21:46:00-01:00
-cover: cover.jpg
+cover: cover.png
 summary: AtomOne’s v3 upgrade is set to mark the next chapter in its unfolding story is set to mark the next chapter in its unfolding story, reflecting months of debate and on-chain decisions. v3 will show how collective choice keeps governance, security, and token design moving forward.
 is_header_clear: true
 ---
 
-[AtomOne’s v3 upgrade](https://common.xyz/atomone/discussion/1305011-Signaling%20proposal%20-%20Constitution%20Amendment) is set to mark the next chapter in its unfolding story, reflecting months of debate and on-chain decisions. v3 will show how collective choice keeps governance, security, and token design moving forward.
+[AtomOne’s v3 upgrade](https://common.xyz/atomone/discussion/1304878-signaling-proposal-atomone-v3-upgrade) is set to mark the next chapter in its unfolding story, reflecting months of debate and on-chain decisions. v3 will show how collective choice keeps governance, security, and token design moving forward.
 
 ## Origins and Foundations
 
