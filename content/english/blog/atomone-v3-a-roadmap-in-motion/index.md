@@ -15,9 +15,9 @@ AtomOne’s [roadmap](http://atom.one/roadmap) has guided every step. Phases \-2
 
 From the very beginning, AtomOne’s “living constitution” was built in the open. Community members shaped governance rules, software choices, and the roadmap through forums, town halls, and the GovGen chain. Token distribution followed the same path, with community-ratified proposals guiding airdrops, the Community Pool, and the Treasury DAO. 
 
-The [AtomOne Constitution](https://github.com/atomone-hub/genesis/blob/main/CONSTITUTION.md?utm_source=chatgpt.com) formalized this framework. It defines the roles of ATONE and PHOTON, establishes proposal types and amendment rules, and sets requirements for deposits and quorum:
+The [AtomOne Constitution](https://github.com/atomone-hub/genesis/blob/main/CONSTITUTION.md) formalized this framework. It defines the roles of ATONE and PHOTON, establishes proposal types and amendment rules, and sets requirements for deposits and quorum:
 
-**ATONE shall be the governance token, used for staking and securing the network and exercising voting rights. PHOTON shall be the fee token, used for transaction costs and spending.**
+> ATONE shall be the governance token, used for staking and securing the network and exercising voting rights. PHOTON shall be the fee token, used for transaction costs and spending.
 
 ## The Fundamentals of AtomOne
 
@@ -25,7 +25,7 @@ AtomOne was designed to change with the community. Its focus remains true to the
 
 Validators secure the chain. Delegators govern it. That separation of powers is central to AtomOne. The Constitution makes this principle clear:
 
-**Each delegator shall exercise voting rights independently of validators, and no validator shall exercise governance rights on behalf of delegators.**
+> Each delegator shall exercise voting rights independently of validators, and no validator shall exercise governance rights on behalf of delegators.
 
 The dual-token model assigns responsibilities cleanly: ATONE for governance and staking, PHOTON for fees and spending. Prop 10 already activated PHOTON-only fees, completing a long-standing design goal. v3 will bolster this separation by converting most Community Pool and Treasury DAO holdings into PHOTON through Prop 14\.
 
@@ -60,7 +60,7 @@ Development of [ICS1](https://github.com/atomone-hub/atomone/pull/216) is happen
 
 Phase 2 will reshape validator incentives and interchain security, pointing toward a future where validators provide security as a service to consumer chains. Around this timeline is also where a “Governors” system may emerge, allowing delegators to direct their voting power through merit-based delegation.
 
-The Nakamoto Bonus, already signaled in [Prop 12](https://gov.atom.one/proposals/12?utm_source=chatgpt.com), is expected in v4 and will strengthen decentralization by rewarding delegations that spread voting power more evenly across validators.
+The Nakamoto Bonus, already signaled in [Prop 12](https://gov.atom.one/proposals/12), is expected in v4 and will strengthen decentralization by rewarding delegations that spread voting power more evenly across validators.
 
 Phase 3 will extend governance across zones. Oversight DAOs will be able to reject proposals from zones. Steering DAOs will coordinate parameters through IBC. Treasury DAOs will expand, increasing the reach of community-controlled funding.
 
@@ -70,7 +70,7 @@ The “[three-layer cake](https://github.com/jaekwon/writings/blob/master/atomon
 
 The following milestones for AtomOne are not only technical but also social. DAO activation will require community review and approval of charters and laws, in line with the Constitution:
 
-**The Steering DAO, Oversight DAO, and Build DAO shall be established by governance, with powers and limitations defined by charter and subject to amendment by law.**
+> The Steering DAO, Oversight DAO, and Build DAO shall be established by governance, with powers and limitations defined by charter and subject to amendment by law.
 
 These frameworks will define AtomOne’s DAOs and prepare the chain to host a GnoVM shard when ICS goes live. Decisions about Treasury use will come next, followed by validator incentive design in Phase 2\. 
 
