@@ -86,6 +86,7 @@
   }
 
 
+
 @layer components {
   .img-grid,
   .img-grid-2 {
@@ -166,6 +167,8 @@
   .alert-note > .alert-heading {
     color: #6c757d !important;
   }
+
+  
 }
 
 @layer utilities {
@@ -197,4 +200,9 @@
   --tw-prose-headings: var(--color-dark);
   --tw-prose-bold: var(--color-dark);
   --tw-prose-pre-bg: var(--color-dark);
+}
+
+.prose blockquote p:first-of-type::before,
+.prose blockquote p:first-of-type::after {
+  content: "" !important;
 }
