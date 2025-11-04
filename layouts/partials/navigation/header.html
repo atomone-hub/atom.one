@@ -1,4 +1,4 @@
-<div class="max-w-screen-2xl px-6 mx-auto pt-6 pb-4">
+<div class="max-w-screen-2xl px-6 mx-auto pt-8 pb-6">
     {{ $isClear := .Params.is_header_clear }}
   <nav role="menubar" class="w-full flex items-center md:justify-start justify-center">
     {{ $isHome := .IsHome }}
@@ -26,7 +26,7 @@
         </span>
       </label>
 
-      <ul role="menu" class="absolute lg:relative gap-6 left-0 {{if .Params.is_header_clear}} bg-light text-dark hover:text-dark/70{{ else }} bg-dark text-light hover:text-light/70{{ end }} px-6 mx-auto pt-7 pb-5 lg:p-0 hidden lg:flex w-full justify-center lg:items-center peer-checked:flex flex-col lg:flex-row">
+      <ul role="menu" class="absolute lg:relative gap-6 left-0 -z-20 {{if .Params.is_header_clear}} bg-light text-dark hover:text-dark/70{{ else }} bg-dark text-light hover:text-light/70{{ end }} px-6 mx-auto pt-7 pb-5 lg:p-0 hidden lg:flex w-full justify-center lg:items-center peer-checked:flex flex-col lg:flex-row">
         <li role="presentation" class="lg:ml-auto block">
           <ul role="menu" class="flex gap-4 lg:gap-8 text-200 lg:text-200 font-light flex-col lg:flex-row items-start">
             {{- range .Site.Menus.resource -}}
@@ -39,15 +39,16 @@
         </li>
 
         <li role="presentation" class="lg:ml-auto">
-          <ul role="menu" class="flex gap-2 text-200 lg:text-200 font-light">
+          {{/*  <ul role="menu" class="flex gap-2 text-200 lg:text-200 font-light">
             {{- range .Site.Menus.header -}}
             <li role="menuitem" class="flex">
               {{ $isMenuCurrent := (eq (lower $.Section) (lower .Name)) }} {{ partial "components/button" (dict "Name" .Name "URL" (.URL | absLangURL) "Variant" .Params.variant "Size" "Small" "IsReversedColor" $isClear) }}
             </li>
             {{- end -}}
-          </ul>
+          </ul>  */}}
         </li>
       </ul>
     </div>
   </nav>
+  {{ partial "components/flag" (dict "Site" .Site) }}
 </div>

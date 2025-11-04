@@ -1,0 +1,12 @@
+{{ $site := .Site }}
+
+<div class="absolute -z-10 flex flex-col gap-0.5 text-50 md:text-100 font-semibold overflow-hidden origin-top rotate-45 pt-22 top-0 -right-1/2 w-screen">
+    {{ range $site.Menus.header }}
+        <a href="{{ .URL }}" class="relative flex p-2 md:p-4 bg-warning-100 text-gray-400 w-full text-center justify-center items-center">
+            <span class="w-5 h-5 shrink-0 mr-2">
+                {{ partial (printf "icons/ico-%s.html" .Identifier) . }}
+            </span>
+            {{ .Name }}
+        </a>
+    {{ end }}
+</div>
