@@ -4,7 +4,7 @@ index .Site.Data .Site.Language.Lang -}}
   <section class="relative mb-20 before:absolute before:w-screen before:h-full before:z-[-1] before:bg-dark before:left-0 before:top-0">
     <div class="max-w-screen-xl mx-auto w-full px-4 flex">
       <div class="md:w-[52%] flex flex-col items-start pt-30 pb-49">
-        <h1 class="inline-block font-bold text-800 text-light leading-none pb-8">{{ .Title }}</h1>
+        <h1 class="inline-block font-bold text-700 md:text-800 text-light leading-none pb-8">{{ .Title }}</h1>
         {{- with .Params.subtitle -}}
           <p class="text-300 text-gray-200 font-semibold md:w-3/4 w-full pb-12">{{ .| markdownify }}</p>
         {{- end -}} 
@@ -41,7 +41,7 @@ index .Site.Data .Site.Language.Lang -}}
   <section class="mb-24 max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
     <h2 class="text-700 font-bold pb-12 leading-tight">{{ .Params.activity.title }}</h2>
     <p class="text-gray-200 md:w-1/2 text-400">{{ .Params.activity.content | markdownify}}</p>
-    <div class="flex md:flex-row flex-col gap-8 w-full my-12" data-component="chain-data">
+    <div class="flex md:flex-row flex-col gap-6 lg:gap-8 w-full my-12" data-component="chain-data">
       {{ range .Params.activity.data }}
       <article class="bg-dark rounded-sm py-12 px-6 w-full">
         <h3 class="text-gray-200 pb-2">{{ .info }}</h3>
