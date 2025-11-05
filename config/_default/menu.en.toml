@@ -1,16 +1,28 @@
-[[header]]
-    identifier = "stake"
-    name = "Stake"
-    url = "https://staking.atom.one/"
-    weight = 1
-    params = { "variant" = "Outlined"}
+#[[header]]
+#   identifier = "stake"
+#    name = "Stake"
+#    url = "https://staking.atom.one/"
+#    weight = 1
+#    params = { "variant" = "Outlined"}
+
+#[[header]]
+#    identifier = "govern"
+#    name = "Govern"
+#    url = "https://gov.atom.one/"
+#    weight = 2
+#    params = { "variant" = "Light"}
 
 [[header]]
-    identifier = "govern"
-    name = "Govern"
-    url = "https://gov.atom.one/"
+    identifier = "github"
+    name = "FORK ME ON GITHUB"
+    url = "https://github.com/atomone-hub"
+    weight = 1
+
+[[header]]
+    identifier = "telegram"
+    name = "JOIN OUR TELEGRAM"
+    url = "https://t.me/youwillatone"
     weight = 2
-    params = { "variant" = "Light"}
 
 
 [[resource]]
@@ -135,7 +147,7 @@
     identifier = "Telegram community"
     params = { label = "Telegram", listed = true }
     name = "telegram"
-    url = "https://t.me/+I7RYy1vR_5FkMTQx"
+    url = "https://t.me/youwillatone"
     weight = 1
 
 [[social]]

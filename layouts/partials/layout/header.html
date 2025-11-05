@@ -1,3 +1,6 @@
 <header class="{{if .Params.is_header_clear}}bg-light text-dark border-gray-100{{ else }}bg-dark text-light border-gray-400{{ end }} fixed z-50 top-0 w-full border-b">
-  {{ partial "components/info" (dict "Info" .Site.Params.info)}}{{ partial "navigation/header" . }}
+  {{ partial "components/info" (dict "Info" .Site.Params.info)}}
+  <div class="relative">
+    {{ partial "navigation/header" . }}
+  </div>
 </header>

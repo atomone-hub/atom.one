@@ -9,7 +9,7 @@ cta:
 
 cta_2:
   text: "Join Telegram Community"
-  link: "https://t.me/+I7RYy1vR_5FkMTQx"
+  link: "https://t.me/youwillatone"
 
 innovation:
   name: "ATOMONE KEY INNOVATIONS"
