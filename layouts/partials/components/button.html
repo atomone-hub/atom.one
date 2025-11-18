@@ -1,7 +1,7 @@
 <a
   href="{{ .URL }}"
   title="{{ .Name }}"
-  class="inline-flex font-medium justify-center gap-0.5 items-center w-max rounded-sm leading-tight text-200 px-8 hover:cursor-pointer
+  class="inline-flex font-medium justify-center gap-0.5 items-center w-max rounded-sm leading-tight text-200 px-8 hover:cursor-pointer {{ with .AnalyticsTag }}{{ . }}{{ end }}
   {{ if eq .Size "Small" }}
     py-3
   {{ else if eq .Size "Large" }}
@@ -15,7 +15,7 @@
   {{ if eq .IsReversedColor true }}bg-dark hover:bg-dark/80 text-light after:invert{{ else }}bg-light hover:bg-light/80 text-dark after:invert-0{{end}}
   {{ end }} ">
   {{ with .Icon }}
-    <div class="w-max h-6 shrink-0">
+    <div class="w-max h-6 shrink-0 mr-2">
         {{ $icon_template := printf "icons/ico-%s.html" (lower .) }}
         {{ partial $icon_template . }}
     </div>

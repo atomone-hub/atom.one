@@ -18,11 +18,11 @@
     url = "https://github.com/atomone-hub"
     weight = 1
 
-[[header]]
-    identifier = "telegram"
-    name = "JOIN OUR TELEGRAM"
-    url = "https://t.me/youwillatone"
-    weight = 2
+#[[header]]
+#   identifier = "telegram"
+#    name = "JOIN OUR TELEGRAM"
+#    url = "https://t.me/youwillatone"
+#    weight = 2
 
 
 [[resource]]

@@ -4,12 +4,17 @@ title: "A Secure Community Driven Interchain Hub"
 subtitle: "AtomOne is a community-driven, constitutionally governed blockchain designed to prioritize security, decentralization, and innovation within the Cosmos ecosystem. Serving as a minimal fork of the Cosmos Hub, it supports IBC and ICS for scalable interchain solutions."
 
 cta:
-  text: "Read the Constitution"
-  link: "https://github.com/atomone-hub/genesis/blob/main/CONSTITUTION.md"
-
-cta_2:
   text: "Join Telegram Community"
   link: "https://t.me/youwillatone"
+  ico: "telegram"
+  analyticsTag: "plausible-event-name=Click+CTA+Telegram plausible-event-position=HomeHero"
+ 
+cta_2:
+  text: "Never Miss an Update"
+  link: "#newsletter"
+  name: "Newsletter"
+  analyticsTag: "plausible-event-name=Click+CTA+Newsletter plausible-event-position=HomeHero"
+
 
 innovation:
   name: "ATOMONE KEY INNOVATIONS"
@@ -160,6 +165,7 @@ contributor:
     content: "I understand my information will be processed in accordance with the [Privacy Policy](/privacy/), and I agree to the [Terms of Service](/terms/)."
     api: https://govgen.us12.list-manage.com/subscribe/post-json?u=8aea2e183e0168577db2fff30&amp;id=a458652cd2&amp;f_id=00c609e9f0
     tag: 12755615 #general segment
+    analyticsTag: "plausible-event-name=Submit+Form+Newsletter plausible-event-position=HomeBottom"
 
 legal:
   - content:

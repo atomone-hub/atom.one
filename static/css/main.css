@@ -59,6 +59,7 @@
     font-kerning: normal;
     text-rendering: optimizeLegibility;
     font-size: 16px;
+    scroll-behavior: smooth;
   }
 
   @supports (font-variation-settings: normal) {
