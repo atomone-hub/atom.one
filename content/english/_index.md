@@ -2,18 +2,18 @@
 meta_title: "AtomOne: A Secure Community-Driven Interchain Hub"
 title: "A Secure Community Driven Interchain Hub"
 subtitle: "AtomOne is a community-driven, constitutionally governed blockchain designed to prioritize security, decentralization, and innovation within the Cosmos ecosystem. Serving as a minimal fork of the Cosmos Hub, it supports IBC and ICS for scalable interchain solutions."
-
-cta:
-  text: "Join Telegram Community"
-  link: "https://t.me/youwillatone"
-  ico: "telegram"
-  analyticsTag: "plausible-event-name=Click+CTA+Telegram plausible-event-position=HomeHero"
  
-cta_2:
+cta:
   text: "Never Miss an Update"
   link: "#newsletter"
   name: "Newsletter"
   analyticsTag: "plausible-event-name=Click+CTA+Newsletter plausible-event-position=HomeHero"
+
+cta_2:
+  text: "Visit our GitHub"
+  link: "https://github.com/atomone-hub"
+  name: "Github"
+  analyticsTag: "plausible-event-name=Click+CTA+Github plausible-event-position=HomeHero"
 
 
 innovation:

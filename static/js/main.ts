@@ -1,4 +1,5 @@
 import "../css/main.css";
+import "./analytics";
 
 (() => {
   interface ModuleItem {
@@ -22,7 +23,7 @@ import "../css/main.css";
     {
       selector: "chain-data",
       importer: () => import("./chaindata"),
-    },
+    }
   ];
 
   const loadModuleIfExists = async (mod: ModuleItem): Promise<void> => {

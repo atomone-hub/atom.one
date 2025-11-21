@@ -13,7 +13,13 @@
   {{ if eq .IsReversedColor true }}bg-light hover:bg-light/80 text-dark after:invert-0{{ else }}bg-dark hover:bg-dark/80 text-light after:invert{{ end }}
   {{ else if eq .Variant "Light" }}
   {{ if eq .IsReversedColor true }}bg-dark hover:bg-dark/80 text-light after:invert{{ else }}bg-light hover:bg-light/80 text-dark after:invert-0{{end}}
-  {{ end }} ">
+  {{ else if eq .Variant "Colored" }}
+  bg-warning-100 hover:bg-warning-100/80 text-black
+  {{ end }} "
+  {{ with .PixelURL }}data-pixel="{{ . }}"{{ end }}
+  {{ with .PixelOn }}data-pixel-on="{{ . }}"{{ end }}
+  {{ with .PixelProps }}data-pixel-props='{{ . }}'{{ end }}
+>
   {{ with .Icon }}
     <div class="w-max h-6 shrink-0 mr-2">
         {{ $icon_template := printf "icons/ico-%s.html" (lower .) }}

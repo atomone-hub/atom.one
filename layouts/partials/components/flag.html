@@ -2,7 +2,7 @@
 
 <div class="absolute flex flex-col text-50 md:text-100 font-semibold overflow-hidden origin-top rotate-45 pt-22 top-0 -right-1/2 w-screen">
     {{ range $site.Menus.header }}
-        <a href="{{ .URL }}" class="relative flex p-2 md:p-4 bg-warning-100 text-black w-full text-center justify-center items-center border-t last:border-b border-black">
+        <a href="{{ .URL }}" class="relative flex p-2 md:p-4 bg-warning-100 text-black w-full text-center justify-center items-center border-t last:border-b border-black 1 {{ with .Params.analyticsTag }}{{ . }}{{ end }}" {{ with .Params.pixelURL }}data-pixel="{{ . }}"{{ end }} {{ with .Params.pixelOn }}data-pixel-on="{{ . }}"{{ end }}>
             <span class="w-5 h-5 shrink-0 mr-2">
                 {{ partial (printf "icons/ico-%s.html" .Identifier) . }}
             </span>
