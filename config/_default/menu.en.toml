@@ -12,17 +12,21 @@
 #    weight = 2
 #    params = { "variant" = "Light"}
 
-[[header]]
-    identifier = "github"
-    name = "FORK ME ON GITHUB"
-    url = "https://github.com/atomone-hub"
-    weight = 1
+#[[header]]
+#    identifier = "github"
+#    name = "FORK ME ON GITHUB"
+#    url = "https://github.com/atomone-hub"
+#    weight = 1
 
 [[header]]
-    identifier = "telegram"
+   identifier = "telegram"
     name = "JOIN OUR TELEGRAM"
     url = "https://t.me/youwillatone"
     weight = 2
+    [header.params]
+        pixelURL = "https://arttrk.com/pixel/?ad_log=referer&action=registration&pixid=a4020bac-f28c-4281-b86e-ad4dfc9590c1"
+        pixelOn = "click"
+        analyticsTag = "plausible-event-name=Click+CTA+Telegram plausible-event-position=HeaderMenuFlag"
 
 
 [[resource]]

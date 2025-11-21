@@ -9,8 +9,8 @@ index .Site.Data .Site.Language.Lang -}}
           <p class="text-300 text-gray-200 font-semibold md:w-3/4 w-full pb-12">{{ .| markdownify }}</p>
         {{- end -}} 
         <div class="flex flex-col md:flex-row gap-2">
-          {{ with .Params.cta }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large") }} {{- end -}}
-          {{ with .Params.cta_2 }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Outlined" "Size" "Large") }} {{- end -}}
+          {{ with .Params.cta }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large" "Icon" .ico "AnalyticsTag" .analyticsTag "PixelURL" .pixelURL "PixelOn" .pixelOn ) }} {{- end -}}
+          {{ with .Params.cta_2 }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Outlined" "Size" "Large" "Icon" .ico "AnalyticsTagTag" .analyticsTag "PixelURL" .pixelURL "PixelOn" .pixelOn) }} {{- end -}}
         </div>
       </div>
       <div class="w-[48%] hidden md:block">{{ partial "images/cover-hp" . }}</div>
@@ -125,7 +125,7 @@ index .Site.Data .Site.Language.Lang -}}
     {{ end }}
     <div class="flex flex-col gap-6">
       {{ partial "components/interactive-banner" (dict "Title" .Params.contributor.newsletter.title "Placeholder" .Params.contributor.newsletter.placeholder "Content"
-      .Params.contributor.newsletter.content "ImgSrc" "/img/hp/newsletter.svg" "Comp" "newsletter" "Api" .Params.contributor.newsletter.api "Tag" .Params.contributor.newsletter.tag)}} {{ partial "components/social" . }}
+      .Params.contributor.newsletter.content "ImgSrc" "/img/hp/newsletter.svg" "Comp" "newsletter" "Api" .Params.contributor.newsletter.api "Tag" .Params.contributor.newsletter.tag "AnalyticsTag" .Params.contributor.newsletter.analyticsTag)}} {{ partial "components/social" . }}
     </div>
   </section>
 
