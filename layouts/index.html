@@ -10,7 +10,7 @@ index .Site.Data .Site.Language.Lang -}}
         {{- end -}} 
         <div class="flex flex-col md:flex-row gap-2">
           {{ with .Params.cta }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large" "Icon" .ico "AnalyticsTag" .analyticsTag "PixelURL" .pixelURL "PixelOn" .pixelOn ) }} {{- end -}}
-          {{ with .Params.cta_2 }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Outlined" "Size" "Large" "Icon" .ico "AnalyticsTagTag" .analyticsTag "PixelURL" .pixelURL "PixelOn" .pixelOn) }} {{- end -}}
+          {{ with .Params.cta_2 }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Outlined" "Size" "Large" "Icon" .ico "AnalyticsTag" .analyticsTag "PixelURL" .pixelURL "PixelOn" .pixelOn) }} {{- end -}}
         </div>
       </div>
       <div class="w-[48%] hidden md:block">{{ partial "images/cover-hp" . }}</div>

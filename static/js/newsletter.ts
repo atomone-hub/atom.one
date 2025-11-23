@@ -76,7 +76,6 @@ class Newsletter {
           // Track the event with Plausible Analytics
           trackPlausible('SubmitNewsletter', {
             props: {
-              email: userEmail,
               position: this.DOM.el.dataset.position ?? "",
               tags: allTags
             }
