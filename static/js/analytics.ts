@@ -136,9 +136,9 @@ window.Pixels = {
  */
 (() => {
   // Initialize Plausible Analytics
-  // initPlausible({
-  //   domain: 'atom.one'
-  // })
+  initPlausible({
+    domain: 'atom.one'
+  })
 
   // Bind pixels to the document when the DOM is loaded.
   if (document.readyState === "loading") {
