@@ -1,7 +1,7 @@
 <a
   href="{{ .URL }}"
   title="{{ .Name }}"
-  class="inline-flex font-medium justify-center gap-0.5 items-center w-max rounded-sm leading-tight text-200 px-8 hover:cursor-pointer {{ with .AnalyticsTag }}{{ . }}{{ end }}
+  class="inline-flex font-medium justify-center gap-0.5 items-center w-max rounded-sm leading-tight text-200 px-8 hover:cursor-pointer {{ with .AnalyticsTag }}{{ . }}{{ end }} {{ with .AnalyticsPosition }}plausible-event-position={{ . }}{{ end }}
   {{ if eq .Size "Small" }}
     py-3
   {{ else if eq .Size "Large" }}
