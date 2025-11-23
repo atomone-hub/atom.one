@@ -15,4 +15,5 @@ newsletter:
     - tag: 12755615 #general segment
       content: Click here if you also want to register to AtomOne project updates and general communication
       default: false
+  analyticsPosition: "ValidatorNewsletterPage"
 ---
