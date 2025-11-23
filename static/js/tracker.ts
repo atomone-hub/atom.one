@@ -64,7 +64,7 @@ class Tracker {
         this.DOM.result.classList.remove("text-negative");
         this.DOM.detail.textContent = `TOTAL AIRDROP = YES + NO + NWV + ABS + DNV + LIQUID ≃ ${balanceTotal} ATONE`;
 
-        trackPlausible('Submit+Form+CheckBalance', {
+        trackPlausible('SubmitFormCheckBalance', {
           props: {
             position: this.DOM.tracker.dataset.position ?? "",
           }
