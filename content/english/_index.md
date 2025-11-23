@@ -84,6 +84,7 @@ allocation:
     title: "INPUT YOUR COSMOS PUBLIC ADDRESS TO VERIFY YOUR ATONE BALANCE"
     placeholder: "Enter your public Cosmos address"
     content: "Or check your allocation directly in your wallet. AtomOne is compatible with [Cosmostation](https://www.cosmostation.io/products/cosmostation_extension), [Leap](https://www.leapwallet.io/download), [Keplr](https://www.keplr.app/) (*add AtomOne chain on [chain registry page](https://chains.keplr.app/)) and more."
+    analyticsPosition: "HomeBottom"
   cards:
     - title: "CREATE, VIEW AND VOTE ON PROPOSALS"
       content: "Create new proposals, deposit on active ones or cast your vote on [AtomOne Governance dApp](https://gov.atom.one/)*"

@@ -57,7 +57,7 @@ index .Site.Data .Site.Language.Lang -}}
     {{ range .Params.allocation.content }}
     <p class="text-gray-200 md:w-1/2 text-400 mb-20">{{ .text | markdownify}}</p>
     {{ end }} {{ partial "components/interactive-banner" (dict "Title" .Params.allocation.tracker.title "Placeholder" .Params.allocation.tracker.placeholder "Content"
-    .Params.allocation.tracker.content "ImgSrc" "/img/hp/coins.svg" "Comp" "tracker")}}
+    .Params.allocation.tracker.content "ImgSrc" "/img/hp/coins.svg" "Comp" "tracker" "AnalyticsPosition" .Params.allocation.tracker.analyticsPosition)}}
 
     <div class="w-full flex-col md:flex-row flex gap-6 my-6">
       {{ range .Params.allocation.cards }} {{ partial "components/card" (dict "Title" .title "Content" .content "ImgSrc" .img "Note" .note)}} {{ end}}
