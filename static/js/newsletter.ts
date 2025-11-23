@@ -1,4 +1,5 @@
 import jsonp from "jsonp";
+import { init as initPlausible, track as trackPlausible } from '@plausible-analytics/tracker'
 
 class Newsletter {
   private DOM: {
@@ -71,6 +72,14 @@ class Newsletter {
           this.DOM.result.innerText = "SUCCESSFULLY SUBSCRIBED";
           this.DOM.result.classList.remove("text-negative");
           this.DOM.result.classList.add(...["text-positive", "pb-2", "mt-8"]);
+
+          // Track the event with Plausible Analytics
+          trackPlausible('Submit+Form+Newsletter', {
+            props: {
+              email: userEmail,
+              tags: allTags
+            }
+          })
         } else {
           this.DOM.result.innerText = "Please, input correct email";
           this.DOM.result.classList.remove("text-positive");

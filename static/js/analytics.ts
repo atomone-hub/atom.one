@@ -1,3 +1,5 @@
+import { init as initPlausible } from '@plausible-analytics/tracker'
+
 declare global {
     interface Window {
       Pixels: {
@@ -128,10 +130,23 @@ window.Pixels = {
   bind: bindPixels,
 };
 
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", () => bindPixels(), { once: true });
-} else {
-  bindPixels();
-}
+
+/**
+ * Initialize the analytics and bind the pixels to the document.
+ */
+(() => {
+  // Initialize Plausible Analytics
+  // initPlausible({
+  //   domain: 'atom.one'
+  // })
+
+  // Bind pixels to the document when the DOM is loaded.
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => bindPixels(), { once: true });
+  } else {
+    bindPixels();
+  }
+})();
+
 
 export {};
