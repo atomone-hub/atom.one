@@ -74,7 +74,7 @@ class Newsletter {
           this.DOM.result.classList.add(...["text-positive", "pb-2", "mt-8"]);
 
           // Track the event with Plausible Analytics
-          trackPlausible('Submit+Form+Newsletter', {
+          trackPlausible('SubmitNewsletter', {
             props: {
               email: userEmail,
               tags: allTags
