@@ -6,7 +6,7 @@
       {{ $cat := index $footer 1}} {{ $lastMenu := eq $index (sub (len $footers) 1) }}
       <li class="text-grey-700 mb-6 capitalize">{{ $cat.Menu }}</li>
       {{ range $footer }}
-      <li class="mb-6"><a href="{{.URL | absLangURL}}" class="text-gray-200 hover:text-gray-300 whitespace-normal after:opacity-40">{{ .Name }}</a></li>
+      <li class="mb-6"><a href="{{.URL | absLangURL}}" class="text-gray-200 hover:text-gray-300 whitespace-normal after:opacity-40 {{ with .Params.analyticsTag }}{{ . }} plausible-event-position=FooterMenu{{ end }}">{{ .Name }}</a></li>
       {{ end }} {{ if $lastMenu }} {{ end }}
     </ul>
     {{ end }}
@@ -19,7 +19,7 @@
           href="{{ .URL | absLangURL }}"
           role="menuitem"
           title="{{ .Name }}"
-          class="hover:text-dark text-gray-200 flex items-center whitespace-normal after:opacity-40"
+          class="hover:text-dark text-gray-200 flex items-center whitespace-normal after:opacity-40 {{ with .Params.analyticsTag }}{{ . }} plausible-event-position=FooterMenu{{ end }}"
           {{
           if
           $isMenuCurrent

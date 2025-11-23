@@ -6,8 +6,8 @@
     <section class="max-w-screen-xl mx-auto w-full px-4 text-center flex flex-col items-center">
       <div class="flex flex-col gap-6">
         {{ partial "components/interactive-banner" (dict "Title" .Params.newsletter.title "Placeholder" .Params.newsletter.placeholder "Content" .Params.newsletter.content "ImgSrc"
-        "/img/hp/newsletter.svg" "Comp" "newsletter" "Api" .Params.newsletter.api "Tag" .Params.newsletter.tag "Complementary_tags" .Params.newsletter.complementary_tags )}} {{ partial
-        "components/social" . }}
+        "/img/hp/newsletter.svg" "Comp" "newsletter" "Api" .Params.newsletter.api "Tag" .Params.newsletter.tag "Complementary_tags" .Params.newsletter.complementary_tags "AnalyticsPosition" .Params.newsletter.analyticsPosition )}} {{ partial
+        "components/social" (dict "Menus" .Site.Menus.social "AnalyticsPosition" .Params.newsletter.analyticsPosition) }}
       </div>
     </section>
   </div>

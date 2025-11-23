@@ -14,6 +14,9 @@ importers:
       '@fontsource/inter':
         specifier: ^5.0.19
         version: 5.1.0
+      '@plausible-analytics/tracker':
+        specifier: ^0.4.4
+        version: 0.4.4
       '@tailwindcss/vite':
         specifier: ^4.0.4
         version: 4.0.4(vite@5.4.11(@types/node@22.10.1)(lightningcss@1.29.1))
@@ -206,6 +209,9 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
+
+  '@plausible-analytics/tracker@0.4.4':
+    resolution: {integrity: sha512-fz0NOYUEYXtg1TBaPEEvtcBq3FfmLFuTe1VZw4M8sTWX129br5dguu3M15+plOQnc181ShYe67RfwhKgK89VnA==}
 
   '@rollup/plugin-inject@5.0.5':
     resolution: {integrity: sha512-2+DEJbNBoPROPkgTDNe8/1YXWcqxbN5DTjASVIOx8HS+pITXushyNiBV56RB08zuptzz8gT3YfkqriTBVycepg==}
@@ -1452,6 +1458,8 @@ snapshots:
   '@fontsource/inter@5.1.0': {}
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
+
+  '@plausible-analytics/tracker@0.4.4': {}
 
   '@rollup/plugin-inject@5.0.5(rollup@4.27.3)':
     dependencies:

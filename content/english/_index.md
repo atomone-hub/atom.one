@@ -84,6 +84,7 @@ allocation:
     title: "INPUT YOUR COSMOS PUBLIC ADDRESS TO VERIFY YOUR ATONE BALANCE"
     placeholder: "Enter your public Cosmos address"
     content: "Or check your allocation directly in your wallet. AtomOne is compatible with [Cosmostation](https://www.cosmostation.io/products/cosmostation_extension), [Leap](https://www.leapwallet.io/download), [Keplr](https://www.keplr.app/) (*add AtomOne chain on [chain registry page](https://chains.keplr.app/)) and more."
+    analyticsPosition: "HomeBottom"
   cards:
     - title: "CREATE, VIEW AND VOTE ON PROPOSALS"
       content: "Create new proposals, deposit on active ones or cast your vote on [AtomOne Governance dApp](https://gov.atom.one/)*"
@@ -109,8 +110,11 @@ photon:
     ctas:
       - text: "Moonkitt"
         link: "https://atomone.moonkitt.com/mint"
+        analyticsTag: "plausible-event-name=Click+CTA+Mint plausible-event-minttool=Moonkit" 
       - text: "Nodeist"
         link: "https://atomone.ist/mainnet/mint"
+        analyticsTag: "plausible-event-name=Click+CTA+Mint plausible-event-minttool=Nodeist" 
+
   legal:
     content:
       - text: "&#42; The community tools mentioned are not owned or created by All in Bits (AIB) therefore AIB can't offer any guarantee regarding their availability or safety. Anyone using these tools also should be aware that these tools are not audited. We also want to remind everyone that users should always be careful about what transactions they sign, whether they do it on browser extension wallets or hardware wallets."
@@ -163,10 +167,10 @@ contributor:
     title: "STAY UP TO DATE WITH THE LATEST UPDATES. SIGN UP FOR OUR NEWSLETTER."
     placeholder: "Enter your email"
     content: "I understand my information will be processed in accordance with the [Privacy Policy](/privacy/), and I agree to the [Terms of Service](/terms/)."
-    api: https://govgen.us12.list-manage.com/subscribe/post-json?u=8aea2e183e0168577db2fff30&amp;id=a458652cd2&amp;f_id=00c609e9f0
+    api: "https://govgen.us12.list-manage.com/subscribe/post-json?u=8aea2e183e0168577db2fff30&amp;id=a458652cd2&amp;f_id=00c609e9f0"
     tag: 12755615 #general segment
-    analyticsTag: "plausible-event-name=Submit+Form+Newsletter plausible-event-position=HomeBottom"
-
+    analyticsPosition: "HomeBottom"
+    
 legal:
   - content:
       - text: "IMPORTANT: Participating in AtomOne requires sharing only your public keys, NOT your private keys. In connection with AtomOne, you should never be asked to share your private key or any seed or recovery phrase. This means that you should never be contacted by email, phone call, or other form of messaging, nor receive instructions or a request to share your private key or seed or recovery phrase. Any request for your private key or seed or recovery phrase should alert you immediately to potential fraud. Beware of bad actors who seek to obtain access to your wallet or digital identity. Keeping your private key and seed or recovery phrases secure is critically important, and failure to do so could result in theft of your digital identity and loss of whatever you may own, including digital assets, that are associated with your digital identity. Certain statements included on this website (or in any linked materials) are forward-looking statements. Please visit the [Terms of Service](/terms/) page for further details about eligibility and your usage of the AtomOne website."
