@@ -165,8 +165,8 @@ contributor:
     content: "I understand my information will be processed in accordance with the [Privacy Policy](/privacy/), and I agree to the [Terms of Service](/terms/)."
     api: https://govgen.us12.list-manage.com/subscribe/post-json?u=8aea2e183e0168577db2fff30&amp;id=a458652cd2&amp;f_id=00c609e9f0
     tag: 12755615 #general segment
-    analyticsTag: "plausible-event-name=Submit+Form+Newsletter plausible-event-position=HomeBottom"
-
+    analyticsPosition: "HomeBottom"
+    
 legal:
   - content:
       - text: "IMPORTANT: Participating in AtomOne requires sharing only your public keys, NOT your private keys. In connection with AtomOne, you should never be asked to share your private key or any seed or recovery phrase. This means that you should never be contacted by email, phone call, or other form of messaging, nor receive instructions or a request to share your private key or seed or recovery phrase. Any request for your private key or seed or recovery phrase should alert you immediately to potential fraud. Beware of bad actors who seek to obtain access to your wallet or digital identity. Keeping your private key and seed or recovery phrases secure is critically important, and failure to do so could result in theft of your digital identity and loss of whatever you may own, including digital assets, that are associated with your digital identity. Certain statements included on this website (or in any linked materials) are forward-looking statements. Please visit the [Terms of Service](/terms/) page for further details about eligibility and your usage of the AtomOne website."

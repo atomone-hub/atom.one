@@ -1,5 +1,5 @@
 import jsonp from "jsonp";
-import { init as initPlausible, track as trackPlausible } from '@plausible-analytics/tracker'
+import { track as trackPlausible } from '@plausible-analytics/tracker'
 
 class Newsletter {
   private DOM: {
@@ -77,6 +77,7 @@ class Newsletter {
           trackPlausible('SubmitNewsletter', {
             props: {
               email: userEmail,
+              position: this.DOM.el.dataset.position ?? "",
               tags: allTags
             }
           })
