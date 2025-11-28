@@ -10,7 +10,7 @@ index .Site.Data .Site.Language.Lang -}}
         {{- end -}} 
         <div class="flex flex-col md:flex-row gap-2">
           {{ with .Params.cta }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large" "Icon" .ico "AnalyticsTag" .analyticsTag "PixelURL" .pixelURL "PixelOn" .pixelOn ) }} {{- end -}}
-          {{ with .Params.cta_2 }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Outlined" "Size" "Large" "Icon" .ico "AnalyticsTagTag" .analyticsTag "PixelURL" .pixelURL "PixelOn" .pixelOn) }} {{- end -}}
+          {{ with .Params.cta_2 }} {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Outlined" "Size" "Large" "Icon" .ico "AnalyticsTag" .analyticsTag "PixelURL" .pixelURL "PixelOn" .pixelOn) }} {{- end -}}
         </div>
       </div>
       <div class="w-[48%] hidden md:block">{{ partial "images/cover-hp" . }}</div>
@@ -57,7 +57,7 @@ index .Site.Data .Site.Language.Lang -}}
     {{ range .Params.allocation.content }}
     <p class="text-gray-200 md:w-1/2 text-400 mb-20">{{ .text | markdownify}}</p>
     {{ end }} {{ partial "components/interactive-banner" (dict "Title" .Params.allocation.tracker.title "Placeholder" .Params.allocation.tracker.placeholder "Content"
-    .Params.allocation.tracker.content "ImgSrc" "/img/hp/coins.svg" "Comp" "tracker")}}
+    .Params.allocation.tracker.content "ImgSrc" "/img/hp/coins.svg" "Comp" "tracker" "AnalyticsPosition" .Params.allocation.tracker.analyticsPosition)}}
 
     <div class="w-full flex-col md:flex-row flex gap-6 my-6">
       {{ range .Params.allocation.cards }} {{ partial "components/card" (dict "Title" .title "Content" .content "ImgSrc" .img "Note" .note)}} {{ end}}
@@ -81,7 +81,7 @@ index .Site.Data .Site.Language.Lang -}}
         {{ end }}
         <div class="flex flex-col sm:flex-row gap-3 *:w-full *:sm:w-auto">
           {{ range .Params.photon.card.ctas }}
-          {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large") }}
+          {{ partial "components/button" (dict "Name" .text "URL" .link "Variant" "Light" "Size" "Large" "AnalyticsTag" .analyticsTag) }}
           {{ end }}
         </div>
       </div>
@@ -125,7 +125,8 @@ index .Site.Data .Site.Language.Lang -}}
     {{ end }}
     <div class="flex flex-col gap-6">
       {{ partial "components/interactive-banner" (dict "Title" .Params.contributor.newsletter.title "Placeholder" .Params.contributor.newsletter.placeholder "Content"
-      .Params.contributor.newsletter.content "ImgSrc" "/img/hp/newsletter.svg" "Comp" "newsletter" "Api" .Params.contributor.newsletter.api "Tag" .Params.contributor.newsletter.tag "AnalyticsTag" .Params.contributor.newsletter.analyticsTag)}} {{ partial "components/social" . }}
+      .Params.contributor.newsletter.content "ImgSrc" "/img/hp/newsletter.svg" "Comp" "newsletter" "Api" .Params.contributor.newsletter.api "Tag" .Params.contributor.newsletter.tag "AnalyticsPosition" .Params.contributor.newsletter.analyticsPosition)}} 
+      {{ partial "components/social" (dict "Menus" .Site.Menus.social "AnalyticsPosition" "HomeBottom")}}
     </div>
   </section>
 

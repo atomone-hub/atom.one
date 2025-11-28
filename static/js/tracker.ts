@@ -1,4 +1,5 @@
 import { bech32 } from "bech32";
+import { track as trackPlausible } from '@plausible-analytics/tracker'
 
 interface BalanceResult {
   amount: string;
@@ -62,6 +63,12 @@ class Tracker {
         this.DOM.result.classList.add(...["text-positive", "pb-2", "mt-8"]);
         this.DOM.result.classList.remove("text-negative");
         this.DOM.detail.textContent = `TOTAL AIRDROP = YES + NO + NWV + ABS + DNV + LIQUID ≃ ${balanceTotal} ATONE`;
+
+        trackPlausible('SubmitFormCheckBalance', {
+          props: {
+            position: this.DOM.tracker.dataset.position ?? "",
+          }
+        })
       }
     } catch (error) {
       if (this.DOM.result && this.DOM.detail) {

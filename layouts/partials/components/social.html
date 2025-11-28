@@ -1,3 +1,4 @@
+{{ $analyticsPosition := .AnalyticsPosition }}
 <article class="bg-dark rounded-sm overflow-hidden py-16 flex justify-center w-full img-grid">
   <div class="flex flex-col md:flex-row px-8 gap-16 lg:w-[95%]">
     <div class="text-left md:w-1/2">
@@ -5,9 +6,9 @@
       <p class="text-gray-200 text-400">Join the conversion or find out how you can contribute to AtomOne by following its socials.</p>
     </div>
     <div class="flex flex-wrap flex-col lg:flex-row gap-2 md:w-1/2">
-      {{ range $index, $item := .Site.Menus.social }}
+      {{ range $index, $item := .Menus }}
       <div class="w-full flex {{ if eq $index 0 }}grow{{else}}xl:w-[32.2%]{{ end }} *:w-full *:gap-2 justify-center">
-        {{ partial "components/button" (dict "Name" $item.Identifier "URL" ($item.URL | absLangURL) "Icon" $item.Name "Variant" "Light" "Size" "Small") }}
+        {{ partial "components/button" (dict "Name" $item.Identifier "URL" ($item.URL | absLangURL) "Icon" $item.Name "Variant" "Light" "Size" "Small" "AnalyticsTag" $item.Params.analyticsTag "AnalyticsPosition" $analyticsPosition) }}
       </div>
       {{ end }}
     </div>
