@@ -98,7 +98,6 @@ The PHOTON rollout followed AtomOne’s governance process from start to finish 
 Along with native integrations in popular Cosmos wallets such as Cosmostation and Keplr, several community-build dashboards are available to users track conversation rates and perform ATONE-to-PHOTON burns:
 
 - [Nodeist Dashboard](https://atomone.ist/mainnet/mint)
-- [Moonkitt Dashboard](https://atomone.moonkitt.com/mint)
 
 These tools provide real-time data and simple interfaces for submitting `MsgMintPhoton` transactions. Eventually the community may build up new interfaces and more existing wallets and dashboards may integrate the ATONE-to-PHOTON burn mechanism.
 

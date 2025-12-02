@@ -108,9 +108,6 @@ photon:
       - text: "PHOTON can only be minted by burning ATONE. This process is irreversible. Minting PHOTON reduces ATONE's circulating supply and ties PHOTON's creation of a maximum of 1 billion PHOTONS directly to it."
       - text: "Examples of community tools* for minting PHOTON:"
     ctas:
-      - text: "Moonkitt"
-        link: "https://atomone.moonkitt.com/mint"
-        analyticsTag: "plausible-event-name=Click+CTA+Mint plausible-event-minttool=Moonkit" 
       - text: "Nodeist"
         link: "https://atomone.ist/mainnet/mint"
         analyticsTag: "plausible-event-name=Click+CTA+Mint plausible-event-minttool=Nodeist" 
