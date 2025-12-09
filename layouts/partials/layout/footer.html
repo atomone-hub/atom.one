@@ -1,1 +1,1 @@
-<footer class="border-t border-gray-100 w-full">{{ partial "navigation/footer.html" . }}{{ block "scripts" . }}{{ end }}</footer>
+<footer class="border-t w-full {{ if eq .Params.is_footer_clear false }}bg-dark border-gray-400{{ else }}border-gray-100{{ end }}">{{ partial "navigation/footer.html" . }}{{ block "scripts" . }}{{ end }}</footer>

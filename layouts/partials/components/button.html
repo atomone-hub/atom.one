@@ -11,6 +11,8 @@
     bg-transparent border {{ if eq .IsReversedColor true }}border-dark text-dark hover:bg-dark/10  after:invert-0{{ else }}border-light text-light hover:bg-light/10  after:invert {{ end }}
   {{ else if eq .Variant "Dark" }}
   {{ if eq .IsReversedColor true }}bg-light hover:bg-light/80 text-dark after:invert-0{{ else }}bg-dark hover:bg-dark/80 text-light after:invert{{ end }}
+  {{ else if eq .Variant "DarkOutlined" }}
+  {{ if eq .IsReversedColor true }}bg-light hover:bg-light/80 text-dark border border-gray-300 hover:border-dark after:invert-0{{ else }}bg-dark hover:bg-dark/80 text-light border border-gray-300 hover:border-light after:invert{{ end }}
   {{ else if eq .Variant "Light" }}
   {{ if eq .IsReversedColor true }}bg-dark hover:bg-dark/80 text-light after:invert{{ else }}bg-light hover:bg-light/80 text-dark after:invert-0{{end}}
   {{ else if eq .Variant "Colored" }}

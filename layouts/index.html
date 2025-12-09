@@ -131,12 +131,8 @@ index .Site.Data .Site.Language.Lang -}}
   </section>
 
   <section class="max-w-screen-xl mx-auto w-full px-4 text-100 text-gray-200">
-    {{ range .Params.legal }}
-    <div class="mt-10">
-      {{ range .content }}
-      <p class="mt-4">{{.text | markdownify }}</p>
-      {{ end}}
-    </div>
+    {{ range site.Params.legal }}
+    <p class="mt-4">{{ .text | markdownify }}</p>
     {{ end }}
   </section>
 </main>

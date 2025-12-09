@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Dither",
+    "description": "Dither is a read-optimized, event-sourced messaging protocol.",
+    "links": [
+      { "label": "Check Dither", "url": "https://dither.chat/" }
+    ]
+  },
+  {
+    "name": "Coingecko",
+    "logo": "./logos/coingecko.svg",
+    "description": "CoinGecko is the world's largest independent cryptocurrency data aggregator.",
+    "links": [
+      { "label": "ATONE on Coingecko", "url": "https://www.coingecko.com/en/coins/atomone" },
+      { "label": "PHOTON on Coingecko", "url": "https://www.coingecko.com/en/coins/photon-2" }
+    ]
+  },
+  {
+    "name": "CoinMarketCap",
+    "description": "CoinMarketCap is the world's most-referenced price-tracking website for cryptoassets.",
+    "links": [
+      { "label": "ATONE on CoinMarketCap", "url": "https://coinmarketcap.com/currencies/atomone/" },
+      { "label": "PHOTON on CoinMarketCap", "url": "https://coinmarketcap.com/currencies/photon-atom-one/" }
+    ]
+  },
+  {
+    "name": "Osmosis",
+    "logo": "./logos/osmosis.svg",
+    "description": "Decentralized exchange (DEX) and DeFi hub enabling cross-chain asset trading and liquidity provision.",
+    "links": [
+      { "label": "ATONE on Osmosis", "url": "https://app.osmosis.zone/assets/ATONE" },
+      { "label": "PHOTON on Osmosis", "url": "https://app.osmosis.zone/assets/PHOTON" }
+    ]
+  },
+  {
+    "name": "AtomOne Staking dApp",
+    "description": "Stake your ATONE tokens and earn rewards while securing the AtomOne network.",
+    "links": [
+      { "label": "Open Staking dApp", "url": "https://staking.atom.one/" }
+    ]
+  },
+  {
+    "name": "AtomOne Governance dApp",
+    "description": "Participate in AtomOne governance by voting on proposals and shaping the future of the network.",
+    "links": [
+      { "label": "Open Governance dApp", "url": "https://gov.atom.one/" }
+    ]
+  },
+  {
+    "name": "Keplr",
+    "description": "The leading wallet for the Cosmos ecosystem. Manage your ATONE and PHOTON tokens securely.",
+    "links": [
+      { "label": "Get Keplr", "url": "https://www.keplr.app/" }
+    ]
+  },
+  {
+    "name": "Cosmostation",
+    "description": "A secure and user-friendly wallet and block explorer for Cosmos-based chains.",
+    "links": [
+      { "label": "Get Cosmostation", "url": "https://www.cosmostation.io/" }
+    ]
+  },
+  {
+    "name": "Leap Wallet",
+    "description": "A non-custodial super wallet for the Cosmos ecosystem with seamless cross-chain support.",
+    "links": [
+      { "label": "Get Leap Wallet", "url": "https://www.leapwallet.io/" }
+    ]
+  },
+  {
+    "name": "Mintscan",
+    "description": "Block explorer and analytics platform for Cosmos-based blockchains.",
+    "links": [
+      { "label": "AtomOne on Mintscan", "url": "https://www.mintscan.io/atomone" }
+    ]
+  },
+  {
+    "name": "DexScreener",
+    "description": "Real-time DEX analytics and price charts for ATONE and PHOTON tokens.",
+    "links": [
+      { "label": "ATONE on DexScreener", "url": "https://dexscreener.com/osmosis/2715-ibc_27394fb092d2eccd56123c74f36e4c1f926001ceada9ca97ea622b25f41e5eb2-ibc_bc26a7a805ecd6822719472bcb7842a48ef09df206182f8f259b2593eb5d23fb" }
+    ]
+  }
+]
