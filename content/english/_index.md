@@ -167,11 +167,4 @@ contributor:
     api: "https://govgen.us12.list-manage.com/subscribe/post-json?u=8aea2e183e0168577db2fff30&amp;id=a458652cd2&amp;f_id=00c609e9f0"
     tag: 12755615 #general segment
     analyticsPosition: "HomeBottom"
-    
-legal:
-  - content:
-      - text: "IMPORTANT: Participating in AtomOne requires sharing only your public keys, NOT your private keys. In connection with AtomOne, you should never be asked to share your private key or any seed or recovery phrase. This means that you should never be contacted by email, phone call, or other form of messaging, nor receive instructions or a request to share your private key or seed or recovery phrase. Any request for your private key or seed or recovery phrase should alert you immediately to potential fraud. Beware of bad actors who seek to obtain access to your wallet or digital identity. Keeping your private key and seed or recovery phrases secure is critically important, and failure to do so could result in theft of your digital identity and loss of whatever you may own, including digital assets, that are associated with your digital identity. Certain statements included on this website (or in any linked materials) are forward-looking statements. Please visit the [Terms of Service](/terms/) page for further details about eligibility and your usage of the AtomOne website."
-      - text: "DISCLAIMER: Nothing on this website is, and nothing on this website is intended to be, an offer of tokens or securities."
-  - content:
-      - text: "This website is a community-owned and operated resource, created and maintained by All in Bits (AiB), a contributing member of the AtomOne ecosystem. It is not an official website of AtomOne, and the information contained within does not represent the official views, decisions, or governance of the AtomOne community or its DAOs. The content and opinions expressed herein are those of the AiB. Use of this website is at your own discretion, and no guarantees are made regarding the accuracy, completeness, or reliability of the information provided."
 ---
