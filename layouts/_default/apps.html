@@ -1,0 +1,51 @@
+{{ define "main" }}
+<main class="pb-20 w-full mx-auto bg-dark">
+  <div class="mb-20 max-w-screen-xl mx-auto w-full px-4 mt-28 text-gray-200">
+    <h1 class="text-center text-700 lg:text-800 leading-none mb-8 font-bold text-light">{{ .Title }}</h1>
+    <h2 class="text-center text-300 lg:text-400 leading-none mb-16 text-gray-200">{{ .Description }}</h2>
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {{ $page := . }}
+        {{ $apps := slice }}
+        {{ with $page.Resources.GetMatch .Params.data_file }}
+          {{ with . | transform.Unmarshal }}
+            {{ $apps = . }}
+          {{ end }}
+        {{ end }}
+        {{ $ghURL := printf "%s%s%s" site.Params.ghrepo_content .File.Dir .Params.data_file }}
+        <a href="{{ $ghURL }}" class="no-underline text-center block-link border border-gray-300 hover:border-light h-full bg-gray-500 rounded-md px-8 py-10 flex flex-col justify-center items-center hover:*:text-light">
+            <span class="text-gray-300 text-600 font-bold mb-4">
+                {{ partial "icons/ico-plus" }}
+            </span>
+            <span class="text-gray-300 text-600 font-bold">Add Your App</span>
+        </a>
+        {{ range $index, $app := $apps }}
+          <div class="bg-gray-500 rounded-md px-8 py-10 flex flex-col">
+            <div class="aspect-[4/1] flex mb-8 items-center justify-start overflow-hidden">
+              {{ $logo := $app.logo }}
+              {{ if $logo }}
+                {{ $trimmed := strings.TrimPrefix "/" $logo }}           
+                {{ $url := printf "%sapps/%s" $page.RelPermalink $trimmed }}
+                <h3><img src="{{ $url }}" alt="{{ $app.name }}" class="h-full object-contain"></h3>
+              {{ else }}
+              <div class="w-full h-full flex gap-4 items-center justify-start">
+                <img src="/img/icons/app.svg" alt="{{ $app.name }}" class="w-16 h-16 object-contain">
+                <h3 class="text-light text-600 font-bold leading-none">{{ $app.name }}</h3>
+              </div>
+              {{ end }}
+            </div>
+            {{ with $app.description }}
+              <p class="text-gray-200 mb-14">{{ . }}</p>
+            {{ end }}
+            {{ with $app.links }}
+              <div class="mt-auto flex flex-col gap-2 *:w-full *:sm:w-auto">
+                {{ range first 2 . }}
+                  {{ partial "components/button" (dict "Name" .label "URL" .url "Variant" "DarkOutlined" "Size" "Large") }}
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+    </section>
+  </div>
+</main>
+{{ end }}   
