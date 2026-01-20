@@ -11,7 +11,8 @@
             {{ $apps = . }}
           {{ end }}
         {{ end }}
-        {{ $ghURL := printf "%s%s%s" site.Params.ghrepo_content .File.Dir .Params.data_file }}
+        {{ $languageDir := strings.ToLower .Site.Language.LanguageName }}
+        {{ $ghURL := printf "%s%s/%s%s" site.Params.ghrepo_content $languageDir .File.Dir .Params.data_file }}
         <a href="{{ $ghURL }}" class="no-underline text-center block-link border border-gray-300 hover:border-light h-full bg-gray-500 rounded-md px-8 py-10 flex flex-col justify-center items-center hover:*:text-light">
             <span class="text-gray-300 text-600 font-bold mb-4">
                 {{ partial "icons/ico-plus" }}
