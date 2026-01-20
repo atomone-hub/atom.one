@@ -30,40 +30,46 @@
 
 
 [[resource]]
+    identifier = "ecosystem"
+    name = "Ecosystem"
+    url = "/ecosystem/"
+    weight = 1
+
+[[resource]]
     identifier = "faq"
     name = "FAQ"
     url = "/faq/"
-    weight = 1
+    weight = 2
 
 [[resource]]
     identifier = "roadmap"
     name = "Roadmap"
     url = "/roadmap/"
-    weight = 2
+    weight = 3
 
 [[resource]]
     identifier = "run-node"
     name = "Run Node"
     url = "/run-node/"
-    weight = 3
+    weight = 4
 
 [[resource]]
     identifier = "submit-tx-securely"
     name = "Submit TX Securely"
     url = "/submit-tx-securely/"
-    weight = 4
+    weight = 5
 
 [[resource]]
     identifier = "blog"
     name = "Blog"
     url = "/blog/"
-    weight = 5
+    weight = 6
 
 [[resource]]
     identifier = "docs"
     name = "Docs"
     url = "https://docs.atom.one"
-    weight = 6
+    weight = 7
     analyticsTag = "plausible-event-name=Click+Header+Github plausible-event-position=HeaderMenu"
 
 [[general]]
@@ -73,28 +79,34 @@
     weight = 1
 
 [[general]]
+    identifier = "ecosystem"
+    name = "Ecosystem"
+    url = "/ecosystem/"
+    weight = 2
+
+[[general]]
     identifier = "faq"
     name = "FAQ"
     url = "/faq/"
-    weight = 2
+    weight = 3
 
 [[general]]
     identifier = "privacy"
     name = "Privacy Policy"
     url = "/privacy/"
-    weight = 3
+    weight = 4
 
 [[general]]
     identifier = "terms"
     name = "Terms and Conditions"
     url = "/terms/"
-    weight = 4
+    weight = 5
 
 [[general]]
     identifier = "branding"
     name = "Brand Assets"
     url = "https://github.com/atomone-hub/assets/tree/main/logos"
-    weight = 5
+    weight = 6
     [general.params]
         analyticsTag = "plausible-event-name=Click+Footer+Branding plausible-event-position=FooterMenu"
 
