@@ -23,6 +23,10 @@ import "./analytics";
     {
       selector: "chain-data",
       importer: () => import("./chaindata"),
+    },
+    {
+      selector: "math",
+      importer: () => import("./math"),
     }
   ];
 

@@ -26,6 +26,9 @@ importers:
       jsonp:
         specifier: ^0.2.1
         version: 0.2.1
+      katex:
+        specifier: ^0.16.45
+        version: 0.16.45
       tailwindcss:
         specifier: ^4.0.4
         version: 4.0.4
@@ -39,6 +42,9 @@ importers:
       '@types/jsonp':
         specifier: ^0.2.3
         version: 0.2.3
+      '@types/katex':
+        specifier: ^0.16.8
+        version: 0.16.8
       '@types/node':
         specifier: ^22.10.1
         version: 22.10.1
@@ -410,6 +416,9 @@ packages:
   '@types/jsonp@0.2.3':
     resolution: {integrity: sha512-+bbowFC2n6TkpbQ369/tqL8pRPF4JRfRNf7Z6cpnAlLlEdy6YxG4HYZE7Qkeg2otcDbwNPIuSMux+P3pE4viFA==}
 
+  '@types/katex@0.16.8':
+    resolution: {integrity: sha512-trgaNyfU+Xh2Tc+ABIb44a5AYUpicB3uwirOioeOkNPPbmgRNtcWyDeeFRzjPZENO9Vq8gvVqfhaaXWLlevVwg==}
+
   '@types/node@22.10.1':
     resolution: {integrity: sha512-qKgsUwfHZV2WCWLAnVP1JqnpE6Im6h3Y0+fYgMTasNQ7V++CBX5OT1as0g0f+OyubbFqhf6XVNIsmN4IIhEgGQ==}
 
@@ -505,6 +514,10 @@ packages:
 
   color-name@1.1.3:
     resolution: {integrity: sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==}
+
+  commander@8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
@@ -826,6 +839,10 @@ packages:
 
   jsonp@0.2.1:
     resolution: {integrity: sha512-pfog5gdDxPdV4eP7Kg87M8/bHgshlZ5pybl+yKxAnCZ5O7lCIn7Ixydj03wOlnDQesky2BPyA91SQ+5Y/mNwzw==}
+
+  katex@0.16.45:
+    resolution: {integrity: sha512-pQpZbdBu7wCTmQUh7ufPmLr0pFoObnGUoL/yhtwJDgmmQpbkg/0HSVti25Fu4rmd1oCR6NGWe9vqTWuWv3GcNA==}
+    hasBin: true
 
   lightningcss-darwin-arm64@1.29.1:
     resolution: {integrity: sha512-HtR5XJ5A0lvCqYAoSv2QdZZyoHNttBpa5EP9aNuzBQeKGfbyH5+UipLWvVzpP4Uml5ej4BYs5I9Lco9u1fECqw==}
@@ -1604,6 +1621,8 @@ snapshots:
 
   '@types/jsonp@0.2.3': {}
 
+  '@types/katex@0.16.8': {}
+
   '@types/node@22.10.1':
     dependencies:
       undici-types: 6.20.0
@@ -1745,6 +1764,8 @@ snapshots:
       color-name: 1.1.3
 
   color-name@1.1.3: {}
+
+  commander@8.3.0: {}
 
   concat-map@0.0.1: {}
 
@@ -2169,6 +2190,10 @@ snapshots:
       debug: 2.6.9
     transitivePeerDependencies:
       - supports-color
+
+  katex@0.16.45:
+    dependencies:
+      commander: 8.3.0
 
   lightningcss-darwin-arm64@1.29.1:
     optional: true

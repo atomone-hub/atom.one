@@ -5,6 +5,11 @@
       [goldmark.parser.attribute]
         block = true
         title = true
+  [goldmark.extensions.passthrough]
+    enable = true
+    [goldmark.extensions.passthrough.delimiters]
+      block = [['\[', '\]'], ['$$', '$$']]
+      inline = [['\(', '\)'], ['$', '$']]
 
 [tableOfContents]
   startLevel = 2

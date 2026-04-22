@@ -5,6 +5,7 @@ publishDate: 2026-04-22T12:00:00-01:00
 cover: cover.png
 summary: AtomOne v4 is built on three distinct pillars, a full upgrade to Cosmos SDK v0.50 and IBC-go v10, the introduction of Governors as a governance-specific delegation mechanism decoupled from staking, and a set of economic controls aligned with the AtomOne Constitution including network-enforced validator commission and the Nakamoto Bonus reward mechanism.
 is_header_clear: true
+math: true
 ---
 
 ## Scope
@@ -55,7 +56,7 @@ The Constitution defines a Governor formally as "a type of account that can have
 
 The Governor implementation adds four new collections to the governance store:
 
-```
+```text
 Governors:                         GovernorAddress → Governor
 GovernanceDelegations:             AccAddress → GovernanceDelegation
 GovernanceDelegationsByGovernor:   Pair[GovernorAddress, AccAddress] → GovernanceDelegation
@@ -92,7 +93,7 @@ The tally function follows a two-phase process that is in practice similar to th
 
 **Phase 1: Individual votes.** For each direct vote, the voter's staking delegations are iterated to compute their voting power. If the voter has a governance delegation to governor G, their staking shares are accumulated into a per-G deductions map:
 
-```
+```text
 G.ValSharesDeductions[validator] += voter.shares_with_validator
 ```
 
@@ -100,7 +101,7 @@ This deduction will be subtracted from G's aggregated shares before G's vote is 
 
 **Phase 2: Active governor votes.** For each governor who both voted and passes the eligibility check (active status, meets minimum self-delegation), the module computes:
 
-```
+```text
 G_voting_power = Σ(validators V) [
     (ValidatorSharesByGovernor[(G,V)] - G.ValSharesDeductions[V]) × V.BondedTokens / V.DelegatorShares
 ]
@@ -524,7 +525,7 @@ The v4→v5 transition will remove the `atomone.gov.v1` wrapper entirely. Client
 
 A summary of new message types introduced in v4 (all under `cosmos.gov.v1`):
 
-```
+```text
 MsgCreateGovernor          { address, description }
 MsgEditGovernor            { address, description }
 MsgUpdateGovernorStatus    { address, status }       // ACTIVE or INACTIVE
@@ -534,7 +535,7 @@ MsgUndelegateGovernor      { delegator_address }
 
 And new query endpoints:
 
-```
+```text
 QueryGovernor              { governor_address }
 QueryGovernors             { status, pagination }
 QueryGovernanceDelegation  { delegator_address }
@@ -544,7 +545,7 @@ QueryGovernorValShares     { governor_address, pagination }
 
 New `x/coredaos` messages:
 
-```
+```text
 MsgAnnotateProposal        { annotator, proposal_id, annotation, overwrite }
 MsgEndorseProposal         { endorser, proposal_id }
 MsgExtendVotingPeriod      { extender, proposal_id }
