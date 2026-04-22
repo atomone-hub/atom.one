@@ -491,7 +491,7 @@ The `ConsensusState` stored after each successful update contains:
 
 ### 7.6 Scope and context
 
-The `10-gno` module is one component of a broader effort to establish full IBC v2 connectivity between AtomOne and Gno. The corresponding work on the Gno side — a Tendermint light client and IBC core logic implemented as Gno realms, along with a modular TypeScript relayer capable of operating across both chain types — is covered in detail in <PLACEHOLDER_LINK>.
+The `10-gno` module is one component of a broader effort to establish full IBC v2 connectivity between AtomOne and Gno. The corresponding work on the Gno side — a Tendermint light client and IBC core logic implemented as Gno realms, along with a modular TypeScript relayer capable of operating across both chain types — will be covered in detail in a dedicated article.
 
 On the AtomOne side, the module's inclusion in v4 means the infrastructure is in place before it is needed. It does not change how AtomOne operates day-to-day; no channels are opened by the upgrade itself. But it is a hard prerequisite for IBC communication with Gno chains, and by extension for the Validation-as-a-Service (VaaS) model AtomOne is developing — a shared security arrangement under which AtomOne validators provide consensus security to consumer chains. Gno.land is expected to be the first consumer chain once implementation readiness milestones are met on both sides. Without `10-gno`, neither the IBC channel establishment nor the cross-chain trust relationship that VaaS requires is possible.
 
