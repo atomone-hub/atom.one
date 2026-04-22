@@ -403,7 +403,7 @@ The `MaximumCoefficient` cap remains relevant as a governance guardrail: the ana
 
 The `x/dynamicfee` module was introduced in v3. In v4, its canonical home moves from the AtomOne repository into the AtomOne SDK, where it is co-versioned with the other AtomOne-specific SDK modifications. This is purely a change of location and ownership, not of algorithm or interface: the module's behaviour is unchanged.
 
-The migration carries one substantive fix absent from the repository version: a guard against `ConsensusParams.Block.MaxGas` returning 0 or -1, the CometBFT representation of "unlimited block gas." Without this guard, the fee price calculation attempts to divide by a zero or negative target, producing incorrect behaviour. The fork introduces a `DefaultMaxBlockGas` parameter (default: 100,000,000 gas units), and the `GetMaxBlockGas` helper returns this value whenever the consensus parameter is absent or unlimited.
+The migration carries one substantive fix absent from the repository version: a guard against `ConsensusParams.Block.MaxGas` returning 0 or -1, the CometBFT representation of "unlimited block gas." Without this guard, the fee price calculation attempts to divide by a zero or negative target, producing incorrect behaviour. The updated version introduces a `DefaultMaxBlockGas` parameter (default: 100,000,000 gas units), and the `GetMaxBlockGas` helper returns this value whenever the consensus parameter is absent or unlimited.
 
 ## 7. IBC Light Client for Gno: `10-gno`
 
