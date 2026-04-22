@@ -555,7 +555,7 @@ MsgUpdateParams            { authority, params }
 
 ## 10. Security Audit
 
-The AtomOne v4 upgrade was subjected to a security audit carried out by [Oak Security](https://oaksecurity.io/). The full audit report is available at <PLACEHOLDER_LINK>.
+The AtomOne v4 upgrade was subjected to a security audit carried out by [Oak Security](https://oaksecurity.io/). The full audit report will be soon available at [github.com/atomone-hub/atomone/tree/main/docs](https://github.com/atomone-hub/atomone/tree/main/docs) as per previous versions audits.
 
 ---
 
