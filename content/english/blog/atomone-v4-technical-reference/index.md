@@ -399,7 +399,7 @@ The `MaximumCoefficient` cap remains relevant as a governance guardrail: the ana
 
 **Integer group division.** The group size is computed as `N / 3` (integer division). For N=100, the high and low groups each contain 33 validators; the middle 34 are unused in the comparison. For validator counts that are not multiples of 3, the groups are slightly unequal but the logic is otherwise unchanged.
 
-## 6. Dynamic Fee Market: Migration to SDK Fork
+## 6. Dynamic Fee Market: Migration to AtomOne SDK
 
 The `x/dynamicfee` module was introduced in v3. In v4, its canonical home moves from the AtomOne repository into the AtomOne SDK, where it is co-versioned with the other AtomOne-specific SDK modifications. This is purely a change of location and ownership, not of algorithm or interface: the module's behaviour is unchanged.
 
