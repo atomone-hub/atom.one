@@ -253,7 +253,7 @@ The validation rules on `MsgUpdateParams` encode several constitutional constrai
 
 **`MsgAnnotateProposal`:** Adds a free-text annotation to a proposal in the voting period. Annotations are stored on the `Proposal` object and visible in query responses. The Steering DAO may overwrite an existing annotation by setting `overwrite: true`. Annotation length is capped at 5,000 characters. The Steering DAO cannot annotate proposals that are not in the voting period.
 
-**`MsgEndorseProposal`:** Marks a proposal as endorsed, setting a boolean flag on the `Proposal` object. Endorsement is one-way — it cannot be revoked. Per the Constitution, a Steering DAO endorsement reduces the passing threshold for law proposals from Constitutional Majority (>90%) to Supermajority (>2/3). The mechanics of this threshold reduction are implemented in the SDK fork's tally logic, which reads the `Endorsed` field.
+**`MsgEndorseProposal`:** Marks a proposal as endorsed, setting a boolean flag on the `Proposal` object. Endorsement is one-way — it cannot be revoked. Per the Constitution, a Steering DAO endorsement reduces the passing threshold for law proposals from Constitutional Majority (>90%) to Supermajority (>2/3). The mechanics of this threshold reduction are implemented in the `x/gov`'s tally logic, which reads the `Endorsed` field.
 
 **`MsgExtendVotingPeriod`:** Extends a proposal's `VotingEndTime` by `VotingPeriodExtensionDuration`. The module removes the proposal from the `ActiveProposalsQueue` at its current end time and reinserts it at the new end time, preventing premature processing. `TimesVotingPeriodExtended` is incremented, and the module enforces that this counter does not exceed `VotingPeriodExtensionsLimit` (default 3, yielding a maximum of 21 additional days with the 7-day default extension duration). Both the Steering DAO and the Oversight DAO can exercise this power.
 
@@ -357,7 +357,7 @@ The $\eta$ coefficient is adjusted weekly (via the `x/epochs` module) by the `Ad
 
 The 3× threshold reflects the following intuition: if the average stake of the top third of validators is at least three times the average of the bottom third, the network's stake distribution is sufficiently concentrated that the bonus should strengthen. Below that ratio, distribution is improving and the bonus can recede.
 
-The epoch-based triggering (via `x/epochs`) was a deliberate refactoring from the original fixed-block-interval implementation. Epochs decouple adjustment timing from block rate, making the behavior predictable from a calendar perspective and easier to reason about across chains with different block times. The distribution keeper implements `epochstypes.EpochHooks`, and `AfterEpochEnd` fires `AdjustNakamotoBonusCoefficient` whenever the epoch identifier matches `NakamotoBonus.PeriodEpochIdentifier`. The `x/epochs` module exists in the SDK fork and the distribution hooks are complete; the application-level wiring — registering the distribution keeper as an epoch hook consumer — is pending and will be completed before the v4 mainnet upgrade, analogously to the `x/dynamicfee` integration described in Section 6.
+The epoch-based triggering (via `x/epochs`) was a deliberate refactoring from the original fixed-block-interval implementation. Epochs decouple adjustment timing from block rate, making the behavior predictable from a calendar perspective and easier to reason about across chains with different block times. The distribution keeper implements `epochstypes.EpochHooks`, and `AfterEpochEnd` fires `AdjustNakamotoBonusCoefficient` whenever the epoch identifier matches `NakamotoBonus.PeriodEpochIdentifier`.
 
 **Parameter rationale: bounds and rate of change.** The original ADR proposed adjustments of ±3% per 120,000 blocks (~one week). This was revised down to ±1% per real-time week. The concern with the faster rate is that delegators need time to observe the new reward distribution and reallocate stake in response. At ±3%, $\eta$ could triple from its initial value within two weeks of activation — well before delegation patterns have had any opportunity to respond. ±1% is slow enough that the delegation market can track the coefficient.
 
@@ -399,11 +399,11 @@ The `MaximumCoefficient` cap remains relevant as a governance guardrail: the ana
 
 **Integer group division.** The group size is computed as `N / 3` (integer division). For N=100, the high and low groups each contain 33 validators; the middle 34 are unused in the comparison. For validator counts that are not multiples of 3, the groups are slightly unequal but the logic is otherwise unchanged.
 
-## 6. Dynamic Fee Market: Migration to SDK Fork
+## 6. Dynamic Fee Market: Migration to AtomOne SDK
 
 The `x/dynamicfee` module was introduced in v3. In v4, its canonical home moves from the AtomOne repository into the AtomOne SDK, where it is co-versioned with the other AtomOne-specific SDK modifications. This is purely a change of location and ownership, not of algorithm or interface: the module's behaviour is unchanged.
 
-The migration carries one substantive fix absent from the repository version: a guard against `ConsensusParams.Block.MaxGas` returning 0 or -1, the CometBFT representation of "unlimited block gas." Without this guard, the fee price calculation attempts to divide by a zero or negative target, producing incorrect behaviour. The fork introduces a `DefaultMaxBlockGas` parameter (default: 100,000,000 gas units), and the `GetMaxBlockGas` helper returns this value whenever the consensus parameter is absent or unlimited.
+The migration carries one substantive fix absent from the repository version: a guard against `ConsensusParams.Block.MaxGas` returning 0 or -1, the CometBFT representation of "unlimited block gas." Without this guard, the fee price calculation attempts to divide by a zero or negative target, producing incorrect behaviour. The updated version introduces a `DefaultMaxBlockGas` parameter (default: 100,000,000 gas units), and the `GetMaxBlockGas` helper returns this value whenever the consensus parameter is absent or unlimited.
 
 ## 7. IBC Light Client for Gno: `10-gno`
 
@@ -491,7 +491,7 @@ The `ConsensusState` stored after each successful update contains:
 
 ### 7.6 Scope and context
 
-The `10-gno` module is one component of a broader effort to establish full IBC v2 connectivity between AtomOne and Gno. The corresponding work on the Gno side — a Tendermint light client and IBC core logic implemented as Gno realms, along with a modular TypeScript relayer capable of operating across both chain types — is covered in detail in <PLACEHOLDER_LINK>.
+The `10-gno` module is one component of a broader effort to establish full IBC v2 connectivity between AtomOne and Gno. The corresponding work on the Gno side — a Tendermint light client and IBC core logic implemented as Gno realms, along with a modular TypeScript relayer capable of operating across both chain types — will be covered in detail in a dedicated article.
 
 On the AtomOne side, the module's inclusion in v4 means the infrastructure is in place before it is needed. It does not change how AtomOne operates day-to-day; no channels are opened by the upgrade itself. But it is a hard prerequisite for IBC communication with Gno chains, and by extension for the Validation-as-a-Service (VaaS) model AtomOne is developing — a shared security arrangement under which AtomOne validators provide consensus security to consumer chains. Gno.land is expected to be the first consumer chain once implementation readiness milestones are met on both sides. Without `10-gno`, neither the IBC channel establishment nor the cross-chain trust relationship that VaaS requires is possible.
 
@@ -555,7 +555,7 @@ MsgUpdateParams            { authority, params }
 
 ## 10. Security Audit
 
-The AtomOne v4 upgrade was subjected to a security audit carried out by [Oak Security](https://oaksecurity.io/). The full audit report is available at <PLACEHOLDER_LINK>.
+The AtomOne v4 upgrade was subjected to a security audit carried out by [Oak Security](https://oaksecurity.io/). The full audit report will be soon available at [github.com/atomone-hub/atomone/tree/main/docs](https://github.com/atomone-hub/atomone/tree/main/docs) as per previous versions audits.
 
 ---
 
