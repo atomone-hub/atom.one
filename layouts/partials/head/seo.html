@@ -16,7 +16,7 @@
     {{ end }}
   {{ end }}
   <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink | absLangURL }}" />
-  <link rel="canonical" href="{{ .Permalink | absLangURL }}" />
+  <link rel="canonical" href="{{ partial "utility/canonical-url" . }}" />
   <link rel="alternate" href="{{ .Permalink | absLangURL }}" hreflang="x-default" />
 {{ end }}
 

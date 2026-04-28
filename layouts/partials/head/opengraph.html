@@ -19,7 +19,7 @@
 <!-- Facebook -->
 <meta property="og:title" content="{{ partial "utility/meta-title" . }}" />
 <meta property="og:description" content="{{ partial "utility/meta-description" . }}" />
-<meta property="og:url" content="{{ .Permalink | absURL }}" />
+<meta property="og:url" content="{{ partial "utility/canonical-url" . }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 
 {{ if .Params.cover }}

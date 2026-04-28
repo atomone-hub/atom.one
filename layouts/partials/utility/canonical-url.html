@@ -1,0 +1,3 @@
+{{- $canonical := .Permalink | absLangURL -}}
+{{- with .Params.canonical }}{{ $canonical = . }}{{ end -}}
+{{- $canonical -}}
