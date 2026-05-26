@@ -80,5 +80,26 @@
     "links": [
       { "label": "ATONE on DexScreener", "url": "https://dexscreener.com/osmosis/2715-ibc_27394fb092d2eccd56123c74f36e4c1f926001ceada9ca97ea622b25f41e5eb2-ibc_bc26a7a805ecd6822719472bcb7842a48ef09df206182f8f259b2593eb5d23fb" }
     ]
+  },
+  {
+    "name": "ValidatorInfo",
+    "description": "Web3 Blockchain Explorer. Validator, Mining Pool, Token and Network Real-time Metrics. Interactive Onchain Dashboard.",
+    "links": [
+      { "label": "AtomOne on ValidatorInfo", "url": "https://validatorinfo.com/networks/atomone/overview" }
+    ]
+  },
+    {
+    "name": "Chain Data Indexer",
+    "description": "Blockchain data indexing framework. An event-driven pipeline for real-time processing of blockchain data.",
+    "links": [
+      { "label": "AtomOne Indexer API", "url": "https://github.com/citizenweb3/chain-data-indexer/tree/atomone-indexer" }
+    ]
+  },
+      {
+    "name": "IBC Screener",
+    "description": "Real-time data showing IBC transactions and volume.",
+    "links": [
+      { "label": "AtomOne on IBC Screener", "url": "https://ibc.validatorinfo.com/atomone/dashboard" }
+    ]
   }
 ]
