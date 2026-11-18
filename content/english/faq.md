@@ -95,11 +95,9 @@ The PHOTON rollout followed AtomOne’s governance process from start to finish 
 
 ## 13. How do I convert ATONE to PHOTON?
 
-Along with native integrations in popular Cosmos wallets such as Cosmostation and Keplr, several community-build dashboards are available to users track conversation rates and perform ATONE-to-PHOTON burns:
+Along with native integrations in popular Cosmos wallets such as Cosmostation and Keplr, you can track the conversion rate and perform ATONE-to-PHOTON burns using the [AtomOne Staking dApp](https://staking.atom.one/).
 
-- [Nodeist Dashboard](https://atomone.ist/mainnet/mint)
-
-These tools provide real-time data and simple interfaces for submitting `MsgMintPhoton` transactions. Eventually the community may build up new interfaces and more existing wallets and dashboards may integrate the ATONE-to-PHOTON burn mechanism.
+It provides real-time data and a simple interface for submitting `MsgMintPhoton` transactions. Over time, the community may build new interfaces, and more wallets and dashboards may integrate the ATONE-to-PHOTON burn mechanism.
 
 ## 14. Where can I learn more about PHOTON?
 

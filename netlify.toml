@@ -4,6 +4,9 @@
 
 [build.environment]
   HUGO_VERSION = "0.139.3"
+  # Netlify's default Python (3.12.3) has no GitHub attestations, so its
+  # install through mise fails. Pin a release that has them.
+  PYTHON_VERSION = "3.12.16"
 
 [context.deploy-preview]
   command = "pnpm preview"
